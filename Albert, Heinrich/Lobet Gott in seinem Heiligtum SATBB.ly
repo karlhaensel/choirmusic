@@ -18,12 +18,7 @@
   \context {
     \Voice
     \consists "Melody_engraver"
-  } }
-
-global = {
-  \key c \major
-  \time 4/4
-  \dynamicUp
+  } 
 }
 
 \include "Lobet Gott in seinem Heiligtum_music.ily"

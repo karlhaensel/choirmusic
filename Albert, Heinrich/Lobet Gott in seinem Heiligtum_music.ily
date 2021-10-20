@@ -1,5 +1,11 @@
 \version "2.18.2"
 
+global = {
+  \key c \major
+  \time 4/4
+  \dynamicUp
+}
+
 nSopranI = \relative c'' {
   \global
   r4 g4.( a8 b c | d2.) cis4 | d e c b | a8( b c2) b4 | c2 r4 c~ |
