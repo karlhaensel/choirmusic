@@ -23,7 +23,7 @@
 \include "Miserere mei, Deus_lyrics.ily"
 
 
-choirmidi = { midiInstrument = "choir aahs" }
+choirmidi = \with { midiInstrument = "choir aahs" }
 
 sSopran = \new Staff \with {
   instrumentName = "Sopran"
