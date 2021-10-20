@@ -23,8 +23,8 @@
   }
 }
 
-\include "notes.ily"
-\include "lyrics.ily"
+\include "Geh aus mein Herz_music.ily"
+\include "Geh aus mein Herz_lyrics.ily"
 
 %%%%%% VIERZEILIGE NOTATION %%%%%%%%
 
