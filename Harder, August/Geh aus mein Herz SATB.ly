@@ -63,3 +63,4 @@ sBass = \new Staff \with {
   \midi {
     \tempo 4=100
   }
+}
