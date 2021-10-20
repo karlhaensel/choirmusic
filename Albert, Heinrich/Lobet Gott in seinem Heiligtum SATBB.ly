@@ -25,9 +25,11 @@
 \include "Lobet Gott in seinem Heiligtum_lyrics.ily"
 
 
+choirmidi = \with { midiInstrument = "choir aahs" }
+
 sTSopran = \new Staff \with {
   instrumentName = "Sopran"
-  midiInstrument = "choir aahs"
+  \choirmidi
 } { \nSopranI }
 \addlyrics { \tSopranIeins }
 \addlyrics { \tSopranIzwei }
@@ -36,7 +38,7 @@ sTSopran = \new Staff \with {
 
 sTAlt = \new Staff \with {
   instrumentName = "Alt"
-  midiInstrument = "choir aahs"
+  \choirmidi
 } { \nSopranII }
 \addlyrics { \tSopranIIeins }
 \addlyrics { \tSopranIIzwei }
@@ -45,7 +47,7 @@ sTAlt = \new Staff \with {
 
 sTTenor = \new Staff \with {
   instrumentName = "Tenor"
-  midiInstrument = "choir aahs"
+  \choirmidi
 } { \clef "treble_8" \nAlt }
 \addlyrics { \tAlteins }
 \addlyrics { \tAltzwei }
@@ -54,7 +56,7 @@ sTTenor = \new Staff \with {
 
 sTBariton = \new Staff \with {
   instrumentName = "Bariton"
-  midiInstrument = "choir aahs"
+  \choirmidi
 } { \clef bass \nTenor }
 \addlyrics { \tTenoreins }
 \addlyrics { \tTenorzwei }
@@ -63,7 +65,7 @@ sTBariton = \new Staff \with {
 
 sTBass = \new Staff \with {
   instrumentName = "Bass"
-  midiInstrument = "choir aahs"
+  \choirmidi
 } { \clef bass \nBass }
 \addlyrics { \tBasseins }
 \addlyrics { \tBasszwei }
