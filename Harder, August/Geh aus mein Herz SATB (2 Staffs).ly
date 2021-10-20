@@ -23,43 +23,37 @@
 \include "Geh aus mein Herz_music.ily"
 \include "Geh aus mein Herz_lyrics.ily"
 
-%%%%%% VIERZEILIGE NOTATION %%%%%%%%
+%%%%%% ZWEIZEILIGE NOTATION %%%%%%%%
 
 choirmidi = \with { midiInstrument = "choir aahs" }
 
-sSopran = \new Staff \with {
-  instrumentName = "Sopran"
+sOben = \new Staff \with {
   \choirmidi
-} { \nSopran }
-\addlyrics { \tEins }
+} { <<
+      \new Voice = "vSopran" {\voiceOne \nSopran}
+      \new Voice = "vAlt" {\voiceTwo \nAlt}
+      \new Lyrics \lyricsto "vSopran" {\tEins}
+    >> }
 
-sAlt = \new Staff \with {
-  instrumentName = "Alt"
-  \choirmidi
-} { \nAlt }
-\addlyrics { \tEins }
 
-sTenor = \new Staff \with {
-  instrumentName = "Tenor"
+sUnten = \new Staff \with {
   \choirmidi
-} { \clef "treble_8" \nTenor }
-\addlyrics { \tEins }
-
-sBass = \new Staff \with {
-  instrumentName = "Bass"
-  \choirmidi
-} { \clef bass \nBass }
-\addlyrics { \tEins }
+} { \clef bass <<
+      \new Voice = "vTenor" {\voiceOne \nTenor}
+      \new Voice = "vBAss" {\voiceTwo \nBass}
+      \new Lyrics \lyricsto "vTenor" {\tEins}
+    >> }
 
 \score {
-  \new ChoirStaff <<
+  \new ChoirStaff \with {instrumentName = "Chor"}<<
     \accidentalStyle Score.modern % damit Erinnerungsvorzeichen nächster Takt
-    \sSopran
-    \sAlt
-    \sTenor
-    \sBass
+    \sOben
+    \sUnten
   >>
   \layout { }
   \midi {
     \tempo 4=100
   }
+
+
+}
