@@ -2,10 +2,8 @@
 
 \header {
   title = "Es wird ein Stern aus Jacob aufgehn"
-  % subtitle = "GGF. UNTERTITEL"
   composer = "Felix Mendelssohn (1809-1847)"
   poet = "aus dem Oratorium \"Christus\""
-  % Voreingestellte LilyPond-Tagline entfernen
   tagline = ##f
 }
 
@@ -19,14 +17,10 @@
   \context {
     \Voice
     \consists "Melody_engraver"
-    % \override Stem #'neutral-direction = #'() % ggf. intelligente neutrale Halsrichtung
-
   }
 }
 
 chormidi = \with {midiInstrument = "choir aahs"}
-
-ficta = { \once \set suggestAccidentals = ##t } % für vogeschlagene Vorzeichen in Alter Musik über Noten -> VOR der Note setzen
 
 global = {
   \key es \major
@@ -58,7 +52,6 @@ sSopran =
         \new Voice = "vSopran" {\nSopran}
       }
       \new Lyrics \lyricsto "vSopran" {\tSopran}
-      % wenn Text über der Zeile dann \with {alignAboveContext = "zSopran"}
     >>
 
 sAlt = 
@@ -73,7 +66,6 @@ sAlt =
         \new Voice = "vAlt" {\nAlt}
       }
       \new Lyrics \lyricsto "vAlt" {\tAlt}
-      % wenn Text über der Zeile dann \with {alignAboveContext = "zAlt"}
     >>
 
 sTenor = 
@@ -88,7 +80,6 @@ sTenor =
         \new Voice = "vTenor" {\clef "violin_8" \nTenor}
       }
       \new Lyrics \lyricsto "vTenor" {\tTenor}
-      % wenn Text über der Zeile dann \with {alignAboveContext = "zTenor"}
     >>
 
 sBass = 
@@ -103,7 +94,6 @@ sBass =
         \new Voice = "vBass" {\clef bass \nBass}
       }
       \new Lyrics \lyricsto "vBass" {\tBass}
-      % wenn Text über der Zeile dann \with {alignAboveContext = "zBass"}
     >>
    
 sRechts =
@@ -139,10 +129,6 @@ sLinks =
   >>
   \layout {
     \context {
-      % \Staff \RemoveEmptyStaves
-      %\override VerticalAxisGroup.remove-first = ##t
-    % To use the setting globally, uncomment the following line:
-    % \override VerticalAxisGroup.remove-first = ##t}
     }
   }
   \midi {
