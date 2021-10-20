@@ -1,5 +1,15 @@
 \version "2.19.84"
 
+global = {
+  \key a \major
+  \time 4/4
+  \dynamicUp
+  \autoBeamOn
+  \tempo "Andantino"
+}
+
+dolce = \markup{\italic dolce} 
+
 nTenorI = \relative c' {
   \global
   \dynamicUp
