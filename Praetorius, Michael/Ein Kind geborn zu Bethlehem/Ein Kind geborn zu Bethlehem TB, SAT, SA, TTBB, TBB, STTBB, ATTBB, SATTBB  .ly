@@ -1,49 +1,38 @@
-\version "2.18.2"
+\version "2.22.1"
 
-% 1. I 
-% 2. IV
-% 3. II - SAT
-% 4. III
-% 4a. II - TBarB
-% 5. IV
-% 6. V
+% Folgende Zuordnung/Einrichtung der Stimmen wurde vorgenommen:
+% 1.  Strophe -> Satz I   - TB 
+% 2.  Strophe -> Satz IV  - SAT
+% 3.  Strophe -> Satz II  - SA
+% 4.  Strophe -> Satz III - TTBB
+% 4a. Strophe -> Satz II  - TBarB
+% 5.  Strophe -> Satz IV  - MelTTBB
+% 6.  Strophe -> Satz V   - SATTBB
+% Zuordnung von Strophe zu Satz und Stimmeinteilung kann aber flexibel vorgenommen werden
 
-\include "global.ily"
-\include "lyrics.ily"
+\include "Ein Kind geborn zu Bethlehem-global.ily"
+\include "Ein Kind geborn zu Bethlehem-lyrics.ily"
 
 \paper {
   #(set-paper-size "a4")
 }
 
 \layout {
-  #(layout-set-staff-size 16) % beeinflusst nur Noten- & Textgröße, Notenlinienabstände in Stimmenvariablen anpassen!
+  #(layout-set-staff-size 16)
   \override Score.BarNumber.font-size = #1
   \context {
     \Voice
     \consists "Melody_engraver"
-    % \override Stem #'neutral-direction = #'() % ggf. intelligente neutrale Halsrichtung
   }
-}
-
-chormidi = \with {midiInstrument = "choir aahs"}
-
-notenlinien = {
-  \override StaffSymbol #'staff-space = #(magstep -1.5) % Anpassung Notenlinienabstände, immer in Kombination mit Staffsize (Layoutblock) verwenden!
-}
-
-textOben = \with { 
-  alignAboveContext = "staff"
-  \override VerticalAxisGroup.staff-affinity = #DOWN
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Strophe 1 (hier nach Satz I, TB)%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\include "I.ily"
+\include "Ein Kind geborn zu Bethlehem-1.ily"
 sEinsT = \new Staff \with {
     instrumentName = "Tenor"
     \chormidi
-    \notenlinien
   }
   {\clef "treble_8" \transpose g g, \keepWithTag #'norm \nIO}
   \addlyrics { \removeWithTag #'kurzI \removeWithTag #'langII \removeWithTag #'halle \tEins }
@@ -51,7 +40,6 @@ sEinsT = \new Staff \with {
 sEinsB = \new Staff \with {
     instrumentName = "Bass" 
     \chormidi
-    \notenlinien
   }
   {\clef bass \transpose g g, \removeWithTag #'punk \removeWithTag #'melII \removeWithTag #'lomb \removeWithTag #'schluss \mel}
   \addlyrics { \removeWithTag #'langI \removeWithTag #'langII \removeWithTag #'halle \tEins }
@@ -61,11 +49,10 @@ sEinsB = \new Staff \with {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Strophe 2 (hier nach Satz II, SAT)%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\include "II.ily"
+\include "Ein Kind geborn zu Bethlehem-2.ily"
 sZweiS = \new Staff \with {
     instrumentName = "Sopran"
     \chormidi
-    \notenlinien
   }
   {\keepWithTag #'norm \nIIO}
   \addlyrics { \removeWithTag #'langI \removeWithTag #'langII \removeWithTag #'halle \tZwei }
@@ -73,7 +60,6 @@ sZweiS = \new Staff \with {
 sZweiA = \new Staff \with {
     instrumentName = "Alt"
     \chormidi
-    \notenlinien
   }
   {\removeWithTag #'punk \removeWithTag #'melII \removeWithTag #'lomb \removeWithTag #'schluss \mel}
   \addlyrics { \removeWithTag #'langI \removeWithTag #'langII \removeWithTag #'halle \tZwei }
@@ -81,7 +67,6 @@ sZweiA = \new Staff \with {
 sZweiT = \new Staff \with {
     instrumentName = "Tenor"
     \chormidi
-    \notenlinien
   }
   {\clef "treble_8" \keepWithTag #'norm \nIIU}
   \addlyrics { \removeWithTag #'langI \removeWithTag #'langII \removeWithTag #'halle \tZwei }
@@ -90,11 +75,10 @@ sZweiT = \new Staff \with {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Strophe 3 (hier nach Satz I, SA)%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\include "I.ily"
+\include "Ein Kind geborn zu Bethlehem-1.ily"
 sDreiS = \new Staff \with {
     instrumentName = "Sopran"
     \chormidi
-    \notenlinien
   }
   {\keepWithTag #'norm \nIO}
   \addlyrics { \removeWithTag #'kurzI \removeWithTag #'langII \removeWithTag #'halle \tDrei }
@@ -102,7 +86,6 @@ sDreiS = \new Staff \with {
 sDreiA = \new Staff \with {
     instrumentName = "Alt" 
     \chormidi
-    \notenlinien
   }
   {\removeWithTag #'punk \removeWithTag #'melII \removeWithTag #'lomb \removeWithTag #'schluss \mel}
   \addlyrics { \removeWithTag #'langI \removeWithTag #'langII \removeWithTag #'halle \tDrei }
@@ -110,15 +93,16 @@ sDreiA = \new Staff \with {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Strophe 4 (hier nach Satz III, TTBB)%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\include "III.ily"
+\include "Ein Kind geborn zu Bethlehem-3.ily"
+
 sVierT = 
-  % wenn Text über Notenzeile, Tenor I als Oberstimme "vTenorI" o.ä. immer neu hinzufügen!
-  \new Lyrics = "lDreiTI" \textOben
+  \new Lyrics = "lDreiTI" \with {
+    \override VerticalAxisGroup.staff-affinity = #DOWN
+  }
   \new Staff 
     \with {
       instrumentName = "Tenor"
       \chormidi
-      \notenlinien
     } 
     <<
       { 
@@ -143,13 +127,10 @@ sVierT =
     >>
 
 sVierB = 
-  % wenn Text über Notenzeile, Bass I als Oberstimme "vBassI" o.ä. immer neu hinzufügen!
-  % \new Lyrics = "lBassI" \textOben
   \new Staff 
     \with {
       instrumentName = "Bass"
       \chormidi
-      \notenlinien
     } 
     <<
       { 
@@ -165,17 +146,15 @@ sVierB =
         {
           \removeWithTag #'langI \removeWithTag #'langII \removeWithTag #'halle \tVier
         }
-      % \context Lyrics = "lBassI" \lyrcisto "vBassI" {Bass I Text} falls Text über Notenzenzeile
     >>
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Strophe 4a (hier nach Satz II, TBarB)%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\include "II.ily"
+\include "Ein Kind geborn zu Bethlehem-2.ily"
 sVierAT = \new Staff \with {
     instrumentName = "Tenor"
     \chormidi
-    \notenlinien
   }
   {\clef "treble_8" \transpose g g, \keepWithTag #'punk \nIIO}
   \addlyrics { \removeWithTag #'langI \removeWithTag #'langII \removeWithTag #'halle \tVierA }
@@ -183,7 +162,6 @@ sVierAT = \new Staff \with {
 sVierABar = \new Staff \with {
     instrumentName = "Bariton"
     \chormidi
-    \notenlinien
   }
   {\clef bass \transpose g g, \removeWithTag #'norm  \removeWithTag #'melII \removeWithTag #'lomb \removeWithTag #'schluss \mel}
   \addlyrics { \removeWithTag #'langI \removeWithTag #'langII \removeWithTag #'halle \tVierA }
@@ -191,33 +169,31 @@ sVierABar = \new Staff \with {
 sVierAB = \new Staff \with {
     instrumentName = "Bass"
     \chormidi
-    \notenlinien
   }
   {\clef bass \transpose g g, \keepWithTag #'punk \nIIU}
   \addlyrics { \removeWithTag #'langI \removeWithTag #'langII \removeWithTag #'halle \tVierA }
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%Strophe 5 (hier nach Satz IV, KTTBB)%
+%Strophe 5 (hier nach Satz IV, MTTBB)%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\include "IV.ily"
+\include "Ein Kind geborn zu Bethlehem-4.ily"
 sFuenfM = \new Staff \with {
     instrumentName = "Melodie" 
     \chormidi
-    \notenlinien
   }
   {\removeWithTag #'punk \removeWithTag #'melII \removeWithTag #'stand \removeWithTag #'schluss \mel}
   \addlyrics { \removeWithTag #'langI \removeWithTag #'langII \removeWithTag #'halle \tFuenf }
 
 sFuenfT = 
-  % wenn Text über Notenzeile, Tenor I als Oberstimme "vTenorI" o.ä. immer neu hinzufügen!
-  \new Lyrics = "lFuenfTIB" \textOben
+  \new Lyrics = "lFuenfTIB"   \with {
+    \override VerticalAxisGroup.staff-affinity = #DOWN
+  }
   \new Staff 
     \with {
       instrumentName = "Tenor"
       \chormidi
-      \notenlinien
-    } 
+    }
     <<
       { 
         \clef "treble_8"
@@ -241,13 +217,13 @@ sFuenfT =
     >>
  
 sFuenfB = 
-  % wenn Text über Notenzeile, Tenor I als Oberstimme "vTenorI" o.ä. immer neu hinzufügen!
-  \new Lyrics = "lFuenfBIB" \textOben
+  \new Lyrics = "lFuenfBIB"   \with {
+    \override VerticalAxisGroup.staff-affinity = #DOWN
+  }
   \new Staff 
     \with {
       instrumentName = "Bass"
       \chormidi
-      \notenlinien
     } 
     <<
       { 
@@ -275,11 +251,10 @@ sFuenfB =
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Strophe 6 (hier nach Satz V, SATTBB)%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\include "V.ily"
+\include "Ein Kind geborn zu Bethlehem-5.ily"
 sSechsS = \new Staff \with {
     instrumentName = "Sopran" 
     \chormidi
-    \notenlinien
   }
   {\removeWithTag #'norm \removeWithTag #'melI \nVO}
   \addlyrics { \removeWithTag #'langI \removeWithTag #'langII \removeWithTag #'hal \removeWithTag #'halle \tSechs Hal -- le -- lu -- ja. }
@@ -287,19 +262,21 @@ sSechsS = \new Staff \with {
 sSechsA = \new Staff \with {
     instrumentName = "Alt" 
     \chormidi
-    \notenlinien
   }
   {\removeWithTag #'norm \removeWithTag #'melI \removeWithTag #'lomb \removeWithTag #'weiter \mel}
   \addlyrics { \removeWithTag #'langI \removeWithTag #'langII \removeWithTag #'halle \tSechs }
 
 sSechsT = 
-  \new Lyrics = "lSechsTIB" \textOben
-  \new Lyrics = "lSechsTID" \textOben
+  \new Lyrics = "lSechsTIB"   \with {
+    \override VerticalAxisGroup.staff-affinity = #DOWN
+  }
+  \new Lyrics = "lSechsTID"   \with {
+    \override VerticalAxisGroup.staff-affinity = #DOWN
+  }
   \new Staff 
     \with {
       instrumentName = "Tenor"
       \chormidi
-      \notenlinien
     } 
     <<
       { 
@@ -336,7 +313,6 @@ sSechsB =
     \with {
       instrumentName = "Bass"
       \chormidi
-      \notenlinien
     } 
     <<
       { 
@@ -358,10 +334,7 @@ sSechsB =
 
   \header {
     title = "Ein Kind geborn zu Bethlehem"
-    % subtitle = "GGF. UNTERTITEL"
     composer = "Michael Praetorius (1571-1621)"
-    % poet = "TEXT/VORLAGE/SONSTIGES"
-    % Voreingestellte LilyPond-Tagline entfernen
     tagline = ##f
   }
   

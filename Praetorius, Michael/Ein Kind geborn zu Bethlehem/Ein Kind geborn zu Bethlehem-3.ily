@@ -1,7 +1,7 @@
 % Satz Variante III, vierstimmig-gleichstimmig, Melodie in der 3. Stimme, original TTBB
 % Tag norm -> normale Strophen, Tag punk -> Strophen, die punktierten Rhythmus im zweiten Volltakt benötigen
 
-\include "II.ily"
+\include "Ein Kind geborn zu Bethlehem-2.ily"
 
 % 1. Oberstimme (in zwei Tags geteilt, um nur beim Halleluja Liedtext oberhalb der Zeile zur ermöglichen)
 nIIIOI = \relative c' {

@@ -1,5 +1,7 @@
 \version "2.18.2"
 
+chormidi = \with {midiInstrument = "choir aahs"}
+
 global = {
   \key g \dorian
   \time 3/4
