@@ -11,7 +11,7 @@
 }
 
 \layout {
-  #(layout-set-staff-size 18) 
+  #(layout-set-staff-size 15) 
   \override Score.BarNumber.font-size = #1
   \context {
     \Voice
@@ -157,7 +157,7 @@ sIITenorI =
       { 
         \new Voice = "vIITenorI" {\clef "violin_8" \nIITenorI}
       }
-      \new Lyrics \lyricsto "vITenorI" {\tIITenorI}
+      \new Lyrics \lyricsto "vIITenorI" {\tIITenorI}
     >>
 
 sIITenorII = 
@@ -216,6 +216,7 @@ sIIBass =
     }
     \new ChoirStaff <<
       \accidentalStyle Score.modern % damit Erinnerungsvorzeichen nächster Takt
+      \set Score.currentBarNumber = #31
       \sIISopran
       \sIIAlt
       \sIITenorI
