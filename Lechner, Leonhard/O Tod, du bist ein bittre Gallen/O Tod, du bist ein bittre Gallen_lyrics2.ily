@@ -14,7 +14,7 @@ tIISopran = \lyricmode {
 }
 
 tIIAlt = \lyricmode {
-  O Tod, o TOd, wie kannst du sein so gar ver -- mes -- sen, so gar ver -- mes -- sen,
+  O Tod, o Tod, wie kannst du sein so gar ver -- mes -- sen, so gar ver -- mes -- sen,
   du meinst, ich hab des gro -- ßen Streits ver -- ges -- sen?
   Du To -- ten -- mann,
   sag mir jetzt an,
