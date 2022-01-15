@@ -140,7 +140,7 @@ sTBass = \new Staff \with {
 \addlyrics { \tBassdrei }
 
 \book {
-  \bookOutputSuffix "SATBB"
+  \bookOutputSuffix "SATBB-transposed"
   \score {
     \new ChoirStaff <<
       \accidentalStyle Score.modern % damit Erinnerungsvorzeichen nächster Takt
