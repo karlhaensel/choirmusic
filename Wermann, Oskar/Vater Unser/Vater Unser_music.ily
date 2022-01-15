@@ -15,7 +15,7 @@ nISopran = \relative c'' {
   r c | d d4 d | d2 es4 es | f2 bes, | r d4 g, | es'2 es4 f |
   g2 r4 es | es2 c4 es | as2 g4 f8 f | es4 es d es | f2 bes, | R1 |
   
-  r4 \footnote #'(-1.1 . 1.7) " Akzente wie im Erstdruck, ggf. auch für ganzes Solo-Ensemble anwenden (wie expl. an anderen Stellen)" cis2-> cis4 | d d e2 | f d | r4 e( f) e | d2 r |
+  r4 \footnote #'(-1.1 . 1.7) " Akzente wie im Erstdruck gesetzt: zunächst nur Sopran, später für alle Soli (ggf. anpassen)" cis2-> cis4 | d d e2 | f d | r4 e( f) e | d2 r |
   r4 g, g es' | d2. c4 | bes2. r4 | r2 r4 d | g f! es-> d |
   c2 bes | bes4. a8 a4 r | r d2-> d4 | es2-> c4 c | d2-> b-> |
   r r4 e | f4.-> c8 c4 f | f4.-> des8 des2 | c4 as g g | R1 | r4 f bes des |
@@ -37,7 +37,7 @@ nIAlt = \relative c' {
   fis2 g | g4. fis8 fis4 r | r2 g4 g | g2 as4 bes | as2 g |
   r2 r4 g | as4.-> as8 as4 as | g4.-> g8 g2 | g4 f f e | R1 | r4 f f f |
   
-  \footnote #'(1 . 2) " im Druck: as'" a2 r | r4 f bes bes | c2-> r4 c | c1( | bes2) bes | bes4 bes as as |
+  \footnote #'(1 . 2) " im Erstdruck: as'" a2 r | r4 f bes bes | c2-> r4 c | c1( | bes2) bes | bes4 bes as as |
   g( bes2) bes4 | bes2 r | R1 | r4 es, es es | es2-> as4 as |
   as2 as4 as | g4.-> g8 g4 bes | as2 as | g r | R1 |
   r2 es4 es | es1 | g2 g4 g | as1~( | as2 g4 f) | g1 \bar "|." 
