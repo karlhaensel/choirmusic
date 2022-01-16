@@ -15,13 +15,15 @@ A loose collection of practical sheet music editions for choirs and singers.
 - Praetorius, Michael: Ein Kind geborn zu Bethlehem
 - Stanford, Charles Villiers: Arise, shine
 
-### I know theese pieces and conducted them but back then used other editions, will use my own Lilypond editions next time:
+### Until now I did not use the following editions with my choirs:
+I know theese pieces and conducted them with my choirs. Back then I used other editions but they had some flaws. So for future use I created my own editions with Lilypond.
 - Eccard, Johann: Zu dieser österlichen Zeit SATB
 - Klein, Bernhard: Der Herr ist mein Hirt TTBB
 - Lechner, Leonhard: O Tod, du bist ein bittre Gallen
 - Wermann, Oskar: Vater Unser
 
 ### I did the following editions just for fun and/or to improve my Lilypond skills:
+The following pieces are some which I do not know (very well). Maybe I will use the editions with my choirs in the future.
 - Albert, Heinrich: Lobet Gott in seinem Heiligtum
 - Berchem, Jacob van: Osterhalleluja
 - Klughardt, August: Der 23. Psalm
@@ -29,8 +31,3 @@ A loose collection of practical sheet music editions for choirs and singers.
 - Pevernage, Andreas: Gloria
 - Reissiger, Carl Gottlieb: Graduale - Domine miserere mei
 - Sweelinck, Jan Pieterszoon: Jauchzet, alle Lande Gott zu Ehren
-
-## License
-The sheet music in this repository is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Public License.
-License code: CC-BY-NC-SA-4.0
-For details see https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
