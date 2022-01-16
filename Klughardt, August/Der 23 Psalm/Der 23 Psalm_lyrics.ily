@@ -8,7 +8,7 @@ tSopran = \lyricmode {
   man -- geln,  mir wird __  nichts man -- geln, der Herr ist mein Hir -- 
   te, __ der Herr ist mein Hir -- te, der Herr ist mein Hir --
   te. Er wei -- det mich auf ei -- ner grü -- nen Au -- e und füh -- ret mich zum
-  fri -- schen Was -- ser. Er er -- wui -- cket mei -- ne See -- le; er
+  fri -- schen Was -- ser. Er er -- qui -- cket mei -- ne See -- le; er
   
   füh -- ret mich auf rech -- ter Stra -- ße, um sei -- nes Na -- mens wil -- len, um
   sei -- nes Na -- mens wil -- len.
