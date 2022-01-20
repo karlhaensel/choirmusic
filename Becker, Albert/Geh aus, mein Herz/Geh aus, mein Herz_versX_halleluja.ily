@@ -2,7 +2,7 @@
 
 common_halleluja = {
   \global_vier
-  \override TextSpanner.bound-details.left.text = \markup{\italic \bold ritardando}
+  \override TextSpanner.bound-details.left.text = \markup{\bold ritardando}
   \tempo "ziemlich schnell"
   s2 | s1*20 |
   
@@ -15,7 +15,7 @@ common_halleluja = {
   \tag #'s { s2 | s4 s\stopTextSpan }
   \tag #'t \tag #'b { s4\p } \tag #'a \tag #'t \tag #'b { s4\> s | s16\pp s\> s8 s4 }
    
-    \override TextSpanner.bound-details.left.text = \markup{\italic \bold rit.}
+  \override TextSpanner.bound-details.left.text = \markup{\bold rit.}
   
   \tempo "Allegro moderato maestoso" s4\p\< s | s1 | s4\f s2. | s4 s\>
   

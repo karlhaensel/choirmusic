@@ -24,7 +24,7 @@ global_vier = {
 }
 
 melodie = {
-  \tag #'s {gis2 } \tag #'t {gis2^\markup{\italic "c.f. evtl. verstärkt durch einige hohe Bässe"}} | fis e | gis a | gis fis | e b' | cis e |
+  gis2 | \tag #'s {fis} \tag #'t {fis2^\markup{\italic "Tenor-c.f. evtl. verstärkt durch einige hohe Bässe"}} e | gis a | gis fis | e b' | cis e |
   b gis | a gis | fis fis | gis fis | gis b | cis1 | \tag #'s {b2\fermata } \tag #'t {b1~ | b2 } gis |
   fis e | gis a | gis fis | e b' | cis e | b gis |
   
