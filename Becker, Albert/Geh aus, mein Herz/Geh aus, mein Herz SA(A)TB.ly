@@ -24,12 +24,12 @@
 }
 
 %%% INCLUDE %%%
-\include "Geh aus mein Herz und suche Freud_global.ily"
-\include "Geh aus mein Herz und suche Freud_lyrics.ily"
-\include "Geh aus mein Herz und suche Freud_vers01.ily"
-\include "Geh aus mein Herz und suche Freud_vers09.ily"
-\include "Geh aus mein Herz und suche Freud_vers11.ily"
-\include "Geh aus mein Herz und suche Freud_versX_halleluja.ily"
+\include "Geh aus, mein Herz_global.ily"
+\include "Geh aus, mein Herz_lyrics.ily"
+\include "Geh aus, mein Herz_vers01.ily"
+\include "Geh aus, mein Herz_vers09.ily"
+\include "Geh aus, mein Herz_vers11.ily"
+\include "Geh aus, mein Herz_versX_halleluja.ily"
 
 %%% BOOK %%%
 \book {
