@@ -21,7 +21,10 @@
 
 chormidi = \with {midiInstrument = "choir aahs"}
 
-ficta = { \once \set suggestAccidentals = ##t } % für vogeschlagene Vorzeichen in Alter Musik über Noten -> VOR der Note setzen
+% sollen vorgeschlagene Alterationen lieber nur über den Noten gesetzt sein, Kommentar in folgender Variable entfernen:
+ficta = { %\once \set suggestAccidentals = ##t 
+}
+% alle nicht mit \ficta (vor der Note) markierten Alterationen entstammen dem Erstdruck des Stimmenmaterials
 
 global = {
   \key a \aeolian
