@@ -10,7 +10,7 @@ tIISopran = \lyricmode {
   der dich im Sieg 
   mit dei -- nem Krieg
   hat ganz und gar ver -- schlun -- gen, hat ganz und gar ver -- schlun -- gen,
-  da -- hin darfst nim -- mer, da -- hin darfst nim -- mehr kom -- men. __
+  da -- hin darfst nim -- mer, da -- hin darfst nim -- mer kom -- men. __
 }
 
 tIIAlt = \lyricmode {

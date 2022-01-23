@@ -24,7 +24,7 @@ chormidi = \with {midiInstrument = "choir aahs"}
 ficta = { \once \set suggestAccidentals = ##t } % für vogeschlagene Vorzeichen in Alter Musik über Noten -> VOR der Note setzen
 
 global = {
-  \key b \aeolian
+  \key a \aeolian
   \time 4/2
   \dynamicUp
   \autoBeamOff
@@ -42,7 +42,7 @@ global = {
 sISopran = 
   \new Staff  = "zISopran"
     \with {
-      instrumentName = "Sopran"
+      instrumentName = "Sopran" % original: Discant
       \chormidi
       \consists "Merge_rests_engraver"
     } 
@@ -56,7 +56,7 @@ sISopran =
 sIAlt = 
   \new Staff  = "zIAlt"
     \with {
-      instrumentName = "Alt"
+      instrumentName = "Alt" % original: Altus
       \chormidi
       \consists "Merge_rests_engraver"
     } 
@@ -70,7 +70,7 @@ sIAlt =
 sITenorI = 
   \new Staff  = "zITenorI"
     \with {
-      instrumentName = "Tenor I"
+      instrumentName = "Tenor I" % original: Quinta vox
       \chormidi
       \consists "Merge_rests_engraver"
     } 
@@ -84,7 +84,7 @@ sITenorI =
 sITenorII = 
   \new Staff  = "zITenorII"
     \with {
-      instrumentName = "Tenor II"
+      instrumentName = "Tenor II" % original: Tenor
       \chormidi
       \consists "Merge_rests_engraver"
     } 
@@ -121,7 +121,7 @@ sIBass =
 sIISopran = 
   \new Staff  = "zIISopran"
     \with {
-      instrumentName = "Sopran"
+      instrumentName = "Sopran" % original: Discant
       \chormidi
       \consists "Merge_rests_engraver"
     } 
@@ -135,7 +135,7 @@ sIISopran =
 sIIAlt = 
   \new Staff  = "zIIAlt"
     \with {
-      instrumentName = "Alt"
+      instrumentName = "Alt" % original: Altus
       \chormidi
       \consists "Merge_rests_engraver"
     } 
@@ -149,7 +149,7 @@ sIIAlt =
 sIITenorI = 
   \new Staff  = "zIITenorI"
     \with {
-      instrumentName = "Tenor I"
+      instrumentName = "Tenor I" % original: Quinta vox
       \chormidi
       \consists "Merge_rests_engraver"
     } 
@@ -163,7 +163,7 @@ sIITenorI =
 sIITenorII = 
   \new Staff  = "zIITenorII"
     \with {
-      instrumentName = "Tenor II"
+      instrumentName = "Tenor II" % original: Tenor
       \chormidi
       \consists "Merge_rests_engraver"
     } 
@@ -191,10 +191,11 @@ sIIBass =
 
 
 
-%%%%%%%% PARTITUR %%%%%%%%%%
+%%%%%%%% PARTITUR ORIGINAL %%%%%%%%%%
 
 
 \book {
+  \bookOutputSuffix "original"
   \score {
     \new ChoirStaff <<
       \accidentalStyle Score.modern % damit Erinnerungsvorzeichen nächster Takt
@@ -222,6 +223,48 @@ sIIBass =
       \sIITenorI
       \sIITenorII
       \sIIBass
+    >>
+    \layout { }
+    \midi {
+      \tempo 2=100
+    }
+  }
+}
+
+
+
+%%%%%%%% PARTITUR TRANSPOSED %%%%%%%%%%
+
+
+\book {
+  \bookOutputSuffix "transposed"
+  \score {
+    \new ChoirStaff <<
+      \accidentalStyle Score.modern % damit Erinnerungsvorzeichen nächster Takt
+      \transpose a b \sISopran
+      \transpose a b \sIAlt
+      \transpose a b \sITenorI
+      \transpose a b \sITenorII
+      \transpose a b \sIBass
+    >>
+    \layout { }
+    \midi {
+      \tempo 2=100
+    }
+  }
+  
+  \score {
+    \header {
+      piece = "Der ander Teil"
+    }
+    \new ChoirStaff <<
+      \accidentalStyle Score.modern % damit Erinnerungsvorzeichen nächster Takt
+      \set Score.currentBarNumber = #31
+      \transpose a b \sIISopran
+      \transpose a b \sIIAlt
+      \transpose a b \sIITenorI
+      \transpose a b \sIITenorII
+      \transpose a b \sIIBass
     >>
     \layout { }
     \midi {
