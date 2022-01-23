@@ -16,10 +16,12 @@ A loose collection of practical sheet music editions for choirs and singers.
 - Stanford, Charles Villiers: Arise, shine
 
 ### Until now I did not use the following editions with my choirs:
-- I know theese pieces and conducted them with my choirs. Back then I used other editions but they had some flaws. So for future use I created my own editions with Lilypond:
+- I know and/or conducted theese pieces with my choirs. Back then I used other editions but they had some flaws. So for future use I created my own editions with Lilypond:
 	- Eccard, Johann: Zu dieser österlichen Zeit SATB
 	- Klein, Bernhard: Der Herr ist mein Hirt TTBB
-	- Lechner, Leonhard: O Tod, du bist ein bittre Gallen
+	- Lechner, Leonhard:
+		- O Tod, du bist ein bittre Gallen
+		- Nun schein du Glanz der Herrlichkeit
 	- Wermann, Oskar: Vater Unser
 - I plan to study theese pieces with my choir in the future:
 	- Becker, Albert: Geh aus, mein Herz
