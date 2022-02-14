@@ -66,6 +66,6 @@ sBass = \new Staff \with {
   >>
   \layout { }
   \midi {
-    \tempo 4=110
+    \tempo 4=112
   }
 }

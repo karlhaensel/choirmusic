@@ -10,14 +10,14 @@ nSopran = \relative c'' {
   \global
   c2. c4 | bes2 c | des c4 c~( | c bes8 as bes2) | % 1-4
   c1 | r4 c2 c4 | c2 c | c c | % 5-8
-  as4.( g8 as4 bes) | c1 | r1 | r2 r4 c4~ | % 9-12
+  as4.( g8 as4 bes) | c1 | R1 | r2 r4 c4~ | % 9-12
   c es2 d4 | c2 bes | r2 r4 g4 | bes c es4. d8 | % 13-16
   c2 r2 | r4 g bes c | f4. f8 es2 | d( c4 es~ | % 17-20
   es8 d c4~ c8 b16 a b4) | c1 | r4 c2 c4 | es2 c | % 21-24
   r4 as4. bes8( c4) | des2. c8( bes) | c4 c2 bes4 | as g as2 | % 25-28
   f4 bes des2 | c1 | r4 bes bes bes | f4. g8 as4. bes8 | % 29-32
   c4( bes8 as g as bes4~ | bes8 as g f g2) | f4 as4~( as8 g as bes) | c1 | % 33-36
-  r1 | r2 r4 c4 | c c g4. as8 | bes4 c as2 | % 37-40
+  R1 | r2 r4 c4 | c c g4. as8 | bes4 c as2 | % 37-40
   g4 g g f8\noBeam as~ | as g\noBeam f4.( e16 d e4) | f2 r4 f' | f f c4. des8 |% 41-44
   es4 f des2 | c r4 es | es es as,4. bes8 | c4 des c2 | % 45-48
   c r | r4 c des bes | c a bes2~( | bes4 a8 g) a2\fermata \bar "|." % 49-52
@@ -62,7 +62,7 @@ nBariton = \relative c' {
   a2. a4 | bes f f2 | f r4 f~( | f8 es des c bes4 bes'~ | % 1-4
   bes a8 g) a2 | r4 g2 g4 | as2 g4 c~ | c as c2 | % 5-8
   f,1 | r2 g | c2. bes4 | as2 g | % 9-12
-  r1 | r2 r4 g4 | bes c es4. es8 | d4 c2( g4~ | % 13-16
+  R1 | r2 r4 g4 | bes c es4. es8 | d4 c2( g4~ | % 13-16
   g as f2) | es r4 g | f f g c | f,2 c'( | % 17-20
   c,) g'~ | g1 | r4 as2 as4 | as2 es4 as~ | % 21-24
   as f2 as4~( | as g8 f g4) g | as as2 g4 | c4. bes8 as4 f~ | % 25-28
@@ -83,8 +83,8 @@ nBass = \relative c {
   es f as4. as8 | g4 g4.( f8 es4 | d2) c4 c | bes bes c4. bes8 | % 17-20
   as2 g | c1 | r4 as2 as4 | as2 as | % 21-24
   des2. c4 | bes2. es4 | as,2 es'4. es8 | c4 c f2~ | % 25-28
-  f4 es des bes( | f'1) | bes,1 | r1 | % 29-32
-  r | r | r2 r4 f'4 | f f c4. d8 | % 33-36
+  f4 es des bes( | f'1) | bes,1 | R1 | % 29-32
+  R | R | r2 r4 f'4 | f f c4. d8 | % 33-36
   es4 f g( as~ | as8 g f4~ f8 e16 d e4) | f2 r | r4 f f f | % 37-40
   c4. des8 es4 f | des2 c | r2 r4 des4 | des des as4. bes8 | % 41-44
   c4 des bes2( | as1) | c2 r | r c | % 45-48
