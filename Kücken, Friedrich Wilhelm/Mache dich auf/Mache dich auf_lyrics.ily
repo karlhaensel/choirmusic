@@ -21,7 +21,7 @@ t_commonD = \lyricmode {
 }
 
 t_commonE = \lyricmode {
-  Ma -- che dihc auf! Ma -- che dich auf! __
+  Ma -- che dich auf! Ma -- che dich auf! __
 }
 
 tSopran = \lyricmode {

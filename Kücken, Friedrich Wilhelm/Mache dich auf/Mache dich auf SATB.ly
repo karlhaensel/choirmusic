@@ -28,6 +28,7 @@ chormidi = \with {midiInstrument = "choir aahs"}
 
 
 sSopran = 
+\new Staff = "zSopran"
 \with {
   instrumentName = "Sopran" % original "Sopran I"
   \chormidi
