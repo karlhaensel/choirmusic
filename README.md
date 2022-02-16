@@ -23,6 +23,7 @@ A loose collection of practical sheet music editions for choirs and singers.
 	- Lechner, Leonhard:
 		- O Tod, du bist ein bittre Gallen
 		- Nun schein du Glanz der Herrlichkeit
+	- Lotti, Antonio: Crucifixus a 8 voci (SSAATTBB)
 	- Wermann, Oskar: Vater Unser
 - I plan to study theese pieces with my choirs in the future:
 	- Becker, Albert: Geh aus, mein Herz
