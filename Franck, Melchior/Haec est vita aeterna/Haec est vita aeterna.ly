@@ -28,17 +28,38 @@ ficta = { \once \set suggestAccidentals = ##t }
 \include "Haec est vita aeterna_music.ily"
 
 
-\score {
-  \new ChoirStaff <<
-    \accidentalStyle Score.modern
-    \sSopranI
-    \sSopranII
-    \sAlt
-    \sTenor
-    \sBass
-  >>
-  \layout { }
-  \midi {
-    \tempo 2=102
+\book {
+  \bookOutputSuffix "transposed-F"
+  \score {
+    \new ChoirStaff <<
+      \accidentalStyle Score.modern
+      \sSopranI
+      \sSopranII
+      \sAlt
+      \sTenor
+      \sBass
+    >>
+    \layout { }
+    \midi {
+      \tempo 2=102
+    }
+  }
+}
+
+\book {
+  \bookOutputSuffix "original-G"
+  \score {
+    \new ChoirStaff <<
+      \accidentalStyle Score.modern
+      \transpose f g \sSopranI
+      \transpose f g \sSopranII
+      \transpose f g \sAlt
+      \transpose f g \sTenor
+      \transpose f g \sBass
+    >>
+    \layout { }
+    \midi {
+      \tempo 2=102
+    }
   }
 }
