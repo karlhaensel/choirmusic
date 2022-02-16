@@ -19,6 +19,7 @@ A loose collection of practical sheet music editions for choirs and singers.
 - I know and/or conducted theese pieces with my choirs. Back then I used other editions but they had some flaws. So for future use I created my own editions with Lilypond:
 	- Bruch, Max: Gebet
 	- Eccard, Johann: Zu dieser österlichen Zeit SATB
+	- Franck, Melchior: Unam petii a Domino
 	- Klein, Bernhard: Der Herr ist mein Hirt TTBB
 	- Lechner, Leonhard:
 		- O Tod, du bist ein bittre Gallen
