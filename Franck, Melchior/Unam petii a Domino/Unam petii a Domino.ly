@@ -2,7 +2,7 @@
 
 \header {
   title = "Unam petii a Domino"
-  composer = "Melchior Franck (um 1580-1639"
+  composer = "Melchior Franck (um 1580-1639)"
   poet = "Psalm 27,4"
   tagline = ##f
 }
