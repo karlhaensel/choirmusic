@@ -1,0 +1,44 @@
+\version "2.22.1"
+
+\header {
+  title = "Haec est vita aeterna"
+  composer = "Melchior Franck (um 1580-1639)"
+  poet = "Johannes 17,3"
+  tagline = ##f
+}
+
+\paper {
+  #(set-paper-size "a4")
+}
+
+\layout {
+  #(layout-set-staff-size 16) 
+  \override Score.BarNumber.font-size = #1
+  \context {
+    \Voice
+    \consists "Melody_engraver"
+  }
+}
+
+chormidi = \with {midiInstrument = "choir aahs"}
+
+ficta = { \once \set suggestAccidentals = ##t }
+
+\include "Haec est vita aeterna_lyrics.ily"
+\include "Haec est vita aeterna_music.ily"
+
+
+\score {
+  \new ChoirStaff <<
+    \accidentalStyle Score.modern
+    \sSopranI
+    \sSopranII
+    \sAlt
+    \sTenor
+    \sBass
+  >>
+  \layout { }
+  \midi {
+    \tempo 2=102
+  }
+}
