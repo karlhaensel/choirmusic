@@ -12,7 +12,7 @@
 }
 
 \layout {
-  #(layout-set-staff-size 16) 
+  #(layout-set-staff-size 17) 
   \override Score.BarNumber.font-size = #1
   \context {
     \Voice
