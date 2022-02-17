@@ -12,7 +12,7 @@
 }
 
 \layout {
-  #(layout-set-staff-size 14.6) 
+  #(layout-set-staff-size 14.5) 
   \override Score.BarNumber.font-size = #1
   \context {
     \Voice
@@ -29,7 +29,7 @@ ficta = { \once \set suggestAccidentals = ##t }
 
 
 \book {
-  \bookOutputSuffix "transposed-F"
+  \bookOutputSuffix "SSATB-transposed-F"
   \score {
     \new ChoirStaff <<
       \accidentalStyle Score.modern
@@ -49,7 +49,7 @@ ficta = { \once \set suggestAccidentals = ##t }
 }
 
 \book {
-  \bookOutputSuffix "original-G"
+  \bookOutputSuffix "SSATB-original-G"
   \score {
     \new ChoirStaff <<
       \accidentalStyle Score.modern

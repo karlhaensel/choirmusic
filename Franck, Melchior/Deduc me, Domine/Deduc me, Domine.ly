@@ -29,7 +29,7 @@ ficta = { \once \set suggestAccidentals = ##t }
 
 
 \book {
-  \bookOutputSuffix "original-E"
+  \bookOutputSuffix "SSATB-original-E"
   \score {
     \new ChoirStaff <<
       \accidentalStyle Score.modern
@@ -49,7 +49,7 @@ ficta = { \once \set suggestAccidentals = ##t }
 }
 
 \book {
-  \bookOutputSuffix "transposed-G"
+  \bookOutputSuffix "SSATB-transposed-G"
   \score {
     \new ChoirStaff <<
       \accidentalStyle Score.modern
