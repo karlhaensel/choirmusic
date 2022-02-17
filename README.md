@@ -32,6 +32,7 @@ A loose collection of practical sheet music editions for choirs and singers.
 	- Wermann, Oskar: Vater Unser
 - I plan to study theese pieces with my choirs in the future:
 	- Becker, Albert: Geh aus, mein Herz
+	- Franck, Melchior: Gloria Patri, qui creavit nos
 	- Kücken, Friedrich Wilhelm: Mache dich auf! Werde Licht!
 
 ### I made the following editions just for fun and/or to improve my Lilypond skills:
