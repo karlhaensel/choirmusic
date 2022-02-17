@@ -6,43 +6,43 @@ I am a professional choir director and singer from Northern Germany. Therefore, 
 A loose collection of practical sheet music editions for choirs and singers.
 
 ### I already used the following editions with my choirs:
-- Byrd, William: Misere mei, Deus
-- Eccard, Johann: In dulci jubilo
-- Harder, August: Geh aus mein Herz
+- Byrd, William: Misere mei, Deus (SATBB)
+- Eccard, Johann: In dulci jubilo (SATTB)
+- Harder, August: Geh aus mein Herz (SATB)
 - Mendelssohn, Felix:
-	- Christus - 03 Es wird ein Stern aus Jacob aufgehn
-	- Jauchzet dem Herrn A-Dur
-- Praetorius, Michael: Ein Kind geborn zu Bethlehem
-- Stanford, Charles Villiers: Arise, shine
+	- Christus - 03 Es wird ein Stern aus Jacob aufgehn (SATB)
+	- Jauchzet dem Herrn A-Dur (SATB, at the end SSAATTBB)
+- Praetorius, Michael: Ein Kind geborn zu Bethlehem (var.)
+- Stanford, Charles Villiers: Arise, shine (SATB)
 
 ### Until now I did not use the following editions with my choirs:
 - I know and/or conducted theese pieces with my choirs. Back then I used other editions but they had some flaws. So for future use I created my own editions with Lilypond:
-	- Bruch, Max: Gebet
-	- Eccard, Johann: Zu dieser österlichen Zeit SATB
+	- Bruch, Max: Gebet (SATB)
+	- Eccard, Johann: Zu dieser österlichen Zeit (SATB)
 	- Franck, Melchior:
-		- Haec est vita aeterna
-		- Unam petii a Domino
-	- Klein, Bernhard: Der Herr ist mein Hirt TTBB
+		- Haec est vita aeterna (SSATB)
+		- Unam petii a Domino (SSATB)
+	- Klein, Bernhard: Der Herr ist mein Hirt (TTBB)
 	- Lechner, Leonhard:
-		- O Tod, du bist ein bittre Gallen
-		- Nun schein du Glanz der Herrlichkeit
+		- O Tod, du bist ein bittre Gallen (SATTB)
+		- Nun schein du Glanz der Herrlichkeit (SSATB or SATTB)
 	- Lotti, Antonio: 
-		- Crucifixus a 8 voci SSAATTBB
-		- Crucifixus a 10 voci SSSAATTTBB
-	- Wermann, Oskar: Vater Unser
+		- Crucifixus a 8 voci (SSAATTBB)
+		- Crucifixus a 10 voci (SSSAATTTBB)
+	- Wermann, Oskar: Vater Unser (SATB-SATB)
 - I plan to study theese pieces with my choirs in the future:
-	- Becker, Albert: Geh aus, mein Herz
+	- Becker, Albert: Geh aus, mein Herz (SATB and SAATB)
 	- Franck, Melchior:
-		- Deduc me, Domine
-		- Gloria Patri, qui creavit nos
-	- Kücken, Friedrich Wilhelm: Mache dich auf! Werde Licht!
+		- Deduc me, Domine (SSATB)
+		- Gloria Patri, qui creavit nos (SSAB - SATTB)
+	- Kücken, Friedrich Wilhelm: Mache dich auf! Werde Licht! (SATB)
 
 ### I made the following editions just for fun and/or to improve my Lilypond skills:
 The following pieces are some which I do not know (very well). Maybe I will use the editions with my choirs in the future.
-- Albert, Heinrich: Lobet Gott in seinem Heiligtum
-- Berchem, Jacob van: Osterhalleluja
-- Klughardt, August: Der 23. Psalm
-- Knefelius, Johann: Also hat Gott die Welt geliebt
-- Pevernage, Andreas: Gloria
-- Reissiger, Carl Gottlieb: Graduale - Domine miserere mei
-- Sweelinck, Jan Pieterszoon: Jauchzet, alle Lande Gott zu Ehren
+- Albert, Heinrich: Lobet Gott in seinem Heiligtum (SSATB or SATBB)
+- Berchem, Jacob van: Osterhalleluja (SATB)
+- Klughardt, August: Der 23. Psalm (SATB)
+- Knefelius, Johann: Also hat Gott die Welt geliebt (SSATB)
+- Pevernage, Andreas: Gloria (SSSAAATBB)
+- Reissiger, Carl Gottlieb: Graduale - Domine miserere mei (SATB)
+- Sweelinck, Jan Pieterszoon: Jauchzet, alle Lande Gott zu Ehren (SATTB)
