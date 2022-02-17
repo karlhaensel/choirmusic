@@ -12,7 +12,7 @@
 }
 
 \layout {
-  #(layout-set-staff-size 18) 
+  #(layout-set-staff-size 17.6) 
   \override Score.BarNumber.font-size = #1
   \context {
     \Voice
@@ -37,8 +37,11 @@ ficta = { \once \set suggestAccidentals = ##t }
     \sTenor
     \sBass
   >>
+ 
   \layout { }
   \midi {
     \tempo 2=86
   }
 }
+ \markup{\italic Übersetzung:}
+ \markup{\wordwrap {Eines bitte ich vom Herrn, dies ersehn' ich: dass ich wohnen darf im Hause meines Herrn alle Tage meines Lebens, und nahe sei meines Gottes Freundlichkeit im Anblick seines Heiligtums.}}
