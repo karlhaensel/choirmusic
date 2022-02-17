@@ -12,7 +12,7 @@
 }
 
 \layout {
-  #(layout-set-staff-size 16) 
+  #(layout-set-staff-size 14.6) 
   \override Score.BarNumber.font-size = #1
   \context {
     \Voice
@@ -44,6 +44,8 @@ ficta = { \once \set suggestAccidentals = ##t }
       \tempo 2=102
     }
   }
+  \markup{\italic Übersetzung:}
+  \markup{\wordwrap{Das ist aber das ewige Leben, dass sie dich, der du allein wahrer Gott bist, und den du gesandt hast, Jesum Christum, erkennen.}}
 }
 
 \book {
@@ -62,4 +64,6 @@ ficta = { \once \set suggestAccidentals = ##t }
       \tempo 2=102
     }
   }
+    \markup{\italic Übersetzung:}
+  \markup{\wordwrap{Das ist aber das ewige Leben, dass sie dich, der du allein wahrer Gott bist, und den du gesandt hast, Jesum Christum, erkennen.}}
 }
