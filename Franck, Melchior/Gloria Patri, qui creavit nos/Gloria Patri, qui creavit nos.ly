@@ -62,3 +62,6 @@ Vierer = { \bar "||" \time 4/2 }
     \tempo 2=108
   }
 }
+\markup{\italic Übersetzung:}
+\markup{\wordwrap{Ehre sei dem Vater, der uns erschaffen, Ehre dem Sohn, der uns erlöst, Ehre dem Heiligen Geist, der uns geheiligt hat. Ehre der höchsten und unteilbaren Dreieinigkeit, deren Werke untrennbar sind, deren Herrschaft ohn Ende ist. Dir gebührt Ruhm und Preis, dir alle Ehre, Lobpreis und Glanz, Kraft und Stärke, (dir) unserm Gott von Ewigkeit zu Ewigkeit. Amen.}}
+
