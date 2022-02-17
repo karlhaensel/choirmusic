@@ -44,6 +44,8 @@ ficta = { \once \set suggestAccidentals = ##t }
       \tempo 2=102
     }
   }
+  \markup{\italic Übersetzung:}
+  \markup{\wordwrap{Weise mir, Herr, deinen Weg, dass ich wandle in deiner Wahrheit; erhalte mein Herz bei dem einen, dass ich deinen Namen fürchte.}}
 }
 
 \book {
@@ -62,4 +64,6 @@ ficta = { \once \set suggestAccidentals = ##t }
       \tempo 2=102
     }
   }
+  \markup{\italic Übersetzung:}
+  \markup{\wordwrap{Weise mir, Herr, deinen Weg, dass ich wandle in deiner Wahrheit; erhalte mein Herz bei dem einen, dass ich deinen Namen fürchte.}}
 }
