@@ -36,6 +36,7 @@ A loose collection of practical sheet music editions for choirs and singers.
 	- Franck, Melchior:
 		- Deduc me, Domine (SSATB)
 		- Gloria Patri, qui creavit nos (SSAB - SATTB)
+		- Peccavimus (SSATB)
 	- Kücken, Friedrich Wilhelm: Mache dich auf! Werde Licht! (SATB)
 
 ### I made the following editions just for fun and/or to improve my Lilypond skills:
