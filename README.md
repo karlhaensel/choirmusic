@@ -19,6 +19,7 @@ A loose collection of practical sheet music editions for choirs and singers.
 - I know and/or conducted theese pieces with my choirs. Back then I used other editions but they had some flaws. So for future use I created my own editions with Lilypond:
 	- Bruch, Max: Gebet (SATB)
 	- Caplet, André: Messe a trois voix (original SMA, opt. TTB/TBarB)
+	- Durante, Francesco: Misericordias Domini No 1 (SATB-SATB)
 	- Eccard, Johann: Zu dieser österlichen Zeit (SATB)
 	- Franck, Melchior:
 		- Haec est vita aeterna (SSATB)
