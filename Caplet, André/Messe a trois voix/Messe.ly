@@ -1,6 +1,7 @@
 \version "2.22.1"
 
 %%%%% TODO: Übersetzungen für französische Begriffe? %%%%%%%
+%%%%% TODO: Vorzeichen für Transposition anpassen? Transposition für Stücke unterschiedlich? %%%%%%%
 
 \paper {
   #(set-paper-size "a4")
@@ -336,6 +337,108 @@ global = {
       \sOTenor
       \sOBariton
       \sOBass
+    >>
+    \layout { }
+    \midi {
+      \tempo 2=62
+    }
+  }
+}
+
+\book {
+  \bookOutputSuffix "TBarB-transposed"
+  \header {
+    title = \markup{\fontsize #5 \smallCaps "Messe a trois voix"}
+    subtitle = "für Tenor, Bariton und Bass"
+    subsubtitle = "(original für Frauenchor und Tonart eine kleine Terz höher)"
+    composer = "André Caplet (1878-1925)"
+    tagline = ##f
+  }
+  \score {
+    \header {
+      piece = \markup{\smallCaps "Kyrie eleison"}
+    }
+    \new ChoirStaff <<
+      \accidentalStyle Score.modern
+      \transpose es c \sKTenor
+      \transpose es c \sKBariton
+      \transpose es c \sKBass
+    >>
+    \layout { }
+    \midi {
+      \tempo 4=100
+    }
+  }
+  \pageBreak
+  \score {
+    \header {
+      title = ""
+      subtitle = ""
+      piece = \markup{\smallCaps "Gloria in excelsis Deo"}
+      composer = ""
+    }
+    \new ChoirStaff <<
+      \accidentalStyle Score.modern
+      \transpose des bes, \sGTenor
+      \transpose des bes, \sGBariton
+      \transpose des bes, \sGBass
+    >>
+    \layout { }
+    \midi {
+      \tempo 4=100
+    }
+  }
+  \pageBreak
+  \score {
+    \header {
+      title = ""
+      subtitle = ""
+      piece = \markup{\smallCaps "Sanctus"}
+      composer = ""
+    }
+    \new ChoirStaff <<
+      \accidentalStyle Score.modern
+      \transpose e des \sSTenor
+      \transpose e des \sSBariton
+      \transpose e des \sSBass
+    >>
+    \layout { }
+    \midi {
+      \tempo 4=76
+    }
+  }
+  \pageBreak
+  \score {
+    \header {
+      title = ""
+      subtitle = ""
+      piece = \markup{\smallCaps "Agnus Dei"}
+      composer = ""
+    }
+    \new ChoirStaff <<
+      \accidentalStyle Score.modern
+      \transpose as f \sATenor
+      \transpose as f \sABariton
+      \transpose as f \sABass
+    >>
+    \layout { }
+    \midi {
+      \tempo 4=86
+    }
+  }
+  \pageBreak
+  \score {
+    \header {
+      title = ""
+      subtitle = ""
+      piece = \markup{\smallCaps "O salutaris"}
+      composer = ""
+    }
+    \new ChoirStaff <<
+      \accidentalStyle Score.modern
+      \transpose f d \sOTenor
+      \transpose f d \sOBariton
+      \transpose f d \sOBass
     >>
     \layout { }
     \midi {
