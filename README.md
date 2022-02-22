@@ -31,7 +31,9 @@ A loose collection of practical sheet music editions for choirs and singers.
 	- Lotti, Antonio: 
 		- Crucifixus a 8 voci (SSAATTBB)
 		- Crucifixus a 10 voci (SSSAATTTBB)
-	- Wermann, Oskar: Vater Unser (SATB-SATB)
+	- Wermann, Oskar:
+		- Psalm 126 "Wenn der Herr die Gefangenen Zions erlösen wird" (SATB)
+		- Vater Unser (SATB-SATB)
 - I plan to study theese pieces with my choirs in the future:
 	- Becker, Albert: Geh aus, mein Herz (SATB and SAATB)
 	- Franck, Melchior:
