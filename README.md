@@ -16,7 +16,7 @@ A loose collection of practical sheet music editions for choirs and singers.
 - Stanford, Charles Villiers: Arise, shine (SATB)
 
 ### Until now I did not use the following editions with my choirs:
-- I know and/or conducted theese pieces with my choirs. Back then I used other editions but they had some flaws. So for future use I created my own editions with Lilypond:
+- I know and/or conducted these pieces with my choirs. Back then I used other editions but they had some flaws. So for future use, I created my own editions with Lilypond:
 	- Bruch, Max: Gebet (SATB)
 	- Caplet, André: Messe a trois voix (original SMA, opt. TTB/TBarB)
 	- Durante, Francesco: Misericordias Domini No 1 (SATB-SATB)
@@ -35,7 +35,7 @@ A loose collection of practical sheet music editions for choirs and singers.
 	- Wermann, Oskar:
 		- Psalm 126 "Wenn der Herr die Gefangenen Zions erlösen wird" (SATB)
 		- Vater Unser (SATB-SATB)
-- I plan to study theese pieces with my choirs in the future:
+- I plan to study these pieces with my choirs in the future:
 	- Becker, Albert: Geh aus, mein Herz (SATB and SAATB)
 	- Franck, Melchior:
 		- Deduc me, Domine (SSATB)
