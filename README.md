@@ -42,7 +42,9 @@ A loose collection of practical sheet music editions for choirs and singers.
 		- Gloria Patri, qui creavit nos (SSAB - SATTB)
 		- Peccavimus (SSATB)
 	- Kücken, Friedrich Wilhelm: Mache dich auf! Werde Licht! (SATB)
-	- Merkel, Gustav: Wenn ich rufe zu dir, Herr (SATB)
+	- Merkel, Gustav: 
+		- Ich hebe meine Augen auf zu den Bergen (SATB)
+		- Wenn ich rufe zu dir, Herr (SATB)
 
 ### I made the following editions just for fun and/or to improve my Lilypond skills:
 The following pieces are some which I do not know (very well). Maybe I will use the editions with my choirs in the future.
