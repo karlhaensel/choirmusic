@@ -9,7 +9,7 @@
 
 \include "Wenn ich rufe zu dir, Herr_music.ily"
 \include "Wenn ich rufe zu dir, Herr_lyrics.ily"
-\include "Wenn ich rufe zu dir, Herr_voice.ily"
+\include "Wenn ich rufe zu dir, Herr_voices.ily"
     
 
 \book {
