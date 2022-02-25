@@ -46,6 +46,7 @@ A loose collection of practical sheet music editions for choirs and singers.
 		- Nr. 1: Barmherzig und gnädig ist der Herr (SATB)
 		- Nr. 2: Ich hebe meine Augen auf zu den Bergen (SATB)
 		- Nr. 3: Wenn ich rufe zu dir, Herr (SATB)
+	- Praetorius, Michael: Allein Gott in der Höh sei Ehr a 5 (SATTB/SSATB)
 
 ### I made the following editions just for fun and/or to improve my Lilypond skills:
 The following pieces are some which I do not know (very well). Maybe I will use the editions with my choirs in the future.
