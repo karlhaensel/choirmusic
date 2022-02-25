@@ -1,7 +1,7 @@
 \version "2.22.1"
 
 tTutti = \lyricmode {
-  Barm -- her -- zig und gnä -- dig, barm -- her --zig ist \tag #'s { der __ } \tag #'a \tag #'t \tag #'b { der }
+  Barm -- her -- zig und gnä -- dig, barm -- her -- zig ist \tag #'s { der __ } \tag #'a \tag #'t \tag #'b { der }
   Herr, barm -- her -- zig \tag #'s \tag #'b { und } \tag #'a \tag #'t { und __ } gnä -- dig, ge -- dul -- \tag #'s \tag #'t \tag #'b { dig } \tag #'a { dig __ } und 
   
   \tag #'s \tag #'a { von gro -- ßer, } \tag #'a { von gro -- ßer, __ } \tag #'t \tag #'b { von gro -- ßer __ Gü -- te, und von Gü -- te, } \tag #'s { von gro -- ßer, } \tag #'s \tag #'a { gro -- ßer Gü -- te, } ge -- dul -- dig

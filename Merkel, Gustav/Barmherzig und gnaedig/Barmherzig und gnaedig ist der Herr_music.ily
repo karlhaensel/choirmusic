@@ -19,7 +19,7 @@ dTutti = {
   
   s2. s4\cresc | s1 | s2. s4\f | s1 |
   \tag #'s \tag #'a { s4 s\dim s2 } \tag #'t \tag #'b { s2 s\dim } | s1 | \mark \default s2. s4\p | s1 | \tag #'s \tag #'a \tag #'b { s1 } \tag #'t { s4.\> s8\! s2 } |
-  s1 | \tag #'s { s2. s4\< | s8 s\! s2. | s1 } \tag #'a { s2\< s8 s\! s4 | s1*2 } \tag #'t { s1 | s4 s2\< s4\! | s1 } \tag #'b { s1 | s2. s4\< | s8 s\! s2. } |
+  s1 | \tag #'s { s2. s4\< | s8 s\! s2. | s1 } \tag #'a { s2\< s8 s\! s4 | s1*2 } \tag #'t { s1 | s4 s4.\< s8\! s4 | s1 } \tag #'b { s1 | s2. s4\< | s16 s\! s8 s2. } |
   
   \tag #'s \tag #'a { s2. } \tag #'t \tag #'b { s2\> s8 s\! } s4\f | s1 | \mark \default s1\> | s2\! \tempo "Un poco mosso." 4=112 \tag #'s \tag #'a { s2 } \tag #'t \tag #'b { s2\mf } |
   \tag #'s { s1 | s2 s\mf } \tag #'a { s2 s\mf | s1 } \tag #'t \tag #'b { s1*2 } | s1 |
@@ -29,7 +29,7 @@ dTutti = {
   \mark \default s2 s\f | s1*2 |
   s1 | s2 s\dim | s2. \tempo "Tempo primo" 4=96 s4\p | s1 |
   
-  \tag #'s \tag #'t \tag #'b { s2 } \tag #'a { s4\> s8 s\! } s2 | s1 | \mark \default \tag #'s { s1 | s4 s2.\< } \tag #'a { s2. s4\< | s4 s8 s\! s2 } \tag #'t { s4 s2\< s8 s\! | s1 } \tag #'b { s2. s4\< | s8 s\! s2. } |
+  \tag #'s \tag #'t \tag #'b { s2 } \tag #'a { s4\> s8 s\! } s2 | s1 | \mark \default \tag #'s { s1 | s4 s2.\< } \tag #'a { s2. s4\< | s4 s8 s\! s2 } \tag #'t { s4 s2\< s8 s\! | s1 } \tag #'b { s2. s4\< | s16 s\! s8 s2. } |
   s2\> s8 s\! \tag #'s \tag #'a { s4\p | s2 } \tag #'t \tag #'b { s4 | s s\p } s2 |
   s s\cresc | s1 | s2. s4\mf | s2 \tag #'s \tag #'a { s2\cresc | s } \tag #'t \tag #'b { s2 | s\cresc }
   
@@ -127,7 +127,7 @@ nBass = \relative c {
   
   bis( cis) dis gis, | cis ais b cis | dis1( | gis4) dis gis2~ |
   gis fisis4( eis8[ fisis]) | gis4 gis, r2 | r dis'4 dis |
-  dis eis8([ fisis]) gis4 gis | gis2 fisis4 fisis | gis fis! e dis | cis2 fis4 ais |
+  dis eis8([ fisis]) gis4 gis | gis2 fisis4 fisis | gis \once \set Staff.extraNatural = ##t fis! e dis | cis2 fis4 ais |
   
   b2 b,4 b | b'2 b4 fis | gis2 b4 gis8([ fis]) | e2 e4 e |
   b2 b4 b8 b | b'2 c4 c | b4. b,8 b4 b8 b |
