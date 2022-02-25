@@ -21,7 +21,7 @@ dTutti = {
   \tag #'s { s1 | s2. s4\cresc } \tag #'a { s2. s4\p | s s2.\cresc } \tag #'t \tag #'b { s1 | s2 s2\cresc } | s1 |
   s2. s4\cresc | s1 | s\ff | s |
   
-  \mark \default s2 s\f | s2. s4\< | s8 s\! \tag #'s \tag #'a \tag #'b { s2 s4\mf } \tag #'t { s2.\mf } | s1 |
+  \mark \default s2 s\f | s2. s4\< | s16 s\! s8 \tag #'s \tag #'a \tag #'b { s2 s4\mf } \tag #'t { s2.\mf } | s1 |
   s1 | s2 s\cresc | s2 s\< | s8 s\! \tag #'s \tag #'a \tag #'b { s2 s4\mf } \tag #'t { s2.\mf } |
   s1*3 | \tag #'s \tag #'t \tag #'b { s2 s\p } \tag #'a { s4 s2.\p } |
   
@@ -37,7 +37,7 @@ dTutti = {
   \tag #'s { s1*3 } \tag #'a { s4 s2.\p | s1*2 } \tag #'t { s1 | s4 s2.\p | s1 } \tag #'b { s1*2 | s4 s2.\p } |
   s1*2 | \mark \default s4 s2.\cresc | s1\f |
   
-  s2.\> s4\! | s4 s2.\p | s1 | s1\< |
+  s2\> s8 s4.\! | s4 s2.\p | s1 | s1\< |
   s2.\> s8 s\! | s1 | s\< | s2\> s8 s\! s4\cresc |
   s1 | s2. s4\f | s1 | s2.\> s8 s\! | \partial 2. s2. \bar "|."
 }

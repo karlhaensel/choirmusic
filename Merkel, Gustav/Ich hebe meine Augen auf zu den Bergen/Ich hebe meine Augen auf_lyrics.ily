@@ -9,8 +9,8 @@ tTutti = \lyricmode {
   \tag #'a \tag #'t { Hil -- fe __ komt, von __ } \tag #'b { Hil -- fe kommt, von } wel -- chen mir Hil -- fe, mir Hil -- fe
   
   kommt. Mei -- ne Hil -- fe kommt vom Herrn, der Him -- mel und
-  er -- de ge -- \tag #'s \tag #'a \tag #'t { macht, } \tag #'b { macht hat, }  mei -- ne Hil -- fe kommt vom Herrn, der
-  Him -- mel und er -- de ge -- \tag #'s \tag #'a \tag #'t { macht __ } \tag #'b { macht } hat. Er
+  Er -- de ge -- \tag #'s \tag #'a \tag #'t { macht, } \tag #'b { macht hat, }  mei -- ne Hil -- fe kommt vom Herrn, der
+  Him -- mel und Er -- de ge -- \tag #'s \tag #'a \tag #'t { macht __ } \tag #'b { macht } hat. Er
   
   wird dei -- nen  \tag #'t { Fuß, dei -- nen } \tag #'b { Fuß nicht glei -- ten, __ dei -- nen } Fuß nicht glei -- ten las -- sen, \tag #'a { dei -- nen Fuß nicht glei -- ten las -- sen, } 
   der dich be -- hü -- tet, \tag #'s { schläft __ } \tag #'a \tag #'t \tag #'b { schläft } nicht.
