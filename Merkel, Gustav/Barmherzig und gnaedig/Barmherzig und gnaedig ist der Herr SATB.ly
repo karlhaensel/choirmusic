@@ -7,9 +7,9 @@
   tagline = ##f
 }
 
-\include "Barmherzig_music.ily"
-\include "Barmherzig_lyrics.ily"
-\include "Barmherzig_voices.ily"
+\include "Barmherzig und gnaedig ist der Herr_music.ily"
+\include "Barmherzig und gnaedig ist der Herr_lyrics.ily"
+\include "Barmherzig und gnaedig ist der Herr_voices.ily"
     
 
 \book {
@@ -17,6 +17,7 @@
   \paper {
     #(set-paper-size "a4")
     systems-per-page = 4
+    page-count = 3
   }
   \score {
     \new ChoirStaff <<
@@ -42,6 +43,7 @@
   \bookOutputSuffix "4pages"
   \paper {
     #(set-paper-size "a4")
+    page-count = 4
   }
   \score {
     \new ChoirStaff <<
