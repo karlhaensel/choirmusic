@@ -13,10 +13,10 @@ tTutti = \lyricmode {
   schrei', \tag #'s { wenn ich mei -- ne } \tag #'a { wenn ich mei -- ne, mei -- ne } \tag #'t \tag #'b { wenn __ ich __ mei -- ne __ } Hän -- de auf -- he -- be zu
   
   dei -- \tag #'s \tag #'a \tag #'t { nem } \tag #'b { nem __ } hei -- li -- gen, heil' -- \tag #'s \tag #'a \tag #'b { gen } \tag #'t { gen __ } Chor, zu dei -- nem \tag #'s \tag #'a \tag #'t { heil' -- gen } |
-  Chor, dei -- nem heil' -- gen CHor. Wenn ich ru -- fe zu dir, Herr mein
+  Chor, dei -- nem heil' -- gen Chor. Wenn ich ru -- fe zu dir, Herr mein
   Hort, \tag #'t { so hör', } \tag #'s \tag #'a { so hö -- re die Stim -- me, so hö -- re die Stim -- me, } \tag #'t \tag #'b { so hö -- re, so hö -- re die Stim -- me, so } \tag #'t { hör', } \tag #'b { hö -- re, } 
   
-  so hö -- re die Stim -- me mei -- \tag #'s \tag #'a \tag #'t { nes } \tag #'b { nes __ } Flehns, so
+  \tag #'s \tag #'t \tag #'b { so } \tag #'a { so __ } hö -- re die Stim -- \tag #'s \tag #'t \tag #'b { me } \tag #'a { me __ } mei -- \tag #'s \tag #'a \tag #'t { nes } \tag #'b { nes __ } Flehns, so
   hö -- re die Stim -- me mei -- nes Flehns, mei -- nes Flehns, \tag #'t { die Stim -- me }
   mei -- nes Flehns. Ge -- lo -- bet sei der Herr, ge -- lo -- bet
   
