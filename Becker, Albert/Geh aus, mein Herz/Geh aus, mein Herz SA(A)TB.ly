@@ -12,6 +12,13 @@
 
 \paper {
   #(set-paper-size "a4")
+  scoreTitleMarkup = \markup {
+    \fill-line {
+      \null
+      \fontsize #3 \bold \fromproperty #'header:piece
+      \null
+    }
+  }
 }
 
 \layout {
@@ -35,7 +42,7 @@
   
   \score {
     \header {
-      piece = \markup{\bold \smallCaps {Vers I}}
+      piece = \markup{\smallCaps {Vers I}}
     }
     
     \new ChoirStaff <<
@@ -54,7 +61,7 @@
   
   \score {
     \header {
-      piece = \markup{\bold \smallCaps {Vers IX}}
+      piece = \markup{\smallCaps {Vers IX}}
     }
     
     \new ChoirStaff <<
@@ -73,7 +80,7 @@
   
   \score {
     \header {
-      piece = \markup{\bold \smallCaps {Vers XI}}
+      piece = \markup{\smallCaps {Vers XI}}
     }
     
     \new ChoirStaff <<
@@ -93,7 +100,7 @@
   
   \score {
     \header {
-      piece = \markup{\bold \smallCaps Halleluja}
+      piece = \markup{\smallCaps Halleluja}
     }
     
     \new ChoirStaff <<
