@@ -38,8 +38,37 @@ global_voice = {
 
 \include "03 Es wird ein Stern aus Jacob aufgehn_staffs.ily"
 
+% \book {
+%   \bookOutputSuffix "vocalScore"
+%   \score {
+%     <<
+%     \new ChoirStaff <<
+%       \accidentalStyle Score.modern % damit Erinnerungsvorzeichen nächster Takt
+%       \sSopran
+%       \sAlt
+%       \sTenor
+%       \sBass
+%     >>
+%     \new PianoStaff
+%     <<
+%       \accidentalStyle Score.modern % damit Erinnerungsvorzeichen nächster Takt
+%       \sRechts
+%       \dKlavierauszug
+%       \sLinks
+%     >>
+%     >>
+%     \layout {
+%       \context {
+%       }
+%     }
+%     \midi {
+%       \tempo 4=124
+%     }
+%   }
+% }
+
 \book {
-  \bookOutputSuffix "vocalScore"
+  \bookOutputSuffix "Score"
   \score {
     <<
     \new ChoirStaff <<
@@ -49,12 +78,12 @@ global_voice = {
       \sTenor
       \sBass
     >>
-    \new PianoStaff
-    <<
-      \accidentalStyle Score.modern % damit Erinnerungsvorzeichen nächster Takt
-      \sRechts
-      \dKlavierauszug
-      \sLinks
+    \new StaffGroup <<
+      \sVioI
+      \sVioII
+      \sVla
+      \sVc
+      \sCb
     >>
     >>
     \layout {

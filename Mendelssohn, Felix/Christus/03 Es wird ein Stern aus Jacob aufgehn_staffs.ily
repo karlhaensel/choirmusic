@@ -3,11 +3,16 @@
 \include "03 Es wird ein Stern aus Jacob aufgehn_choir.ily"
 \include "03 Es wird ein Stern aus Jacob aufgehn_lyrics.ily"
 \include "03 Es wird ein Stern aus Jacob aufgehn_pianoReduction.ily"
+\include "03 Es wird ein Stern aus Jacob aufgehn_strings.ily"
+
+
+
+%%% CHOIR %%%
 
 sSopran = 
   \new Staff  = "zSopran"
     \with {
-      instrumentName = "Sopran"
+      instrumentName = "Soprano"
       \chormidi
       \consists "Merge_rests_engraver"
     } 
@@ -21,7 +26,7 @@ sSopran =
 sAlt = 
   \new Staff  = "zAlt"
     \with {
-      instrumentName = "Alt"
+      instrumentName = "Alto"
       \chormidi
       \consists "Merge_rests_engraver"
     } 
@@ -35,7 +40,7 @@ sAlt =
 sTenor = 
   \new Staff  = "zTenor"
     \with {
-      instrumentName = "Tenor"
+      instrumentName = "Tenore"
       \chormidi
       \consists "Merge_rests_engraver"
     } 
@@ -49,7 +54,7 @@ sTenor =
 sBass = 
   \new Staff  = "zBass"
     \with {
-      instrumentName = "Bass"
+      instrumentName = "Basso"
       \chormidi
       \consists "Merge_rests_engraver"
     } 
@@ -59,7 +64,85 @@ sBass =
       }
       \new Lyrics \lyricsto "vBass" {\tBass}
     >>
-   
+
+
+
+%%% STRINGS %%%
+
+sVioI =
+  \new Staff = "zVioI"
+    \with {
+      instrumentName = "Violino I"
+      midiInstrument = "violin"
+      \consists "Merge_rests_engraver"
+    }
+    <<
+      \keepWithTag #'vioI \dStrings
+      {
+        \new Voice = "vVioI" {\nVioI}
+      }
+    >>
+    
+sVioII =
+  \new Staff = "zVioII"
+    \with {
+      instrumentName = "Violino II"
+      midiInstrument = "violin"
+      \consists "Merge_rests_engraver"
+    }
+    <<
+      \keepWithTag #'vioII \dStrings
+      {
+        \new Voice = "vVioII" {\nVioII}
+      }
+    >>
+
+sVla =
+  \new Staff = "zVla"
+    \with {
+      instrumentName = "Viola"
+      midiInstrument = "viola"
+      \consists "Merge_rests_engraver"
+    }
+    <<
+      \keepWithTag #'vla \dStrings
+      {
+        \new Voice = "vVla" {\clef alto \nVla}
+      }
+    >>
+    
+sVc =
+  \new Staff = "zVc"
+    \with {
+      instrumentName = "Violoncello"
+      midiInstrument = "cello"
+      \consists "Merge_rests_engraver"
+    }
+    <<
+      \keepWithTag #'vc \dStrings
+      {
+        \new Voice = "vVc" {\clef bass \nVc}
+      }
+    >>
+    
+sCb =
+  \new Staff = "zCb"
+    \with {
+      instrumentName = "Basso"
+      midiInstrument = "contrabass"
+      \consists "Merge_rests_engraver"
+    }
+    <<
+      \keepWithTag #'cb \dStrings
+      {
+        \new Voice = "vCb" {\clef bass \nCb}
+      }
+    >>
+    
+    
+
+%%% PIANO REDUCTION %%%
+
 sRechts =
   \new Staff = "zRechts"
     \with {
