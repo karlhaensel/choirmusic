@@ -88,9 +88,7 @@ sVioI =
     }
     <<
       \keepWithTag #'vioI \dStrings
-      {
-        \new Voice = "vVioI" {\nVioI}
-      }
+      {\new Voice = "vVioI" {\nVioI}}
     >>
     
 sVioII =
@@ -102,9 +100,7 @@ sVioII =
     }
     <<
       \keepWithTag #'vioII \dStrings
-      {
-        \new Voice = "vVioII" {\nVioII}
-      }
+      {\new Voice = "vVioII" {\nVioII}}
     >>
 
 sVla =
@@ -116,9 +112,7 @@ sVla =
     }
     <<
       \keepWithTag #'vla \dStrings
-      {
-        \new Voice = "vVla" {\clef alto \nVla}
-      }
+      {\new Voice = "vVla" {\clef alto \nVla}}
     >>
     
 sVc =
@@ -130,9 +124,7 @@ sVc =
     }
     <<
       \keepWithTag #'vc \dStrings
-      {
-        \new Voice = "vVc" {\clef bass \nVc}
-      }
+      {\new Voice = "vVc" {\clef bass \nVc}}
     >>
     
 sCb =
@@ -144,9 +136,7 @@ sCb =
     }
     <<
       \keepWithTag #'cb \dStrings
-      {
-        \new Voice = "vCb" {\clef bass \nCb}
-      }
+      {\new Voice = "vCb" {\clef bass \nCb}}
     >>
     
     
