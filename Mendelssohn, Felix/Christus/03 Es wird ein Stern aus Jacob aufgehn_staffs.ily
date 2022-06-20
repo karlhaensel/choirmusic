@@ -1,9 +1,23 @@
 \version "2.22.00"
 
+\include "03 Es wird ein Stern aus Jacob aufgehn_brass.ily"
 \include "03 Es wird ein Stern aus Jacob aufgehn_choir.ily"
 \include "03 Es wird ein Stern aus Jacob aufgehn_lyrics.ily"
-\include "03 Es wird ein Stern aus Jacob aufgehn_pianoReduction.ily"
 \include "03 Es wird ein Stern aus Jacob aufgehn_strings.ily"
+\include "03 Es wird ein Stern aus Jacob aufgehn_pianoReduction.ily"
+
+
+
+%%% BRASS %%%
+
+sHrn =
+  \new Staff = "zHorn"
+    \with {
+      instrumentName = "Horn in Es"
+      midiInstrument = "french horn"
+      \consists "Merge_rests_engraver"
+    }
+    <<{\transposition es \transpose es c' {\partCombine \nHrnI \nHrnII}}>>
 
 
 
@@ -17,9 +31,8 @@ sSopran =
       \consists "Merge_rests_engraver"
     } 
     <<
-      { 
-        \new Voice = "vSopran" {\nSopran}
-      }
+      \keepWithTag #'s \dChoir
+      {\new Voice = "vSopran" {\nSopran}}
       \new Lyrics \lyricsto "vSopran" {\tSopran}
     >>
 
@@ -31,9 +44,8 @@ sAlt =
       \consists "Merge_rests_engraver"
     } 
     <<
-      { 
-        \new Voice = "vAlt" {\nAlt}
-      }
+      \keepWithTag #'a \dChoir
+      {\new Voice = "vAlt" {\nAlt}}
       \new Lyrics \lyricsto "vAlt" {\tAlt}
     >>
 
@@ -45,9 +57,8 @@ sTenor =
       \consists "Merge_rests_engraver"
     } 
     <<
-      { 
-        \new Voice = "vTenor" {\clef "violin_8" \nTenor}
-      }
+      \keepWithTag #'t \dChoir
+      {\new Voice = "vTenor" {\clef "violin_8" \nTenor}}
       \new Lyrics \lyricsto "vTenor" {\tTenor}
     >>
 
@@ -59,9 +70,8 @@ sBass =
       \consists "Merge_rests_engraver"
     } 
     <<
-      { 
-        \new Voice = "vBass" {\clef bass \nBass}
-      }
+      \keepWithTag #'b \dChoir
+      {\new Voice = "vBass" {\clef bass \nBass}}
       \new Lyrics \lyricsto "vBass" {\tBass}
     >>
 
