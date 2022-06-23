@@ -1,6 +1,7 @@
 \version "2.22.00"
 
 \include "03 Es wird ein Stern aus Jacob aufgehn_brass.ily"
+\include "03 Es wird ein Stern aus Jacob aufgehn_timpani.ily"
 \include "03 Es wird ein Stern aus Jacob aufgehn_choir.ily"
 \include "03 Es wird ein Stern aus Jacob aufgehn_lyrics.ily"
 \include "03 Es wird ein Stern aus Jacob aufgehn_strings.ily"
@@ -36,6 +37,21 @@ sPosB =
       \consists "Merge_rests_engraver"
     }
     <<{\clef bass \nPosB}>>
+
+
+
+%%% TIMPANI %%%
+
+sPk =
+  \new Staff = "zPauken"
+    \with {
+      instrumentName = "Pauken in Es.B."
+      midiInstrument = "timpani"
+      \consists "Merge_rests_engraver"
+    }
+    <<{\clef bass \nPk}>>
+
+
 
 %%% CHOIR %%%
 

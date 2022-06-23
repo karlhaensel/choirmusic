@@ -83,6 +83,7 @@ global_voice = {
         \sPosB
       >>
     >>
+    \sPk
     \new ChoirStaff <<
       \accidentalStyle Score.modern % damit Erinnerungsvorzeichen nächster Takt
       \sSopran
