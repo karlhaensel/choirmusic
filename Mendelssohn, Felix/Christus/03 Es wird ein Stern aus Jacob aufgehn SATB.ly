@@ -78,6 +78,10 @@ global_voice = {
     <<
     \new StaffGroup <<
       \sHrn
+      \new GrandStaff <<
+        \sPosAT
+        \sPosB
+      >>
     >>
     \new ChoirStaff <<
       \accidentalStyle Score.modern % damit Erinnerungsvorzeichen nächster Takt

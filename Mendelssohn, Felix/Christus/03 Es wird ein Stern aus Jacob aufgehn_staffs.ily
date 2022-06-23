@@ -19,7 +19,23 @@ sHrn =
     }
     <<{\transposition es \transpose es c' {\partCombine \nHrnI \nHrnII}}>>
 
-
+sPosAT =
+  \new Staff = "zPosAT"
+    \with {
+      instrumentName = "Alt- und Tenorposaune"
+      midiInstrument = "trombone"
+      \consists "Merge_rests_engraver"
+    }
+    <<{\clef "alto" \partCombine \nPosA \nPosT}>>
+    
+sPosB =
+  \new Staff = "zPosB"
+    \with {
+      instrumentName = "Bassposaune"
+      midiInstrument = "trombone"
+      \consists "Merge_rests_engraver"
+    }
+    <<{\clef bass \nPosB}>>
 
 %%% CHOIR %%%
 
