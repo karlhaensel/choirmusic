@@ -7,7 +7,7 @@ dStrings = {
   % S.8
   s1*4 | s1\f | s1 |
   % S.9-13
-  s1 | \tag #'vc {s4.\sf s8 s2} \tag #'vioI \tag #'vioII \tag #'vla { s1*2 } \tag #'cb { s1 } \tag #'vc \tag #'cb { s4 s2.\f } | s2\sf s | s1*3 | s4\sf s2. | s1 | \tag #'vioI \tag #'vioII \tag #'vla {s1*3} \tag #'vc { s2. s4\f | s1 | s4.\sf s8 s2 |} \tag #'cb {s2. s4\f | s1\sf | s1\sf |} s4 s\sf s2 | \tag #'vioI \tag #'vioII \tag #'vla {s1*3} \tag #'vc { s4.\sf s8 s2 | s1*2} \tag #'cb {s4.\sf s8 s2 | s1 | s\sf} | s1*3 | \tag #'vioI \tag #'vioII \tag #'vla {s1*11} \tag #'vc \tag #'cb {s2.\sf s4 | s1*8 | s2\sf s | s1} | 
+  s1 | \tag #'vc {s4.\sf s8 s2} \tag #'vioI \tag #'vioII \tag #'vla { s1*2 } \tag #'cb { s1 } \tag #'vc \tag #'cb { s4 s2.\f } | s2\sf s | s1 | s2\sf s2 | s1 | s4\sf s2. | s1 | \tag #'vioI \tag #'vioII \tag #'vla {s1*3} \tag #'vc { s2. s4\f | s1 | s4.\sf s8 s2 |} \tag #'cb {s2. s4\f | s1\sf | s1\sf |} s4 s\sf s2 | \tag #'vioI \tag #'vioII \tag #'vla {s1*3} \tag #'vc { s4.\sf s8 s2 | s1*2} \tag #'cb {s4.\sf s8 s2 | s1 | s\sf} | s1*3 | \tag #'vioI \tag #'vioII \tag #'vla {s1*11} \tag #'vc \tag #'cb {s2.\sf s4 | s1*8 | s2\sf s | s1} | 
   % S.14-15
   s4\sf s s2\dim | s1*3 | s1\p | s1 | \tag #'vioI {s2 s\cresc | s1*2 | s4 s2.\f } \tag #'vioII \tag #'vla {s2 s\cresc | s1*3 } \tag #'vc \tag #'cb {s1 | s4 s2.\cresc | s4 s2.\f | s1} | s1 | s4 s2.\dim | 
   % S.16
