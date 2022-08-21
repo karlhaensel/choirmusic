@@ -9,6 +9,7 @@ A loose collection of practical sheet music editions for choirs and singers.
 - Byrd, William: Misere mei, Deus (SATBB)
 - Eccard, Johann: In dulci jubilo (SATTB)
 - Harder, August: Geh aus mein Herz (SATB)
+- Klein, Bernhard: Der Herr ist mein Hirt (TTBB)
 - Mendelssohn, Felix:
 	- Christus - 03 Es wird ein Stern aus Jacob aufgehn (SATB)
 	- Jauchzet dem Herrn A-Dur (SATB, at the end SSAATTBB)
@@ -27,7 +28,6 @@ A loose collection of practical sheet music editions for choirs and singers.
 	- Franck, Melchior:
 		- Haec est vita aeterna (SSATB)
 		- Unam petii a Domino (SSATB)
-	- Klein, Bernhard: Der Herr ist mein Hirt (TTBB)
 	- Lechner, Leonhard:
 		- O Tod, du bist ein bittre Gallen (SATTB)
 		- Nun schein du Glanz der Herrlichkeit (SSATB or SATTB)
