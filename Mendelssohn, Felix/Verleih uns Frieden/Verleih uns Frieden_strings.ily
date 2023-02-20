@@ -8,7 +8,7 @@ dStringsI = { % ohne Cb-Dynamik am Anfang
   \tag #'vla {s2.*12 s2._\markup{\dynamic p \italic {dim.}} | s2.*6 | % S. 4
   s2.*3 | s4. s\p | s2.*3 | s4. s\cresc | s2 s4\dim | s2. | % S. 5
   s2.\p | s2.*3 | s4 s4.\< s8\! | s2.*4 | s2.\dim | % S. 6
-  s4\p\< s4\> s\! | s2. | s4 s2\pp | s2.*7 | % S. 7
+  \tag #'score \tag #'vla {s4\p\< s4\> s\!} \tag #'part \tag #'vla {s4\<_\markup{\dynamic p} s4\> s\!} | s2. | s4 s2\pp | s2.*7 | % S. 7
   s2.\cresc | s2.*2 | s4 s2\cresc | s2. | s\dim | s\p | s2.*3 | % S. 8
   s2 s4\p | s2.*3 | s2.\p | s2. | s8 s\cresc s2 | s2.*2 | s8 s\f s2 | % S. 9
   }
@@ -44,8 +44,8 @@ nVioI = \relative c''' {
   \global
   % S. 3-8
   R2.*59 |
-  % S. 9 %%%%%%%%%%%% STICHNOTEN
-  R2.*7 | r4 r r8 as\( | g f bes as g\) es'~ | es c\( bes as g f\) |
+  % S. 9
+  R2.*5 \cueDuringWithClef "cello1" #UP "bass" {\tag #'part {\set instrumentCueName = "Vc. I"} R2.*2 | r4 r} r8 as\( | g f bes as g\) es'~ | es c\( bes as g f\) |
   % S. 10
   es4\( g f\) | es2 es4 | es\( bes'\) as | g2 g4 | c2\( bes4\) | as\( g\) es8\( f\) | g2. | es4 r r | es\( as\) as8\( g\) | f2 r4 | f\( bes\) bes8\( as\) | g2 r4 |
   % S. 11
@@ -58,8 +58,8 @@ nVioII = \relative c'' {
   \global
   % S. 3-8
   R2.*59 |
-  % S. 9 %%%%%%%%%%%% STICHNOTEN
-  R2.*7 | r4 r r8 f\( | es d es4.\) as8\( | es\) as\( bes d, es bes\) |
+  % S. 9
+  R2.*5 \cueDuringWithClef "cello1" #UP "bass" {\tag #'part {\set instrumentCueName = "Vc. I"} R2.*2 | r4 r} r8 f\( | es d es4.\) as8\( | es\) as\( bes d, es bes\) |
   % S. 10
   bes4\( es\) es8\( d\) | es2 des4 | c\( es4. d8\) | es2 g4 | as2\( f4\) | f\( es\) es~\( | es d2\) | c4 r r | c c8\( d es4\) | d2 r4 | d\( es\) f | es2 r4 |
   % S. 11
@@ -72,8 +72,8 @@ nVla = \relative c' {
   \global
   % S. 3
   R2.*9 |
-  % S. 4 %%%%%%%%%%%% STICHNOTEN
-  R2.*3 | as2.~ | as4. as8\( g f\) | f4\( es\) r | R2.*4 |
+  % S. 4 
+  R2.| \cueDuring "cello1" #UP {\tag #'part {\set instrumentCueName = "Vc. I"} R2.*2} | as2.~ | as4. as8\( g f\) | f4\( es\) r | R2.*4 |
   % S. 5
   R2.*3 | s4 s8 c\( es g | c4\) r r | r r8 d,\( f\) f\( | bes4\) r r | r4 r8 g8\( as bes\) | c\( bes as4\) g4\( | f es des\) |
   % S. 6
@@ -142,7 +142,7 @@ nVcII = \relative c {
 
 Bass = {
   % S. 3
-  es2.~ | \repeat unfold 4 {es2.~ |} es4 r4 g | as\( bes c\) | f,2 g4 | as2 r4 |
+  es2.~ | \repeat unfold 4 {es2.~ |}  es4 r4 g | as\( bes c\) | f,2 g4 | as2 r4 |
   % S. 4
   bes2.~ | bes | es,~ | es~ | es~ | es4 r r | r r bes'4 | c2 g4 | as f bes | es,2 es4 |
   % S. 5

@@ -49,9 +49,9 @@ FlKlarII = \relative c'' {
 nFlI = \relative c'' {
   \global
   % S. 3-6 
-  R2.*39
-  % S. 7-9 %%%%%%% STICHNOTEN NICHT VERGESSEN! %%%%%%%%
-  R2.*2 | \FlKlarI
+  R2.*37
+  % S. 7-9
+  \cueDuringWithClef "cello1" #UP "bass" {\tag #'part {\set instrumentCueName = "Vc. I (zum 2. Mal)"} R2.*4} | \FlKlarI
   % S. 9
   r8 c'\( bes es~\) es4~ | es8\( c bes4. d,8\) |
   % S. 10
@@ -65,9 +65,9 @@ nFlI = \relative c'' {
 nFlII = \relative c'' {
   \global
   % S. 3-6 
-  R2.*39
-  % S. 7-9 %%%%%%% STICHNOTEN NICHT VERGESSEN! %%%%%%%%
-  R2.*2 | \FlKlarII
+  R2.*37
+  % S. 7-9
+  \cueDuringWithClef "cello1" #UP "bass" {\tag #'part {\set instrumentCueName = "Vc. I (zum 2. Mal)"} R2.*4} | \FlKlarII
   % S. 9
   r8 as'\( g f g c\) | es es,~\(  es f g bes, \) |
   % S. 10
@@ -82,9 +82,9 @@ nKlarI = \transpose c bes \relative c' {
   \global_transpose
   \key f \major
   % S. 3-6 
-  R2.*39
-  % S. 7-9 %%%%%%% STICHNOTEN NICHT VERGESSEN! %%%%%%%%
-  R2.*2 | \transpose bes c \FlKlarI |
+  R2.*37
+  % S. 7-9
+  \cueDuringWithClef "cello1" #UP "bass" {\tag #'part {\set instrumentCueName = "Vc. I (zum 2. Mal)"} R2.*4} | \transpose bes c \FlKlarI |
   % S. 9
   r4 f2~-> | f4 r8 bes8\( a g\) |
   % S. 10
@@ -99,9 +99,9 @@ nKlarII = \transpose c bes \relative c' {
   \global_transpose
   \key f \major
   % S. 3-6 
-  R2.*39
-  % S. 7-9 %%%%%%% STICHNOTEN NICHT VERGESSEN! %%%%%%%%
-  R2.*2 | \transpose bes c \FlKlarII |
+  R2.*37
+  % S. 7-9
+  \cueDuringWithClef "cello1" #UP "bass" {\tag #'part {\set instrumentCueName = "Vc. I (zum 2. Mal)"} R2.*4} | \transpose bes c \FlKlarII |
   % S. 9
   r4 f,2~-> | f4 r8 e'\( f e\) |
   % S. 10

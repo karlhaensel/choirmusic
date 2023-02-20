@@ -9,6 +9,8 @@
 
 %%% CUE VOICES %%%
 
+\addQuote "chorbass" { \nBass }
+
 \addQuote "vio1" { \nVioI }
 \addQuote "vio2" { \nVioII }
 \addQuote "cello1" { \nVcI }
@@ -80,6 +82,32 @@ sFag =
       \keepWithTag #'fag \dBass
       \keepWithTag #'fag \dWoodwindsII
       {\clef bass \partCombine  \nFagI \nFagII}
+    >>
+
+sFagI =
+  \new Staff = "zFagI"
+    \with {
+      instrumentName = "Fagotto I"
+      midiInstrument = "bassoon"
+      \consists "Merge_rests_engraver"
+    }
+    <<
+      \keepWithTag #'fag \dBass
+      \keepWithTag #'fag \dWoodwindsII
+      {\clef bass \nFagI}
+    >>
+
+sFagII =
+  \new Staff = "zFagII"
+    \with {
+      instrumentName = "Fagotto II"
+      midiInstrument = "bassoon"
+      \consists "Merge_rests_engraver"
+    }
+    <<
+      \keepWithTag #'fag \dBass
+      \keepWithTag #'fag \dWoodwindsII
+      {\clef bass \nFagII}
     >>
 
 
