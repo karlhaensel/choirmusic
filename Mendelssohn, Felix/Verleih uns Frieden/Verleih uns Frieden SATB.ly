@@ -11,8 +11,7 @@
   #(set-paper-size "a4")
 }
 
-\layout {
-  #(layout-set-staff-size 16) 
+\layout { 
   \override Score.BarNumber.font-size = #2
   \context {
     \Voice
@@ -56,6 +55,7 @@ global_voice = {
     >>
     >>
     \layout {
+      #(layout-set-staff-size 18)
       \context {
         \Staff \RemoveEmptyStaves
       }
@@ -86,6 +86,7 @@ global_voice = {
 %     >>
 %     >>
 %     \layout {
+%       #(layout-set-staff-size 16)
 %       \context {
 %       }
 %     }
@@ -125,6 +126,7 @@ global_voice = {
     >>
     >>
     \layout {
+      #(layout-set-staff-size 13.8)
       \context {
       }
       indent = 2.5\cm
