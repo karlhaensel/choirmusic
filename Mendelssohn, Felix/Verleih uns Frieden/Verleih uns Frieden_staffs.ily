@@ -65,11 +65,12 @@ sKlarII =
 sFag =
   \new Staff = "zFag"
     \with {
-      instrumentName = "Fagotti"
+      instrumentName = "Fagotto I, II"
       midiInstrument = "bassoon"
       \consists "Merge_rests_engraver"
     }
     <<
+      \keepWithTag #'fag \dBass
       \keepWithTag #'fag \dWoodwindsII
       {\clef bass \partCombine  \nFagI \nFagII}
     >>
@@ -206,6 +207,7 @@ sCb =
       \consists "Merge_rests_engraver"
     }
     <<
+      \keepWithTag #'cb \dBass
       \keepWithTag #'cb \dStringsII
       {\new Voice = "vCb" {\clef bass \nCb}}
     >>

@@ -142,19 +142,37 @@ nVcII = \relative c {
 
 Bass = {
   % S. 3
-  es2.~\p | \repeat unfold 4 {es2.~ |} es4 r4 g | as\(\cresc bes c\) | f,2\< g4 | as2\! r4 |
+  es2.~ | \repeat unfold 4 {es2.~ |} es4 r4 g | as\( bes c\) | f,2 g4 | as2 r4 |
   % S. 4
-  bes2.~ | bes | es,~\dim | es~ | es~_\markup{\dynamic p \italic {dim.} } | es4 r r | r r bes'4\p | c2 g4 | as f bes | es,2 es4 |
+  bes2.~ | bes | es,~ | es~ | es~ | es4 r r | r r bes'4 | c2 g4 | as f bes | es,2 es4 |
   % S. 5
-  as4\( g8 f\) e4 | f g as | g2.\p | c4 r r | \partCombineUnisono c4.\cresc\( d8 es4\) | bes2 r4 | bes4.\( c8 d4\) | es4. des8\cresc\( c bes | as4\) r r | R2. |
+  as4\( g8 f\) e4 | f g as | g2. | c4 r r | \partCombineUnisono c4.\( d8 es4\) | bes2 r4 | bes4.\( c8 d4\) | es4. des8\( c bes | as4\) r r | R2. |
   % S. 6
-  \tag #'fagI \tag #'fagII { c2\( } \tag #'Cb { c2\p\( } f4\) | c2\( f,4\) | c' r \partCombineAutomatic \tag #'fagI { g'\p\( | as bes as | g\cresc\) g, } \tag #'fagII { e\p\( | f g as | g\cresc\) g, } \tag #'Cb { r4 | f,2. | g2\cresc } es4 | as2 f4\p | bes2.~ | bes  | es,\dim~ | es~ |
+  \tag #'fagI \tag #'fagII { c2\( } \tag #'Cb { c2\( } f4\) | c2\( f,4\) | c' r \partCombineAutomatic \tag #'fagI { g'\( | as bes as | g\) g, } \tag #'fagII { e\( | f g as | g\) g, } \tag #'Cb { r4 | f,2. | g2 } es4 | as2 f4 | bes2.~ | bes  | es,~ | es~ |
   % S. 7
-  es~ | es4 r r | r r bes'\p\( | c2\) es,4 | as f bes | es,2 es4 | as\( g8 f e4\) | f\( g as\) | g2\( g'4\) | c,2 r4 |
+  es~ | es4 r r | r r bes'\( | c2\) es,4 | as f bes | es,2 es4 | as\( g8 f e4\) | f\( g as\) | g2\( g'4\) | c,2 r4 |
   % S. 8
-  \partCombineUnisono c4.\cresc\( d8 es4\) | bes2 r4 | bes4.\(  c8 d4\) | es4. des8\cresc\( c bes\) | as4 r r | r r bes\p | c2\( f4\) | c2\( f,4\) | c' r \partCombineAutomatic \tag #'fagI { g'\( | as bes\cresc as\) | g g,2 | } \tag #'fagII { e4\( | f g\cresc as\) | g g,2 | } \tag #'Cb { r4 | f,2._\markup{\dynamic p \italic {cresc. }} | g2.\<  |} 
+  \partCombineUnisono c4.\( d8 es4\) | bes2 r4 | bes4.\(  c8 d4\) | es4. des8\( c bes\) | as4 r r | r r bes | c2\( f4\) | c2\( f,4\) | c' r \partCombineAutomatic \tag #'fagI { g'\( | as bes as\) | g g,2 | } \tag #'fagII { e4\( | f g as\) | g g,2 | } \tag #'Cb { r4 | f,2. | g2.  |} 
   % S. 9
-  as2 f4\p | bes2.~ | bes  | \partCombineAutomatic es,~ | es~ | \tag #'fagI { es2.\cresc | es'~ | es4 r8 \partCombineApart c\( bes as\) | g\f\( } \tag #'fagII { es2.~\cresc | es~ | es4 r8 c'\( bes as\) | g\f\( } \tag #'Cb { es2.~\cresc | es~ | es4. c'8\f\( bes as\) | g\( } as g f es4\)~ |  
+  as2 f4 | bes2.~ | bes  | \partCombineAutomatic es,~ | es~ | \tag #'fagI { es2. | es'~ | es4 r8 \partCombineApart c\( bes as\) | g\( } \tag #'fagII { es2.~ | es~ | es4 r8 c'\( bes as\) | g\( } \tag #'Cb { es2.~ | es~ | es4. c'8\( bes as\) | g\( } as g f es4\)~ |  
+}
+
+dBass = {
+    % S. 3
+  s2.~\p | s2.*5| s2.\cresc | s\< | s\! |
+  % S. 4
+  s2.*2 | s2.\dim | s2. | s_\markup{\dynamic p \italic {dim.} } | s2. | s2 s4\p | s2.*3 |
+  % S. 5
+  s2.*2 |s2.\p | s | s\cresc | s2.*2 | s4. s4.\cresc | s2.*2 |
+  % S. 6
+  \tag #'fag { s2 } \tag #'cb { s2\p } s4 | s2. | s2 \tag #'fag { s4\p | s2. | s2\cresc } \tag #'cb { s4 | s2. | s2\cresc } s4 | s2 s4\p | s2.*2 | s2.\dim | s |
+  % S. 7
+  s2.*2 | s2 s4\p | s2.*7 |
+  % S. 8
+  s2.\cresc | s2.*2 | s4. s4.\cresc | s2. | s2 s4\p | s2.*2 | s2 \tag #'fag { s4 | s s2\cresc  | s2. | } \tag #'cb { s4 | s2._\markup{\dynamic p \italic {cresc. }} | s2\< s4\!  |} 
+  % S. 9
+  s2 s4\p | s2.*4 | \tag #'fag { s2.\cresc | s | s | s\f } \tag #'cb { s2.\cresc | s2. | s4. s4.\f | s2.} |  
+
 }
 
 nCb = \relative c, {
