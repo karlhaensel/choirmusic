@@ -3,12 +3,12 @@
 dStringsI = { % ohne Cb-Dynamik am Anfang
   \global
   % Vios 
-  \tag #'vioI \tag #'vioII {s2.*66 | s2 s8 s\p | s2.\cresc | s8 s\f s2 |}
+  \tag #'vioI \tag #'vioII {s2.*15 | s2.*51 | s2 s8 s\p | s2.\cresc | s8 s\f s2 |}
   % Vla
-  \tag #'vla {s2.*12 s2._\markup{\dynamic p \italic {dim.}} | s2.*6 | % S. 4
+  \tag #'vla {s2.*12 s2._\markup{\dynamic p \italic {dim.}} | s2.*2 \mark \default | s2.*4 | % S. 4
   s2.*3 | s4. s\p | s2.*3 | s4. s\cresc | s2 s4\dim | s2. | % S. 5
   s2.\p | s2.*3 | s4 s4.\< s8\! | s2.*4 | s2.\dim | % S. 6
-  \tag #'score \tag #'vla {s4\p\< s4\> s\!} \tag #'part \tag #'vla {s4\<_\markup{\dynamic p} s4\> s\!} | s2. | s4 s2\pp | s2.*7 | % S. 7
+  \tag #'score \tag #'vla {s4\p\< s4\> s\!} \tag #'part \tag #'vla {s4\<_\markup{\dynamic p} s4\> s\!} | s2. \mark \default | s4 s2\pp | s2.*7 | % S. 7
   s2.\cresc | s2.*2 | s4 s2\cresc | s2. | s\dim | s\p | s2.*3 | % S. 8
   s2 s4\p | s2.*3 | s2.\p | s2. | s8 s\cresc s2 | s2.*2 | s8 s\f s2 | % S. 9
   }
@@ -21,7 +21,7 @@ dStringsI = { % ohne Cb-Dynamik am Anfang
   % S. 6
   s4\p\< s4.\> s8\! | s4\< s4\> s4\dim | s2. | s2 s4\cresc | s2\< s4\sf | s2. |} \tag #'vcI { s4. s\p |} \tag #'vcII {s8 s\p s2 |} \tag #'vcI \tag #'vcII { s4. s\< | s4 s4.\> s8\! | s8 s\dim s2 |}
   % S. 7
-  \tag #'vcI {s4\p\< s4\> s\!|} \tag #'vcII {s2.\p|} \tag #'vcI \tag #'vcII { s2. | s2.\pp | s2.\< | s2.\! | s2.*5 |
+  \tag #'vcI {s4\p\< s4\> s\!|} \tag #'vcII {s2.\p|} \tag #'vcI \tag #'vcII { s2. \mark \default | s2.\pp | s2.\< | s2.\! | s2.*5 |
   % S. 8
   s2.\cresc | s2.*2 | s4 s2\cresc | s2 s4\dim | s2. | s4\p\< s2\> | s4\< s2\> |} \tag #'vcI {s2.\dim|} \tag #'vcII {s2.\!|} \tag #'vcI \tag #'vcII { s2 s4\cresc |
   % S. 9
@@ -31,7 +31,7 @@ dStringsI = { % ohne Cb-Dynamik am Anfang
 dStringsII = { % jetzt alle zusammen
   \global
   % S. 3-9
-  s2.*69
+  s2.*15 \mark \default | s2.*26 \mark \default | s2.*28 \mark \default|
   % S. 10
   \tag #'vioI \tag #'vioII {s2.\mf} \tag #'vla \tag #'vcI \tag #'vcII \tag #'cb {s2 s4\mf} | s2.*2 | s2.\< | s2.\! | s2 s4\dim | s2. | \tag #'vioI \tag #'vioII \tag #'vla \tag #'cb { s2. | s4 s2\cresc | s2.*3 |} \tag #'vcI \tag #'vcII { s8 s\< s2 | s2.\! | s2.*2 | s8 s\< s2 |}  
   % S. 11
@@ -43,7 +43,7 @@ dStringsII = { % jetzt alle zusammen
 nVioI = \relative c''' {
   \global
   % S. 3-8
-  R2.*59 |
+  R2.*15 | R2.*26 | R2.*18 |
   % S. 9
   R2.*5 \cueDuringWithClef "cello1" #UP "bass" {\tag #'part {\set instrumentCueName = "Vc. I"} R2.*2 | r4 r} r8 as\( | g f bes as g\) es'~ | es c\( bes as g f\) |
   % S. 10
@@ -57,7 +57,7 @@ nVioI = \relative c''' {
 nVioII = \relative c'' {
   \global
   % S. 3-8
-  R2.*59 |
+  R2.*15 | R2.*26 | R2.*18 |
   % S. 9
   R2.*5 \cueDuringWithClef "cello1" #UP "bass" {\tag #'part {\set instrumentCueName = "Vc. I"} R2.*2 | r4 r} r8 f\( | es d es4.\) as8\( | es\) as\( bes d, es bes\) |
   % S. 10
@@ -171,7 +171,7 @@ dBass = {
   % S. 8
   s2.\cresc | s2.*2 | s4. s4.\cresc | s2. | s2 s4\p | s2.*2 | s2 \tag #'fag { s4 | s s2\cresc  | s2. | } \tag #'cb { s4 | s2._\markup{\dynamic p \italic {cresc. }} | s2\< s4\!  |} 
   % S. 9
-  s2 s4\p | s2.*4 | \tag #'fag { s2.\cresc | s | s | s\f } \tag #'cb { s2.\cresc | s2. | s4. s4.\f | s2.} |  
+  s2 s4\p | s2.*4 | \tag #'fag { s2.\cresc | s | s | s\f \mark \default } \tag #'cb { s2.\cresc | s2. | s4. s4.\f | s2. \mark \default} |  
 
 }
 

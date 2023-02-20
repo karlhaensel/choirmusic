@@ -4,24 +4,24 @@ dChoir = {
   \global
   \global_voice
   % S. 3
-  s2.*15 |
+  s2.*15 \mark \default |
   % S. 4-9 Alt+Bass %%%%%%%%% STICHNOTEN FÜR ALLE? %%%%%%%%
   \tag #'a {
     s2.*22 | % S. 4-6
-    s2.*4 | s4^\markup{\dynamic p \italic {e dolce}}s2 | s2.*7 | % S. 7
+    s2.*4 \mark \default | s4^\markup{\dynamic p \italic {e dolce}}s2 | s2.*7 | % S. 7
     s2.*9 | s4 s2\cresc | % S. 8
-    s2. | s2 s4\dim | s2. | s4\! s2 | s2. | s2.*5 | % S. 9
+    s2. | s2 s4\dim | s2. | s4\! s2 | s2. | s2.*5 \mark \default | % S. 9
   } 
   \tag #'b {
     s4^\markup{\dynamic p \italic {e dolce}}s2 | s2.*3 | % S. 4
     s2.*10 | % S. 5
     s2.*4 | s2.\cresc | s2 s4\p | s2.*2 | % S. 6
-    s2.*4 | s2.*8 | % S. 7
+    s2.*4 \mark \default | s2.*8 | % S. 7
     s2.*6 | s2 s4\< | s s\! s | s2. | s4. s8\cresc s4 | % S. 8
-    s2.*2 | s2 s4\dim | s2. | s2\! s4 | s2.*5 | % S. 9
+    s2.*2 | s2 s4\dim | s2. | s2\! s4 | s2.*5 \mark \default | % S. 9
   }
   % S. 4-9 Sopran+Tenor
-  \tag #'s \tag #'t {s2.*22 | s2.*4 | s2.*23 | s2.*5 |} 
+  \tag #'s \tag #'t {s2.*22 | s2.*4 \mark \default | s2.*23 | s2.*5 \mark \default |} 
   % S. 10 SATB
   s2.\mf | s2.*2 | s2.\< | s\! | s2 s4\dim | s2.\p | s | s4 s2\cresc | s2.*3 |
   % S. 11

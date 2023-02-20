@@ -5,13 +5,13 @@
 dWoodwindsI = { % Anfang ohne Fagott
   \global_transpose
   % S. 3-6
-  s2.*41 |
+  s2.*15 \mark \default | s2.*26 \mark \default |
   % S. 7
   s2.\pp | s8 s\< s2 | s2.\! | s2.*5 |
   % S. 8
   s2.\cresc | s2.*2 | s4 s2\cresc | s2. | s2 s8 s\p | s4\< s\> s\! | s\< s\> s\! | s2. | s2 s4\cresc |
   % S. 9
-  s2 s4\sf | s2. | \tag #'flI \tag #'klarI {s4. s\p} \tag #'flII \tag #'klarII {s8 s\p s2} | s2. | s4.\< s\> | s2.\! | s2. | s8 s\cresc s2 | s2. | \tag #'flI  \tag #'flII {s8 s\f s2} \tag #'klarI \tag #'klarII {s2.\f} |
+  s2 s4\sf | s2. | \tag #'flI \tag #'klarI {s4. s\p} \tag #'flII \tag #'klarII {s8 s\p s2} | s2. | s4.\< s\> | s2.\! | s2. | s8 s\cresc s2 | s2. | \tag #'flI  \tag #'flII {s8 s\f s2} \tag #'klarI \tag #'klarII {s2.\f} \mark \default |
   % S. 10
   s2.\mf | s2.*2 |
 }
@@ -19,7 +19,7 @@ dWoodwindsI = { % Anfang ohne Fagott
 dWoodwindsII = { % jetzt mit Fagott
   \global_transpose
   % S. 3-10
-  s2.*72 |
+  s2.*15 \mark \default | s2.*26 \mark \default |s2.*28 \mark \default | s2.*3 |
   % S. 10
   s2.\< | s\! | \tag #'flI \tag #'flII \tag #'fag {s2 s4\dim | s2.*2 | s4 s2\cresc | s2.*3} \tag #'klarI \tag #'klarII {s2.*2 | s8 s\< s2 | s2.\! | s2.*2 | s8 s\cresc s2} |
   % S. 11
@@ -49,7 +49,7 @@ FlKlarII = \relative c'' {
 nFlI = \relative c'' {
   \global
   % S. 3-6 
-  R2.*37
+  R2.*15 | R2.*22 |
   % S. 7-9
   \cueDuringWithClef "cello1" #UP "bass" {\tag #'part {\set instrumentCueName = "Vc. I (zum 2. Mal)"} R2.*4} | \FlKlarI
   % S. 9
@@ -65,7 +65,7 @@ nFlI = \relative c'' {
 nFlII = \relative c'' {
   \global
   % S. 3-6 
-  R2.*37
+  R2.*15 | R2.*22 |
   % S. 7-9
   \cueDuringWithClef "cello1" #UP "bass" {\tag #'part {\set instrumentCueName = "Vc. I (zum 2. Mal)"} R2.*4} | \FlKlarII
   % S. 9
@@ -82,7 +82,7 @@ nKlarI = \transpose c bes \relative c' {
   \global_transpose
   \key f \major
   % S. 3-6 
-  R2.*37
+  R2.*15 | R2.*22 |
   % S. 7-9
   \cueDuringWithClef "cello1" #UP "bass" {\tag #'part {\set instrumentCueName = "Vc. I (zum 2. Mal)"} R2.*4} | \transpose bes c \FlKlarI |
   % S. 9
@@ -99,7 +99,7 @@ nKlarII = \transpose c bes \relative c' {
   \global_transpose
   \key f \major
   % S. 3-6 
-  R2.*37
+  R2.*15 | R2.*22 |
   % S. 7-9
   \cueDuringWithClef "cello1" #UP "bass" {\tag #'part {\set instrumentCueName = "Vc. I (zum 2. Mal)"} R2.*4} | \transpose bes c \FlKlarII |
   % S. 9

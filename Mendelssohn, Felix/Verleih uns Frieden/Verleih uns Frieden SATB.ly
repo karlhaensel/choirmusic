@@ -23,6 +23,8 @@ chormidi = \with {midiInstrument = "choir aahs"}
 global_transpose = {
   \time 3/4
   \tempo "Andante"
+  \override Score.DynamicTextSpanner.style = #'none
+  \set Score.rehearsalMarkFormatter = #format-mark-box-alphabet
 }
 
 global = {
@@ -43,7 +45,7 @@ global_voice = {
   \score {
     <<
     \accidentalStyle Score.modern % damit Erinnerungsvorzeichen nächster Takt
-    \override Score.DynamicTextSpanner.style = #'none
+    \override Score.RehearsalMark.font-size = #6
     \new ChoirStaff <<
       \removeWithTag #'score {\compressEmptyMeasures \sSopran}
       \removeWithTag #'score {\compressEmptyMeasures \sAlt}
@@ -52,7 +54,7 @@ global_voice = {
     >>
     >>
     \layout {
-      #(layout-set-staff-size 16.7)
+      #(layout-set-staff-size 16)
       \override Score.BarNumber.font-size = #2
       \context {
         \Staff \RemoveEmptyStaves
@@ -71,6 +73,7 @@ global_voice = {
 %     <<
 %     \accidentalStyle Score.modern % damit Erinnerungsvorzeichen nächster Takt
 %     \override Score.DynamicTextSpanner.style = #'none
+%     \override Score.RehearsalMark.font-size = #6
 %     \new ChoirStaff <<
 %       \removeWithTag #'part \killCues \sSopran
 %       \removeWithTag #'part \killCues \sAlt
@@ -103,6 +106,7 @@ global_voice = {
     <<
     \accidentalStyle Score.modern % damit Erinnerungsvorzeichen nächster Takt
     \override Score.DynamicTextSpanner.style = #'none
+    \override Score.RehearsalMark.font-size = #8
     \new StaffGroup <<
       \removeWithTag #'part \killCues \sFlI
       \removeWithTag #'part \killCues \sFlII
