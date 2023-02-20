@@ -102,17 +102,13 @@ global_voice = {
     <<
     \accidentalStyle Score.modern % damit Erinnerungsvorzeichen nächster Takt
     \override Score.DynamicTextSpanner.style = #'none
-%     \new StaffGroup <<
-%       \new GrandStaff <<
-%         \sFlI
-%         \sFlII
-%       >>
-%       \new GrandStaff <<
-%         \sKlarI
-%         \sKlarII
-%       >>
-%       \sFag
-%     >>
+    \new StaffGroup <<
+      \sFlI
+      \sFlII
+      \sKlarI
+      \sKlarII
+      \sFag
+    >>
     \new ChoirStaff <<
       \sSopran
       \sAlt

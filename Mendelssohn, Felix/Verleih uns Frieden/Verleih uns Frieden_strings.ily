@@ -37,7 +37,7 @@ dStringsII = { % jetzt alle zusammen
   % S. 11
   s4.\f\< s4.\> | s8 s\! s4 \tag #'vioI \tag #'vioII \tag #'vla { s4\dim | s2.\< | s4\> s\p s | s2.*2 | s2 s4\p | s2.\cresc | s2. | s4\f\> s2 |} \tag #'vcI \tag #'vcII {s4\dim | s4\< s2\> | s4\< s2\> |} \tag #'vcI {s2.\dim | s2 s4\p | s2\< s8 s\! |} \tag #'vcII {s2.| s2 s4\p | s2\< s4\! |} \tag #'vcI \tag #'vcII {s2. | s2\< s4\sf | s2 s4\dim } \tag #'cb { s4 | s2.\< | s2.\> | s2.\! | s2.\p | s | s\cresc | s | s\> |}
   % S. 12
-  \tag #'vioI \tag #'vioII \tag #'vla \tag #'cb {s2.\dim | s2 s4\p | s2. |} \tag #'vioI \tag #'vioII \tag #'vla {s2. | s2.\pp | s2.*6} \tag #'vcI \tag #'vcII {s2.*4} \tag #'vcI { s4. s\p | s2. | s8 s\< s2 | s2.\! |} \tag #'vcII {s8 s\p s2 | s8 s\< s2 | s8 s\! s2 | s2. |} \tag #'vcI \tag #'vcII { s2.\> |} \tag #'cb { s2.\dim | s\pp | s2.*4 |} \tag #'vcI \tag #'vcII \tag #'cb { s4.\pp\<s4.\> | s2.\! } \bar "|."
+  \tag #'vioI \tag #'vioII \tag #'vla \tag #'cb {s2.\dim | s2 s4\p | s2. |} \tag #'vioI \tag #'vioII {s2. | s2.\pp | s2.*6}  \tag #'vla {s2. | s2.\pp | s2.*2 | s2.\< | s2.\> | s2.\pp | s2.} \tag #'vcI \tag #'vcII {s2.*4} \tag #'vcI { s4. s\p | s2. | s8 s\< s2 | s2.\! |} \tag #'vcII {s8 s\p s2 | s8 s\< s2 | s8 s\! s2 | s2. |} \tag #'vcI \tag #'vcII { s2.\> |} \tag #'cb { s2.\dim | s\pp | s2.*4 |} \tag #'vcI \tag #'vcII \tag #'cb { s2.\pp | s2.\! } \bar "|."
 }
 
 nVioI = \relative c''' {
@@ -89,7 +89,7 @@ nVla = \relative c' {
   % S. 11
   es4\) as,\( es'\) | es\( des\) c | c,2.~ | c | R2.*2 | r4 r bes' | as2 as4 | g2 g4\( | c2.\) |
   % S. 12
-  c2.~ | c4 r c | <c~ es~>2. | <c es>4 r r | bes2.~ | bes4 r r | R2. | as2.~ | as4. as8\( g f \) | f2.\( | es2.\fermata\)
+  c2.~ | c4 r c | <c~ es~>2. | <c es>4 r r | bes2.~ | bes4 r r | R2. | as2.~ | as4. as8\( g f \) | f2.\espressivo\( | es2.\fermata\)
 }
 
 nVcI = \relative c {
@@ -113,7 +113,7 @@ nVcI = \relative c {
   % S. 11
   g4\) c,,\( es\) | as\( es\) c'8\( d\) | e\( f g e c d\) | e\( f g e c as\) | g\( e c g c,4\) | f r \clef "tenor" c''8\( d | es f g as bes g\) | c,4 r c8\( d | es f g as bes g\) | es4 r \clef bass f,,4\( |
   % S. 12
-  c g' g'\) | c\( es g\) | as2.~ | as4 r r | r r8 d,\( c d | es4.\) d8\( c d | es\) c\( des2~ | des8\) bes\( c2~ | c8\) c\( f c bes as\) | as2.\( | g\fermata\)
+  c g' g'\) | c\( es g\) | as2.~ | as4 r r | r r8 d,\( c d | es4.\) d8\( c d | es\) c\( des2~ | des8\) bes\( c2~ | c8\) c\( f c bes as\) | as2.\espressivo\( | g\fermata\)
 }
 
 nVcII = \relative c {
@@ -137,7 +137,7 @@ nVcII = \relative c {
   % S. 11
   es4\) c,\( es\) | as\( es\) as | g8\( as bes4 as\) | g8\( as bes4 as8 f | e c\) r4 r | r r \clef "tenor" as'8\( ces | bes as bes c! des4\) | c r c8\( ces | bes as bes c! des4\) | c r \clef bass f,,4\( |
   % S. 12
-  c g' es'\) | g\( c es\) | as2.~ | as4 r r | r8 g,\( as2\) | r8 g\( as2~ | as4.\) g8\( f g | as4.\) g8\( f es | d2.\) | d2.\( | es\fermata\)
+  c g' es'\) | g\( c es\) | as2.~ | as4 r r | r8 g,\( as2\) | r8 g\( as2~ | as4.\) g8\( f g | as4.\) g8\( f es | d2.\) | d2.\espressivo\( | es\fermata\)
 }
 
 Bass = {
@@ -148,13 +148,13 @@ Bass = {
   % S. 5
   as4\( g8 f\) e4 | f g as | g2.\p | c4 r r | \partCombineUnisono c4.\cresc\( d8 es4\) | bes2 r4 | bes4.\( c8 d4\) | es4. des8\cresc\( c bes | as4\) r r | R2. |
   % S. 6
-  \tag #'FagI \tag #'FagII { c2\( } \tag #'Cb { c2\p\( } f4\) | c2\( f,4\) | c' r \partCombineAutomatic \tag #'FagI { g'\p\( | as bes as | g\cresc\) g, } \tag #'FagII { e\p\( | f g as | g\cresc\) g, } \tag #'Cb { r4 | f,2. | g2\cresc } es4 | as2 f4\p | bes2.~ | bes  | es,\dim~ | es~ |
+  \tag #'fagI \tag #'fagII { c2\( } \tag #'Cb { c2\p\( } f4\) | c2\( f,4\) | c' r \partCombineAutomatic \tag #'fagI { g'\p\( | as bes as | g\cresc\) g, } \tag #'fagII { e\p\( | f g as | g\cresc\) g, } \tag #'Cb { r4 | f,2. | g2\cresc } es4 | as2 f4\p | bes2.~ | bes  | es,\dim~ | es~ |
   % S. 7
   es~ | es4 r r | r r bes'\p\( | c2\) es,4 | as f bes | es,2 es4 | as\( g8 f e4\) | f\( g as\) | g2\( g'4\) | c,2 r4 |
   % S. 8
-  \partCombineUnisono c4.\cresc\( d8 es4\) | bes2 r4 | bes4.\(  c8 d4\) | es4. des8\cresc\( c bes\) | as4 r r | r r bes\p | c2\( f4\) | c2\( f,4\) | c' r \partCombineAutomatic \tag #'FagI { g'\( | as bes\cresc as\) | g g,2 | } \tag #'FagII { e4\( | f g\cresc as\) | g g,2 | } \tag #'Cb { r4 | f,2._\markup{\dynamic p \italic {cresc. }} | g2.\<  |} 
+  \partCombineUnisono c4.\cresc\( d8 es4\) | bes2 r4 | bes4.\(  c8 d4\) | es4. des8\cresc\( c bes\) | as4 r r | r r bes\p | c2\( f4\) | c2\( f,4\) | c' r \partCombineAutomatic \tag #'fagI { g'\( | as bes\cresc as\) | g g,2 | } \tag #'fagII { e4\( | f g\cresc as\) | g g,2 | } \tag #'Cb { r4 | f,2._\markup{\dynamic p \italic {cresc. }} | g2.\<  |} 
   % S. 9
-  as2 f4\p | bes2.~ | bes  | \partCombineAutomatic es,~ | es~ | \tag #'FagI { es2.\cresc | es'~ | es4 r8 \partCombineApart c\( bes as\) | g\f\( } \tag #'FagII { es2.~\cresc | es~ | es4 r8 c'\( bes as\) | g\f\( } \tag #'Cb { es2.~\cresc | es~ | es4. c'8\f\( bes as\) | g\( } as g f es4\)~ |  
+  as2 f4\p | bes2.~ | bes  | \partCombineAutomatic es,~ | es~ | \tag #'fagI { es2.\cresc | es'~ | es4 r8 \partCombineApart c\( bes as\) | g\f\( } \tag #'fagII { es2.~\cresc | es~ | es4 r8 c'\( bes as\) | g\f\( } \tag #'Cb { es2.~\cresc | es~ | es4. c'8\f\( bes as\) | g\( } as g f es4\)~ |  
 }
 
 nCb = \relative c, {
@@ -166,5 +166,5 @@ nCb = \relative c, {
   % S. 11
   es8\( des\) c4\( es\) | as\( es\) f | c2\( f4\) | c2\( f,4\) | c' r r | f,2. | g2 es4 | f2. | g | as4 g f |
   % S. 12
-  c'2.~ | c4 r c | as2.~ | as | bes~ | bes | \repeat unfold 4 { es,~ | } es\fermata
+  c'2.~ | c4 r c | as2.~ | as | bes~ | bes | \repeat unfold 3 { es,~ | } es~\espressivo | es\fermata
 }

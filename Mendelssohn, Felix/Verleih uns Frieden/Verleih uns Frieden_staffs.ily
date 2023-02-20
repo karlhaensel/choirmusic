@@ -1,6 +1,6 @@
 \version "2.24.00"
 
-%\include "Verleih uns Frieden_woodwinds.ily"
+\include "Verleih uns Frieden_woodwinds.ily"
 \include "Verleih uns Frieden_choir.ily"
 \include "Verleih uns Frieden_lyrics.ily"
 \include "Verleih uns Frieden_strings.ily"
@@ -10,69 +10,69 @@
 
 %%% WOODWINDS %%%
 
-% sFlI =
-%   \new Staff = "zFlI"
-%     \with {
-%       instrumentName = "Flauto I"
-%       midiInstrument = "flute"
-%       \consists "Merge_rests_engraver"
-%     }
-%     <<
-%       \keepWithTag #'flI \dWoodwindsI
-%       \keepWithTag #'flI \dWoodwindsII
-%       {\nFlI}
-%     >>
-%     
-% sFlII =
-%   \new Staff = "zFlII"
-%     \with {
-%       instrumentName = "Flauto II"
-%       midiInstrument = "flute"
-%       \consists "Merge_rests_engraver"
-%     }
-%     <<
-%       \keepWithTag #'flII \dWoodwindsI
-%       \keepWithTag #'flII \dWoodwindsII
-%       {\nFlII}
-%     >>
-% 
-% sKlarI =
-%   \new Staff = "zKlarI"
-%     \with {
-%       instrumentName = "Clarinetto I in B"
-%       midiInstrument = "clarinet"
-%       \consists "Merge_rests_engraver"
-%     }
-%     <<
-%       \keepWithTag #'klarI \dWoodwindsI
-%       \keepWithTag #'klarI \dWoodwindsII
-%       {\transposition bes \transpose bes c' \nKlarI }
-%     >>
-% 
-% sKlarII =
-%   \new Staff = "zKlarII"
-%     \with {
-%       instrumentName = "Clarinetto II in B"
-%       midiInstrument = "clarinet"
-%       \consists "Merge_rests_engraver"
-%     }
-%     <<
-%       \keepWithTag #'klarII \dWoodwindsI
-%       \keepWithTag #'klarII \dWoodwindsII
-%       {\transposition bes \transpose bes c' \nKlarII }
-%     >>
-% 
-% sFag =
-%   \new Staff = "zFag"
-%     \with {
-%       instrumentName = "Fagotti"
-%       midiInstrument = "bassoon"
-%       \consists "Merge_rests_engraver"
-%     }
-%     <<
-%       \keepWithTag #'fag \dWoodwindsII
-%       {\clef bass \partCombine  \nFagI \nFagII}
-%     >>
+sFlI =
+  \new Staff = "zFlI"
+    \with {
+      instrumentName = "Flauto I"
+      midiInstrument = "flute"
+      \consists "Merge_rests_engraver"
+    }
+    <<
+      \keepWithTag #'flI \dWoodwindsI
+      \keepWithTag #'flI \dWoodwindsII
+      {\nFlI}
+    >>
+    
+sFlII =
+  \new Staff = "zFlII"
+    \with {
+      instrumentName = "Flauto II"
+      midiInstrument = "flute"
+      \consists "Merge_rests_engraver"
+    }
+    <<
+      \keepWithTag #'flII \dWoodwindsI
+      \keepWithTag #'flII \dWoodwindsII
+      {\nFlII}
+    >>
+
+sKlarI =
+  \new Staff = "zKlarI"
+    \with {
+      instrumentName = "Clarinetto I in B"
+      midiInstrument = "clarinet"
+      \consists "Merge_rests_engraver"
+    }
+    <<
+      \keepWithTag #'klarI \dWoodwindsI
+      \keepWithTag #'klarI \dWoodwindsII
+      {\transposition bes \transpose bes c' \nKlarI }
+    >>
+
+sKlarII =
+  \new Staff = "zKlarII"
+    \with {
+      instrumentName = "Clarinetto II in B"
+      midiInstrument = "clarinet"
+      \consists "Merge_rests_engraver"
+    }
+    <<
+      \keepWithTag #'klarII \dWoodwindsI
+      \keepWithTag #'klarII \dWoodwindsII
+      {\transposition bes \transpose bes c' \nKlarII }
+    >>
+
+sFag =
+  \new Staff = "zFag"
+    \with {
+      instrumentName = "Fagotti"
+      midiInstrument = "bassoon"
+      \consists "Merge_rests_engraver"
+    }
+    <<
+      \keepWithTag #'fag \dWoodwindsII
+      {\clef bass \partCombine  \nFagI \nFagII}
+    >>
 
 
 %%% CHOIR %%%
