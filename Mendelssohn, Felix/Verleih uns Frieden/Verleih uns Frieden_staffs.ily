@@ -7,6 +7,13 @@
 %\include "Verleih uns Frieden_pianoReduction.ily"
 
 
+%%% CUE VOICES %%%
+
+\addQuote "vio1" { \nVioI }
+\addQuote "vio2" { \nVioII }
+\addQuote "cello1" { \nVcI }
+\addQuote "cello2" { \nVcII }
+
 
 %%% WOODWINDS %%%
 

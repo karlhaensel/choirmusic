@@ -43,7 +43,7 @@ nSopran = \relative c' {
   \global
   \global_voice
   % S.3-9
-  R2.*15 | R2.*22 | R2.*4 | R2.*23 | R2.*5 |
+  R2.*15 | R2.*22 | R2.*4 | R2.*23 | R2.*2 \cueDuring "vio1" #DOWN {\tag #'part {\set instrumentCueName = "Violine I" r2.*3} \tag #'score {R2.*3}} |
   % S. 10
   \keepWithTag #'sop \nChorMelodie
   % S. 11
@@ -56,9 +56,9 @@ nAlt = \relative c' {
   \global
   \global_voice
   % S.3-6
-  R2.*15 | R2.*22 | R2.*4 |
+  R2.*15 | R2.*22 | \cueDuringWithClef "cello1" #DOWN "bass" { \tag #'part {\set instrumentCueName = "Violoncello I" s2.*4 } \tag #'score {R2.*4} } |
   % S. 7-9
-  \keepWithTag #'ba \nChorMelodie | R2. | R2.*5 |
+  \keepWithTag #'ba \nChorMelodie | R2. | R2.*2 \cueDuring "vio2" #DOWN {\tag #'part {\set instrumentCueName = "Violine II" r2.*3} \tag #'score {R2.*3} } |
   % S. 10
   bes4 es es8([ d]) | es2 des4 | c4( es4.) d8 | es2 g4 | as2 f4 | f( es) es | es( d2) | es4 r r | es f es | d2 r4 | d es f | bes,2 r4 |
   % S. 11
@@ -71,7 +71,7 @@ nTenor = \relative c' {
   \global
   \global_voice
   % S.3-9
-  R2.*15 | R2.*22 | R2.*4 | R2.*23 | R2.*5 |
+  R2.*11 | \cueDuringWithClef "cello1" #DOWN "bass" { \tag #'part {\set instrumentCueName = "Violoncello I" s2.*4} \tag #'score {R2.*4}} | R2.*22 | R2.*4 | R2.*23 | R2.*5 |
   % S. 10
   g4 bes bes | g2 bes4 | es,( g) f | es2 es'4 | es2 d4 | bes2 c4 | c2( b4) | c r r | g as bes8([ c]) | d2 r4 | bes8([ as]) g4 f | g2 r4 |
   % S. 11
@@ -84,9 +84,9 @@ nBass = \relative c {
   \global
   \global_voice
   % S.3
-  R2.*15 |
+  R2.*11 | \cueDuring "cello2" #DOWN { \tag #'part {\set instrumentCueName = "Violoncello II" s2.*4} \tag #'score {R2.*4}} |
   % S. 4-6 %%%%%%%%%%% STICHNOTEN?
-  \keepWithTag #'ba \nChorMelodie | R2.*4 |
+  \keepWithTag #'ba \nChorMelodie | \cueDuring "cello2" #DOWN {\tag #'part {\set instrumentCueName = "Violoncello II" s2.*4} \tag #'score {R2.*4}} |
   % S. 7
   r4 r bes | g'2. | as4( bes2) | bes2. | as4 r g | f( g) as | g2 r4 | c4 g es8([ d]) |
   % S. 8

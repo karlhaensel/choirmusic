@@ -24,7 +24,6 @@ chormidi = \with {midiInstrument = "choir aahs"}
 global_transpose = {
   \time 3/4
   \tempo "Andante"
-  \override DynamicTextSpanner.style = #'none % keine Striche/Punkt o.ä. nach cresc./dim. als Text
 }
 
 global = {
@@ -35,7 +34,6 @@ global = {
 global_voice = {
   \dynamicUp
   \autoBeamOff
-  \override DynamicTextSpanner.style = #'none  
 }
 
 \include "Verleih uns Frieden_staffs.ily"
@@ -48,14 +46,14 @@ global_voice = {
     \accidentalStyle Score.modern % damit Erinnerungsvorzeichen nächster Takt
     \override Score.DynamicTextSpanner.style = #'none
     \new ChoirStaff <<
-      \compressEmptyMeasures \sSopran
-      \compressEmptyMeasures \sAlt
-      \compressEmptyMeasures \sTenor
-      \compressEmptyMeasures \sBass
+      \removeWithTag #'score {\compressEmptyMeasures \sSopran}
+      \removeWithTag #'score {\compressEmptyMeasures \sAlt}
+      \removeWithTag #'score {\compressEmptyMeasures \sTenor}
+      \removeWithTag #'score {\compressEmptyMeasures \sBass}
     >>
     >>
     \layout {
-      #(layout-set-staff-size 18)
+      #(layout-set-staff-size 16.7)
       \context {
         \Staff \RemoveEmptyStaves
       }
@@ -72,11 +70,12 @@ global_voice = {
 %   \score {
 %     <<
 %     \accidentalStyle Score.modern % damit Erinnerungsvorzeichen nächster Takt
+%     \override Score.DynamicTextSpanner.style = #'none
 %     \new ChoirStaff <<
-%       \sSopran
-%       \sAlt
-%       \sTenor
-%       \sBass
+%       \removeWithTag #'part \killCues \sSopran
+%       \removeWithTag #'part \killCues \sAlt
+%       \removeWithTag #'part \killCues \sTenor
+%       \removeWithTag #'part \killCues \sBass
 %     >>
 %     \new PianoStaff
 %     <<
@@ -111,10 +110,10 @@ global_voice = {
       \sFag
     >>
     \new ChoirStaff <<
-      \sSopran
-      \sAlt
-      \sTenor
-      \sBass
+      \removeWithTag #'part \killCues \sSopran
+      \removeWithTag #'part \killCues \sAlt
+      \removeWithTag #'part \killCues \sTenor
+      \removeWithTag #'part \killCues \sBass
     >>
     \new StaffGroup <<
       \sVioI
