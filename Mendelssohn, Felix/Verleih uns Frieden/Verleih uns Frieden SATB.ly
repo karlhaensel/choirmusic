@@ -42,28 +42,29 @@ global_voice = {
 \include "Verleih uns Frieden_staffs.ily"
 
 
-\book {
-  \bookOutputSuffix "choirScore"
-  \score {
-    <<
-    \accidentalStyle Score.modern % damit Erinnerungsvorzeichen nächster Takt
-    \new ChoirStaff <<
-      \compressEmptyMeasures \sSopran
-      \compressEmptyMeasures \sAlt
-      \compressEmptyMeasures \sTenor
-      \compressEmptyMeasures \sBass
-    >>
-    >>
-    \layout {
-      \context {
-        \Staff \RemoveEmptyStaves
-      }
-    }
-    \midi {
-      \tempo 4=90
-    }
-  }
-}
+% \book {
+  % \bookOutputSuffix "choirScore"
+%   \score {
+%     <<
+%     \accidentalStyle Score.modern % damit Erinnerungsvorzeichen nächster Takt
+%     \override Score.DynamicTextSpanner.style = #'none
+%     \new ChoirStaff <<
+%       \compressEmptyMeasures \sSopran
+%       \compressEmptyMeasures \sAlt
+%       \compressEmptyMeasures \sTenor
+%       \compressEmptyMeasures \sBass
+%     >>
+%     >>
+%     \layout {
+%       \context {
+%         \Staff \RemoveEmptyStaves
+%       }
+%     }
+%     \midi {
+%       \tempo 4=90
+%     }
+%   }
+% }
 
 
 % \book {
@@ -95,11 +96,12 @@ global_voice = {
 % }
 
 
-% \book {
-%   \bookOutputSuffix "Score"
-%   \score {
-%     <<
-%     \accidentalStyle Score.modern % damit Erinnerungsvorzeichen nächster Takt
+\book {
+  \bookOutputSuffix "Score"
+  \score {
+    <<
+    \accidentalStyle Score.modern % damit Erinnerungsvorzeichen nächster Takt
+    \override Score.DynamicTextSpanner.style = #'none
 %     \new StaffGroup <<
 %       \new GrandStaff <<
 %         \sFlI
@@ -111,28 +113,28 @@ global_voice = {
 %       >>
 %       \sFag
 %     >>
-%     \new ChoirStaff <<
-%       \sSopran
-%       \sAlt
-%       \sTenor
-%       \sBass
-%     >>
-%     \new StaffGroup <<
-%       \sVioI
-%       \sVioII
-%       \sVla
-%       \sVcI
-%       \sVcII
-%       \sCb
-%     >>
-%     >>
-%     \layout {
-%       \context {
-%       }
-%       indent = 2.5\cm
-%     }
-%     \midi {
-%       \tempo 4=90
-%     }
-%   }
-% }
+    \new ChoirStaff <<
+      \sSopran
+      \sAlt
+      \sTenor
+      \sBass
+    >>
+    \new StaffGroup <<
+      \sVioI
+      \sVioII
+      \sVla
+      \sVcI
+      \sVcII
+      \sCb
+    >>
+    >>
+    \layout {
+      \context {
+      }
+      indent = 2.5\cm
+    }
+    \midi {
+      \tempo 4=90
+    }
+  }
+}

@@ -3,7 +3,7 @@
 %\include "Verleih uns Frieden_woodwinds.ily"
 \include "Verleih uns Frieden_choir.ily"
 \include "Verleih uns Frieden_lyrics.ily"
-%\include "Verleih uns Frieden_strings.ily"
+\include "Verleih uns Frieden_strings.ily"
 %\include "Verleih uns Frieden_pianoReduction.ily"
 
 
@@ -17,7 +17,11 @@
 %       midiInstrument = "flute"
 %       \consists "Merge_rests_engraver"
 %     }
-%     <<{\nFlI}>>
+%     <<
+%       \keepWithTag #'flI \dWoodwindsI
+%       \keepWithTag #'flI \dWoodwindsII
+%       {\nFlI}
+%     >>
 %     
 % sFlII =
 %   \new Staff = "zFlII"
@@ -26,7 +30,11 @@
 %       midiInstrument = "flute"
 %       \consists "Merge_rests_engraver"
 %     }
-%     <<{\nFlII}>>
+%     <<
+%       \keepWithTag #'flII \dWoodwindsI
+%       \keepWithTag #'flII \dWoodwindsII
+%       {\nFlII}
+%     >>
 % 
 % sKlarI =
 %   \new Staff = "zKlarI"
@@ -35,7 +43,11 @@
 %       midiInstrument = "clarinet"
 %       \consists "Merge_rests_engraver"
 %     }
-%     <<{\transposition f \transpose bes c' \nKlarI }>>
+%     <<
+%       \keepWithTag #'klarI \dWoodwindsI
+%       \keepWithTag #'klarI \dWoodwindsII
+%       {\transposition bes \transpose bes c' \nKlarI }
+%     >>
 % 
 % sKlarII =
 %   \new Staff = "zKlarII"
@@ -44,7 +56,11 @@
 %       midiInstrument = "clarinet"
 %       \consists "Merge_rests_engraver"
 %     }
-%     <<{\transposition f \transpose bes c' \nKlarII }>>
+%     <<
+%       \keepWithTag #'klarII \dWoodwindsI
+%       \keepWithTag #'klarII \dWoodwindsII
+%       {\transposition bes \transpose bes c' \nKlarII }
+%     >>
 % 
 % sFag =
 %   \new Staff = "zFag"
@@ -53,7 +69,10 @@
 %       midiInstrument = "bassoon"
 %       \consists "Merge_rests_engraver"
 %     }
-%     <<{\clef bass \partCombine \nFagI \nFagII}>>
+%     <<
+%       \keepWithTag #'fag \dWoodwindsII
+%       {\clef bass \partCombine  \nFagI \nFagII}
+%     >>
 
 
 %%% CHOIR %%%
@@ -114,77 +133,82 @@ sBass =
 
 %%% STRINGS %%%
 
-% sVioI =
-%   \new Staff = "zVioI"
-%     \with {
-%       instrumentName = "Violino I"
-%       midiInstrument = "violin"
-%       \consists "Merge_rests_engraver"
-%     }
-%     <<
-%       \keepWithTag #'vioI \dStrings
-%       {\new Voice = "vVioI" {\nVioI}}
-%     >>
-%     
-% sVioII =
-%   \new Staff = "zVioII"
-%     \with {
-%       instrumentName = "Violino II"
-%       midiInstrument = "violin"
-%       \consists "Merge_rests_engraver"
-%     }
-%     <<
-%       \keepWithTag #'vioII \dStrings
-%       {\new Voice = "vVioII" {\nVioII}}
-%     >>
-% 
-% sVla =
-%   \new Staff = "zVla"
-%     \with {
-%       instrumentName = "Viola"
-%       midiInstrument = "viola"
-%       \consists "Merge_rests_engraver"
-%     }
-%     <<
-%       \keepWithTag #'vla \dStrings
-%       {\new Voice = "vVla" {\clef alto \nVla}}
-%     >>
-%     
-% sVcI =
-%   \new Staff = "zVcI"
-%     \with {
-%       instrumentName = "Violoncello I"
-%       midiInstrument = "cello"
-%       \consists "Merge_rests_engraver"
-%     }
-%     <<
-%       \keepWithTag #'vcI \dStrings
-%       {\new Voice = "vVcI" {\clef bass \nVcI}}
-%     >>
-% 
-% sVcII =
-%   \new Staff = "zVcII"
-%     \with {
-%       instrumentName = "Violoncello II"
-%       midiInstrument = "cello"
-%       \consists "Merge_rests_engraver"
-%     }
-%     <<
-%       \keepWithTag #'vcII \dStrings
-%       {\new Voice = "vVcII" {\clef bass \nVcII}}
-%     >>
-% 
-% sCb =
-%   \new Staff = "zCb"
-%     \with {
-%       instrumentName = "Basso ed Organo"
-%       midiInstrument = "contrabass"
-%       \consists "Merge_rests_engraver"
-%     }
-%     <<
-%       \keepWithTag #'cb \dStrings
-%       {\new Voice = "vCb" {\clef bass \nCb}}
-%     >>
+sVioI =
+  \new Staff = "zVioI"
+    \with {
+      instrumentName = "Violino I"
+      midiInstrument = "violin"
+      \consists "Merge_rests_engraver"
+    }
+    <<
+      \keepWithTag #'vioI \dStringsI
+      \keepWithTag #'vioI \dStringsII
+      {\new Voice = "vVioI" {\nVioI}}
+    >>
+    
+sVioII =
+  \new Staff = "zVioII"
+    \with {
+      instrumentName = "Violino II"
+      midiInstrument = "violin"
+      \consists "Merge_rests_engraver"
+    }
+    <<
+      \keepWithTag #'vioII \dStringsI
+      \keepWithTag #'vioII \dStringsII
+      {\new Voice = "vVioII" {\nVioII}}
+    >>
+
+sVla =
+  \new Staff = "zVla"
+    \with {
+      instrumentName = "Viola"
+      midiInstrument = "viola"
+      \consists "Merge_rests_engraver"
+    }
+    <<
+      \keepWithTag #'vla \dStringsI
+      \keepWithTag #'vla \dStringsII
+      {\new Voice = "vVla" {\clef alto \nVla}}
+    >>
+    
+sVcI =
+  \new Staff = "zVcI"
+    \with {
+      instrumentName = "Violoncello I"
+      midiInstrument = "cello"
+      \consists "Merge_rests_engraver"
+    }
+    <<
+      \keepWithTag #'vcI \dStringsI
+      \keepWithTag #'vcI \dStringsII
+      {\new Voice = "vVcI" {\clef bass \nVcI}}
+    >>
+
+sVcII =
+  \new Staff = "zVcII"
+    \with {
+      instrumentName = "Violoncello II"
+      midiInstrument = "cello"
+      \consists "Merge_rests_engraver"
+    }
+    <<
+      \keepWithTag #'vcII \dStringsI
+      \keepWithTag #'vcII \dStringsII
+      {\new Voice = "vVcII" {\clef bass \nVcII}}
+    >>
+
+sCb =
+  \new Staff = "zCb"
+    \with {
+      instrumentName = "Basso ed Organo"
+      midiInstrument = "contrabass"
+      \consists "Merge_rests_engraver"
+    }
+    <<
+      \keepWithTag #'cb \dStringsII
+      {\new Voice = "vCb" {\clef bass \nCb}}
+    >>
     
     
 
