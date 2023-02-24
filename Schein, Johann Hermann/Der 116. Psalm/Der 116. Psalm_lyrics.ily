@@ -4,7 +4,7 @@ all = \lyricmode { al -- le -- lu -- ja, }
 
 tTutti = \lyricmode {
   Das ist mir lieb, dass der Herr mei -- ne Stim -- me \repeat unfold 2 { und mein Fle -- hen, }
-  und mein Fle -- hen hö --ret. Dass er sein Ohr
+  und mein Fle -- hen hö -- ret. Dass er sein Ohr
   zu mir nei -- get. Da -- rum will ich mein Le -- ben lang ihn an -- ru -- fen, da -- rum will
   
   ich mein Le -- ben lang ihn an -- ru -- fen. Stri -- \tag #'sI \tag #'sII \tag #'t { cke __ } \tag #'a \tag #'b { cke } des To -- des hat -- ten \tag #'sI \tag #'t { mich __ } \tag #'sII \tag #'a \tag #'b { mich }
@@ -14,7 +14,7 @@ tTutti = \lyricmode {
    
    a -- ber ich rief an den Na -- men des Her -- ren: O Herr, o
    Herr, \repeat unfold 2 { er -- ret -- te mei -- ne See -- le, }
-   \tag #'sI \tag #'sII { \repeat unfold 4 { er -- ret -- te mei -- ne See -- le, }}  \tag #'a { \repeat unfold 3 { er -- re -- te mei -- ne See -- le, } o Herr, } \tag #'t \tag #'b { \repeat unfold 4 { o Herr, }}
+   \tag #'sI \tag #'sII { \repeat unfold 4 { er -- ret -- te mei -- ne See -- le, }}  \tag #'a { \repeat unfold 3 { er -- ret -- te mei -- ne See -- le, } o Herr, } \tag #'t \tag #'b { \repeat unfold 4 { o Herr, }}
    er -- ret -- te mei --
    
    ne See -- le. \tag #'a \tag #'t \tag #'b { Der Herr ist gnä -- dig } und ge -- recht, und un -- ser Gott ist barm -- her --
@@ -22,7 +22,7 @@ tTutti = \lyricmode {
    \tag #'a { wenn ich un -- ter -- lie -- ge, so hilft  er __ mir. } \tag #'t { so hilft __ er mir. } \tag #'b { so hilft er mir. } Sei nun wie -- der zu -- frie -- den, mei -- ne
    See -- le, \tag #'t { mei -- ne See -- le, } denn der Herr tut dir Guts, \tag #'sI { denn der Herr, }
    
-   \tag #'sI \tag #'a \tag #'b { denn der Herr tut dir Guts. } \tag #'sII { tut dir Guts. } \tag #'t { der Herr tut dir Guts. } Denn du hast mei -- en See -- le \tag #'sI \tag #'sII \tag #'t { aus __ } \tag #'a { aus } \tag #'b { aus dem To -- de, aus } dem To --
+   \tag #'sI \tag #'a \tag #'b { denn der Herr tut dir Guts. } \tag #'sII { tut dir Guts. } \tag #'t { der Herr tut dir Guts. } Denn du hast mei -- ne See -- le \tag #'sI \tag #'sII \tag #'t { aus __ } \tag #'a { aus } \tag #'b { aus dem To -- de, aus } dem To --
    de ge -- ris -- sen, mein Au -- ge von den Trä --
    nen, \tag #'sI { \repeat unfold 2 { mei -- nen Fuß, }} \tag #'sII \tag #'t { mei -- nen Fuß, } \tag #'a {\repeat unfold 3 { mei -- nen Fuß, }} mei -- nen Fuß \tag #'t { vom Glei -- ten, } vom Glei --
    ten. \tag #'sI \tag #'a \tag #'b { Ich will wan -- deln für dem } \tag #'sI \tag #'a { Herrn, ich will wan -- deln für dem } \tag #'sI \tag #'a \tag #'b { Herrn im Lan -- de der Le -- ben -- di -- gen. }

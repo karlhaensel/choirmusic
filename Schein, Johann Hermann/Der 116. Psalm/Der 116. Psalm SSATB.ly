@@ -29,7 +29,7 @@
       \sBass
     >>
     \layout {
-      #(layout-set-staff-size 14) 
+      #(layout-set-staff-size 13.7) 
       \override Score.BarNumber.font-size = #1
       \context {
         \Voice
