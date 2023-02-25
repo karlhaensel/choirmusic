@@ -61,7 +61,7 @@ nVioII = \relative c'' {
   % S. 9
   R2.*5 \cueDuringWithClef "cello1" #UP "bass" {\tag #'part {\set instrumentCueName = "Vc. I"} R2.*2 | r4 r} r8 f\( | es d es4.\) as8\( | es\) as\( bes d, es bes\) |
   % S. 10
-  bes4\( es\) es8\( d\) | es2 des4 | c\( es4. d8\) | es2 g4 | as2\( f4\) | f\( es\) es~\( | es d2\) | c4 r r | c c8\( d es4\) | d2 r4 | d\( es\) f | es2 r4 |
+  bes4\( es\) es8\( d\) | es2 des4 | c\( es4. d8\) | es2 g4 | as2\( f4\) | f\( es\) es~ | es\( d2\) | c4 r r | c c8\( d es4\) | d2 r4 | d\( es\) f | es2 r4 |
   % S. 11
   es,4\( f\) g | as\( g\) f | c'2.~ | c | R2.*2 | r4 r des, | c2\( f4\) | es2 es4 | es es \( f\) |
   % S. 12
@@ -77,7 +77,7 @@ nVla = \relative c' {
   % S. 5
   R2.*3 | s4 s8 c\( es g | c4\) r r | r r8 d,\( f\) f\( | bes4\) r r | r4 r8 g8\( as bes\) | c\( bes as4\) g4\( | f es des\) |
   % S. 6
-  c2.~ | c~ | c4 r r | R2. | r4 es2~\( | es4 c'\) r | R2.*3 | as2.~ |
+  c2.~ | c~ | c4 r r | R2. | r4 es2~ | es4\( c'\) r | R2.*3 | as2.~ |
   % S. 7
   as4. as8\( g f\) | f4\( es\) r | r g\( bes\) | r es,\( g\) | r f\( f'\) | r es\( g,\) | r c,\( c'\) | r bes\( as\) | r c\( g\) | r g8\( c, es g\) |
   % S. 8
@@ -97,47 +97,47 @@ nVcI = \relative c {
   % S. 3
   r8 bes\( g bes es f | g2\)  f8\( g | as\) es\( c es c' des | es4.\) es8\( d c | bes4.\) c8\( bes as | g\) bes\( g bes es d\) | c4\( bes as8 g\) | as\( bes c d\) es4~ | es8 g4\( f8 c d\) |
   % S. 4
-  es4.\( d8 c d\) | es4.\( d8 c d | es\) c\( des2~ | des8\) bes\( c2~ | c8\) c\( f c bes as\) | as4\( g8 f g as\) | bes4\( es4. d8\) | \clef "tenor" es\( f g as bes g\) | es8\( g4 f8 c d | es4\) bes8\( c des4\) |
+  es4.\( d8 c d\) | es4.\( d8 c d | es\) c\( des2~\) | des8 bes\( c2~\) | c8 c\( f c bes as\) | as4\( g8 f g as\) | bes4\( es4. d8\) | \clef "tenor" es\( f g as bes g\) | es8\( g4 f8 c d | es4\) bes8\( c des4\) |
   % S. 5
-  c8 r e\( f g4~\) | g8\( f es bes\) c4~ | c8\( d es\) c~\( c b\) | c\( g es g c d | es\) g4\( f es8\) | d\( bes f bes d es | f\) as4\( g f8\) | es\( bes g bes es des\) | c4. f4 es8~ | es des4 c8\( bes f'\) |
+  c8 r e\( f g4~\) | g8\( f es bes\) c4~ | c8\( d es\) c~ c\( b\) | c\( g es g c d | es\) g4\( f es8\) | d\( bes f bes d es | f\) as4\( g f8\) | es\( bes g bes es des\) | c4. f4 es8~ | es des4 c8\( bes f'\) |
   % S. 6
-  e\( f g e c d\) | e\( f g e c as\) | \clef bass g\( e c g c,4\) | f r c''8\( d | \clef "tenor" es f g as bes g\) | es2 r4 | r \clef bass r8 d\( c d | es4.\) d8\( c d | es\) c\( des2~ | des8\) bes\( c2~ |
+  e\( f g e c d\) | e\( f g e c as\) | \clef bass g\( e c g c,4\) | f r c''8\( d | \clef "tenor" es f g as bes g\) | es2 r4 | r \clef bass r8 d\( c d | es4.\) d8\( c d | es\) c\( des2~\) | des8 bes\( c2~\) |
   % S. 7
-  c8\) c\( f c bes as \) | as4\( g8 f g as\)  | bes4\( es4. d8\) | \clef "tenor" es\( f g as bes g\) | es\( g4 f8 c d\) | es4\( bes8 c des4\) | c4\( e8 f\) g4~\( | g8 f es! bes\) c4~\( | c8 d es\) c~\( c b\) | c\( g es g c d |
+  c8 c\( f c bes as \) | as4\( g8 f g as\)  | bes4\( es4. d8\) | \clef "tenor" es\( f g as bes g\) | es\( g4 f8 c d\) | es4\( bes8 c des4\) | c4\( e8 f\) g4~ | g8\( f es! bes\) c4~ | c8\( d es\) c~ c\( b\) | c\( g es g c d |
   % S. 8
   es\) g4\( f es8\) | d\( bes f bes d es | f\) as4\( g f8\) | es\( bes g bes es des\) | c\( des es\) f4 es8~| es des4 c8\( bes f'\) | e\( f g e c d\) | e\( f g e c as\) | \clef bass g\( e c g c,4\) | f4 r \clef "tenor" c''8\( d |
   % S. 9
-  es! f g as bes g\) | es2 r4 | r4 \clef bass r8 d8\( c d | es4.\) d8\( c d | es\) c\( des2~ | des8\) bes\( c2~ | c8\) c->\( bes as g f\) | g\( d' es c bes as\) | bes\( d es4. c8\) | bes\( c es f g as\) |
+  es! f g as bes g\) | es2 r4 | r4 \clef bass r8 d8\( c d | es4.\) d8\( c d | es\) c\( des2~\) | des8 bes\( c2~\) | c8 c->\( bes as g f\) | g\( d' es c bes as\) | bes\( d es4. c8\) | bes\( c es f g as\) |
   % S. 10
   g8\( es bes4\) bes, | c2 g4 | as\( g8 as\) bes4 | es,2 es'4 | as,2 bes4 | d\( es\) as | g2. | r8 g\( es g c d | es4\) f,,\( g8 as | bes\) f'\( d f bes c | d4\) r r | r8 bes\( g bes es f |
   % S. 11
   g4\) c,,\( es\) | as\( es\) c'8\( d\) | e\( f g e c d\) | e\( f g e c as\) | g\( e c g c,4\) | f r \clef "tenor" c''8\( d | es f g as bes g\) | c,4 r c8\( d | es f g as bes g\) | es4 r \clef bass f,,4\( |
   % S. 12
-  c g' g'\) | c\( es g\) | as2.~ | as4 r r | r r8 d,\( c d | es4.\) d8\( c d | es\) c\( des2~ | des8\) bes\( c2~ | c8\) c\( f c bes as\) | as2.\espressivo\( | g\fermata\)
+  c g' g'\) | c\( es g\) | as2.~ | as4 r r | r r8 d,\( c d | es4.\) d8\( c d | es\) c\( des2~\) | des8 bes\( c2~\) | c8 c\( f c bes as\) | as2.\espressivo\( | g\fermata\)
 }
 
 nVcII = \relative c {
   \global
   % S.3
-  R2. | r8 es\( bes es as bes | c2\) as8\( bes | c bes as g\) as4~\( | as8 g as f d4\) | es8\( g es g bes4\) | as\( g f8 e\) | f\( g as ces bes des\) | c\( bes as2~ |
+  R2. | r8 es\( bes es as bes | c2\) as8\( bes | c bes as g\) as4~ | as8\( g as f d4\) | es8\( g es g bes4\) | as\( g f8 e\) | f\( g as ces bes des\) | c\( bes as2~\) |
   % S. 4
-  as8\) g\( as2~ | as8\) g\( as2~ | as4.\) g8\( f g | as4.\) g8\( f es | d2.~ | d4\) es8\( d es f | g as bes4 as\) | g8\( as bes c des4\) | c4\( bes as\) | g8\( f g as bes g\) |
+  as8 g\( as2~\) | as8 g\( as2~\) | as4. g8\( f g | as4.\) g8\( f es | d2.~\) | d4 es8\( d es f | g as bes4 as\) | g8\( as bes c des4\) | c4\( bes as\) | g8\( f g as bes g\) |
   % S. 5
-  es\( c' bes as g c~\) | c\( d es4\) c,8\( d\) | es\( f g c d4\) | c8\( es, c es g b | c4.\) f8\( bes,4~ | bes8\) f\( d f bes c \) | d\( c bes2~\) | bes8\( g es\) es\( f g\) | as\( bes c4\) bes\( | as g8 as f4\) |
+  es\( c' bes as g c~\) | c\( d es4\) c,8\( d\) | es\( f g c d4\) | c8\( es, c es g b | c4.\) f8\( bes,4~\) | bes8 f\( d f bes c \) | d\( c bes2~\) | bes8\( g es\) es\( f g\) | as\( bes c4\) bes\( | as g8 as f4\) |
   % S. 6
-  g8\( as bes4 as\) | g8\( as bes4 as8 f | e c\) r4 r | r r as'8\( ces | bes as bes c des4\) | des\( c\) r | r8 g\( as2~ | as8\) g\( as2~ | as4.\) g8\( f g | as4.\) g8\( f es |
+  g8\( as bes4 as\) | g8\( as bes4 as8 f | e c\) r4 r | r r as'8\( ces | bes as bes c des4\) | des\( c\) r | r8 g\( as2~\) | as8 g\( as2~\) | as4. g8\( f g | as4.\) g8\( f es |
   % S. 7
-  d2.~ | d4\) es8\( d es f\) | g\( as bes4 as\) | \clef "tenor" g8\( as bes c des4\) | c4\( bes as\) | g8\( f g as bes g\) | es\( c' bes as g c~\) | c\( d es4\) r8 d\( | es f g es d4\) | c8\( es, c es g b\) |
+  d2.~\) | d4 es8\( d es f\) | g\( as bes4 as\) | \clef "tenor" g8\( as bes c des4\) | c4\( bes as\) | g8\( f g as bes g\) | es\( c' bes as g c~\) | c\( d es4\) r8 d\( | es f g es d4\) | c8\( es, c es g b\) |
   % S. 8
-  c4.\( f8 bes,!4\) | bes8\( f d f bes c\) | d\( c bes2~ | bes8\) g\( es g as bes\) | \clef bass c\( bes c4 bes\) | as\( g8 as bes4\) | g8\( as bes4 as\) | g8\( as bes4 as8 f | e c\) r4 r | r r \clef "tenor" as'8\( ces |
+  c4.\( f8 bes,!4\) | bes8\( f d f bes c\) | d\( c bes2~\) | bes8 g\( es g as bes\) | \clef bass c\( bes c4 bes\) | as\( g8 as bes4\) | g8\( as bes4 as\) | g8\( as bes4 as8 f | e c\) r4 r | r r \clef "tenor" as'8\( ces |
   % S. 9
-  bes8 as bes c! des4\) | des\( c\)  r | \clef bass r8 g\( as2\) | r8 g\( as2~ | as4.\) g8\( f g | as4.\) g8\( f es | d4.\) d8\( es d'\) | es\( as, g as bes d\) | es\( f g\)  as,\( bes\) es, | es\( as bes f' es f\) |
+  bes8 as bes c! des4\) | des\( c\)  r | \clef bass r8 g\( as2\) | r8 g\( as2~\) | as4. g8\( f g | as4.\) g8\( f es | d4.\) d8\( es d'\) | es\( as, g as bes d\) | es\( f g\)  as,\( bes\) es, | es\( as bes f' es f\) |
   % S. 10
   g8\( es bes4\) bes, | c2 g4 | as\( g8 as\) bes4 | es,2 es'4 | as,2 bes4 | d\( es\) as | g2. | r8 es\( c es g b | c4\) f,,4\( g8 as | bes\) d\( bes d f a | bes4\) r r | r8 g\( es g bes d |
   % S. 11
   es4\) c,\( es\) | as\( es\) as | g8\( as bes4 as\) | g8\( as bes4 as8 f | e c\) r4 r | r r \clef "tenor" as'8\( ces | bes as bes c! des4\) | c r c8\( ces | bes as bes c! des4\) | c r \clef bass f,,4\( |
   % S. 12
-  c g' es'\) | g\( c es\) | as2.~ | as4 r r | r8 g,\( as2\) | r8 g\( as2~ | as4.\) g8\( f g | as4.\) g8\( f es | d2.\) | d2.\espressivo\( | es\fermata\)
+  c g' es'\) | g\( c es\) | as2.~ | as4 r r | r8 g,\( as2\) | r8 g\( as2~\) | as4. g8\( f g | as4.\) g8\( f es | d2.\) | d2.\espressivo\( | es\fermata\)
 }
 
 Bass = {

@@ -30,11 +30,11 @@ dWoodwindsII = { % jetzt mit Fagott
 
 FlKlarI = \relative c'' { 
   % S. 7
-  bes4\( es4. d8\) | es\( f g as bes g\) | es\( g4 f8 c d\) | es4\( bes8 c des4\) | c\( e8 f\) g4~\( | g8 f es! bes\) c4~\( | c8 d es c~ c b\) | c\( g es g c d |
+  bes4\( es4. d8\) | es\( f g as bes g\) | es\( g4 f8 c d\) | es4\( bes8 c des4\) | c\( e8 f\) g4~ | g8\( f es! bes\) c4~ | c8\( d es c~ c b\) | c\( g es g c d |
   % S. 8
   es\) g4\( f es8\) | d\( bes f bes d es | f\) as4\( g f8\) | es\( bes g bes es des\) | c4 r r | r r r8 f | e\( f g e c d\) | e\( f g e c as\) | g4 r r | r r c8\( d |
   % S. 9
-  es! f g as bes g\) | es2 r4 | r r8 d\( c d | es4.\) d8\( c d | es\) c\( des2~ | des8\) bes\( c2~ | c8\) r r4 r | r8 c\( bes es~ es d\) |
+  es! f g as bes g\) | es2 r4 | r r8 d\( c d | es4.\) d8\( c d | es\) c\( des2~\) | des8 bes\( c2~\) | c8 r r4 r | r8 c\( bes es~ es d\) |
 }
 
 FlKlarII = \relative c'' {
@@ -69,7 +69,7 @@ nFlII = \relative c'' {
   % S. 7-9
   \cueDuringWithClef "cello1" #UP "bass" {\tag #'part {\set instrumentCueName = "Vc. I (zum 2. Mal)"} R2.*4} | \FlKlarII
   % S. 9
-  r8 as'\( g f g c\) | es es,~\(  es f g bes, \) |
+  r8 as'\( g f g c\) | es es,~ es\( f g bes, \) |
   % S. 10
   bes4 es~\( es8 d\) | es2 es4 | es2 f4 | g2 es4 | es2\( d4\) | f\( es\) c8\( d\) | es4\( d2\) | c4 r r | es\( f\) es | d2 r4 | d\( es\) f| es2 r4 |
   % S. 11
