@@ -9,7 +9,7 @@ tTutti = \lyricmode {
   \tag #'sI \tag #'b {\repeat unfold 3 { pec -- ca -- vi -- mus, }} \tag #'sII \tag #'t {\repeat unfold 4 { pec -- ca -- vi -- mus, }} \tag #'a {pec -- ca -- vi -- mus, __ pec -- ca -- vi -- mus, } 
   pec -- ca -- vi -- mus \tag #'sI \tag #'sII \tag #'a \tag #'b { im -- pi -- è e -- gi -- mus, } im -- pi -- è e -- gi -- mus
   
-  \tag #'sI \tag #'t {\repeat unfold 2 { in -- i -- què ges -- si -- mus, }} \tag #'sII \tag #'a \tag #'b {\repeat unfold 3 { in -- i -- què ges -- si -- mus, }}
+  \tag #'sI \tag #'t {\repeat unfold 2 { in -- i -- que ges -- si -- mus, }} \tag #'sII \tag #'a \tag #'b {\repeat unfold 3 { in -- i -- que ges -- si -- mus, }}
   Do -- mi -- ne De -- us nos -- ter,
   Do -- mi -- ne De -- \tag #'sI \tag #'a \tag #'t \tag #'b { us } \tag #'sII { us __ } nos -- ter
   
