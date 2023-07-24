@@ -75,7 +75,7 @@ nVla = \relative c' {
   % S. 4 
   R2.| \cueDuring "cello1" #UP {\tag #'part {\set instrumentCueName = "Vc. I"} R2.*2} | as2.~ | as4. as8\( g f\) | f4\( es\) r | R2.*4 |
   % S. 5
-  R2.*3 | s4 s8 c\( es g | c4\) r r | r r8 d,\( f\) f\( | bes4\) r r | r4 r8 g8\( as bes\) | c\( bes as4\) g4\( | f es des\) |
+  R2.*3 | r4 r8 c\( es g | c4\) r r | r r8 d,\( f\) f\( | bes4\) r r | r4 r8 g8\( as bes\) | c\( bes as4\) g4\( | f es des\) |
   % S. 6
   c2.~ | c~ | c4 r r | R2. | r4 es2~ | es4\( c'\) r | R2.*3 | as2.~ |
   % S. 7
