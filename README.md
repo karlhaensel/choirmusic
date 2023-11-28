@@ -14,6 +14,7 @@ A loose collection of practical sheet music editions for choirs and singers.
 	- Christus - 03 Es wird ein Stern aus Jacob aufgehn (SATB)
 	- Jauchzet dem Herrn A-Dur (SATB, at the end SSAATTBB)
 	- Trauergesang (SATB)
+	- Verleih uns Frieden (SATB)
 - Praetorius, Michael: Ein Kind geborn zu Bethlehem (var.)
 - Stanford, Charles Villiers: Arise, shine (SATB)
 
@@ -35,7 +36,6 @@ A loose collection of practical sheet music editions for choirs and singers.
 	- Lotti, Antonio: 
 		- Crucifixus a 8 voci (SSAATTBB)
 		- Crucifixus a 10 voci (SSSAATTTBB)
-	- Mendelssohn, Felix: "Verleih uns Frieden" (SATB)
 	- Schein, Johann Hermann: Der 116. Psalm "Das ist mir lieb" (SSATB)
 	- Wermann, Oskar:
 		- Psalm 126 "Wenn der Herr die Gefangenen Zions erlösen wird" (SATB)
