@@ -13,6 +13,7 @@ A loose collection of practical sheet music editions for choirs and singers.
 - Mendelssohn, Felix:
 	- Christus - 03 Es wird ein Stern aus Jacob aufgehn (SATB)
 	- Jauchzet dem Herrn A-Dur (SATB, at the end SSAATTBB)
+	- Trauergesang (SATB)
 - Praetorius, Michael: Ein Kind geborn zu Bethlehem (var.)
 - Stanford, Charles Villiers: Arise, shine (SATB)
 
