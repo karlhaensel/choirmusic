@@ -15,10 +15,6 @@
 \layout {
   #(layout-set-staff-size 16) 
   \override Score.BarNumber.font-size = #1
-  \context {
-    \Voice
-    \consists "Melody_engraver"
-  }
 }
 
 chormidi = \with {midiInstrument = "choir aahs"}
@@ -28,7 +24,7 @@ chormidi = \with {midiInstrument = "choir aahs"}
 \book {
   \score {
     \new ChoirStaff <<
-      \accidentalStyle Score.modern % damit Erinnerungsvorzeichen nächster Takt
+      \accidentalStyle Score.modern
       \sSopran
       \sAlt
       \sTenor
