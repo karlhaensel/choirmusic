@@ -16,10 +16,6 @@
 \layout {
   #(layout-set-staff-size 15)
   \override Score.BarNumber.font-size = #1
-  \context {
-    \Voice
-    \consists "Melody_engraver"
-  }
 }
 
 global = {
@@ -27,6 +23,7 @@ global = {
   \autoBeamOff
   \override Score.DynamicTextSpanner.style = #'none
   \set Score.tempoHideNote = ##t
+  %\set suspendMelodyDecisions = ##t
   \key g \minor
   \time 4/4
   \tempo "Andante."
@@ -44,7 +41,6 @@ sSopran =
     \with {
       instrumentName = "Sopran"
       \chormidi
-      \consists "Merge_rests_engraver"
     } 
     <<
       \keepWithTag #'s \dChoir
@@ -59,7 +55,6 @@ sAlt =
     \with {
       instrumentName = "Alt"
       \chormidi
-      \consists "Merge_rests_engraver"
     } 
     <<
       \keepWithTag #'a \dChoir
@@ -74,7 +69,6 @@ sTenor =
     \with {
       instrumentName = "Tenor"
       \chormidi
-      \consists "Merge_rests_engraver"
     } 
     <<
       \keepWithTag #'t \dChoir
@@ -89,7 +83,6 @@ sBass =
     \with {
       instrumentName = "Bass"
       \chormidi
-      \consists "Merge_rests_engraver"
     } 
     <<
       \keepWithTag #'b \dChoir
@@ -102,7 +95,7 @@ sBass =
 
 \score {
   \new ChoirStaff <<
-    \accidentalStyle Score.modern % damit Erinnerungsvorzeichen nächster Takt
+    \accidentalStyle Score.modern
     \sSopran
     \sAlt
     \sTenor
