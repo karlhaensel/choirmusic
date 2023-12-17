@@ -52,7 +52,7 @@ nTenor = \relative c' {
   
   dis4 b b | b4. a8 g a | g2. | d'4. c8 b c | b4. b8 c c | b4( a) g | r d' d | d( c) c | b2 c8([ d]) |
   d4. c8 c4 | r e g | d4. d8 d d | e2 d4 | d4 d d8 d | d4( g) fis | e2 c4 | b2 c4 | b2. |
-  r4 e cis | a c! b8 a | g4( f') e8([ d]) | d4 c2 | r4 fis, fis | g2 c4 | b4.( g8) fis([ a]) | g4 b b |
+  r4 e cis | a c! b8 a | g4_( f') e8([ d]) | d4 c2 | r4 fis, fis | g2 c4 | b4.( g8) fis([ a]) | g4 b b |
   c( g) a | b b b | b4. a8 g a | g2. | d'4. c8 b c | b4 b c | b( g) g | g2.\fermata
 }
 
