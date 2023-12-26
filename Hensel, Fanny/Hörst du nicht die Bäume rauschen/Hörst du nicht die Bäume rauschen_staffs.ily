@@ -14,7 +14,8 @@ sSopran =
     <<
       \keepWithTag #'s \common
       \new Voice = "vSopran" {\clef violin \dynamicUp \nSopran}
-      \new  Lyrics \lyricsto "vSopran" {\keepWithTag #'s \tText }
+      \new Lyrics \lyricsto "vSopran" {\keepWithTag #'s \tText }
+      \new Lyrics \lyricsto "vSopran" {\keepWithTag #'s \tTextOriginal }
     >>
 
 sAlt = 
@@ -28,6 +29,7 @@ sAlt =
       \keepWithTag #'a \common
       \new Voice = "vAlt" {\clef violin \dynamicUp \nAlt}
       \new Lyrics \lyricsto "vAlt" {\keepWithTag #'a \tText }
+      \new Lyrics \lyricsto "vAlt" {\keepWithTag #'a \tTextOriginal }
          >>
 
 sTenor = 
@@ -40,7 +42,8 @@ sTenor =
     <<
       \keepWithTag #'t \common
       \new Voice = "vTenor" {\clef "treble_8" \dynamicUp \nTenor}
-      \new Lyrics \lyricsto "vTenor" {\keepWithTag #'t \tText }    
+      \new Lyrics \lyricsto "vTenor" {\keepWithTag #'t \tText }  
+      \new Lyrics \lyricsto "vTenor" {\keepWithTag #'t \tTextOriginal }
     >>
     
 sBass = 
@@ -54,4 +57,5 @@ sBass =
       \keepWithTag #'b \common
       \new Voice = "vBass" {\clef bass \dynamicUp \nBass}
       \new Lyrics \lyricsto "vBass" {\keepWithTag #'b \tText }
+      \new Lyrics \lyricsto "vBass" {\keepWithTag #'b \tTextOriginal }
     >>

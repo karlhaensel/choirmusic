@@ -2,9 +2,9 @@
 
 \header {
   title = "Hörst du nicht die Bäume rauschen"
+  subtitle = "aus: \"Gartenlieder\" op. 3, Nr. 1"
   composer = "Fanny Hensel (1805-1847)"
   poet = "Joseph von Eichendorff"
-  opus = "Op. 3, Nr. 1"
   tagline = ##f
 }
 
@@ -22,7 +22,8 @@ chormidi = \with {midiInstrument = "choir aahs"}
 \include "Hörst du nicht die Bäume rauschen_staffs.ily"
 
 \book {
-  \score {
+  \markup {\italic \smaller {Dichter-Original als kursive Textvariante}}
+  \score {  
     \new ChoirStaff <<
       \accidentalStyle Score.modern
       \sSopran
