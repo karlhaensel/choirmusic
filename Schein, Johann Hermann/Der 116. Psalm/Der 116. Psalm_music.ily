@@ -238,7 +238,7 @@ nTenor = \relative c' {
   a2 a d4 d d d8 c | bes2 bes4 a g2 g4 g | g2 g4 a a bes bes a |
   bes2 r4 g g c c b | c2 r4 a a d d cis | d2 r4 d8 bes bes4 bes8 bes bes4 c8 d |
   
-  c4 c r c f, a d, g | a2 r4 a8 a4 a8 a a f4 g8 a | g4 g r f es g a a b1 |
+  c4 c r c f, a d, g | a2 r4 a8 a8 a4 a8 a f4 g8 a | g4 g r f es g a a b1 |
   R\breve.*2 | f1 g a | d,\breve. | R\breve.*2 | g1 g fis |
   g\breve. | bes2 bes a a g g | fis\breve fis1 | R\breve.*2 | f'2 f e e d d |
   cis\breve cis1 | f2 f e e d d | cis\breve cis1 | d d cis | d\breve. | R\breve.*2 |
