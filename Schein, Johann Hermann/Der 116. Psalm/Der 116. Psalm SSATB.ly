@@ -31,10 +31,6 @@
     \layout {
       #(layout-set-staff-size 13.7) 
       \override Score.BarNumber.font-size = #1
-      \context {
-        \Voice
-        \consists "Melody_engraver"
-      }
     }
     \midi {
     }
@@ -62,10 +58,6 @@
     \layout {
       #(layout-set-staff-size 18) 
       \override Score.BarNumber.font-size = #1
-      \context {
-        \Voice
-        \consists "Melody_engraver"
-      }
     }
     \midi {
     }
