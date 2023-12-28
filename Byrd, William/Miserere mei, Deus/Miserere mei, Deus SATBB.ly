@@ -13,10 +13,6 @@
 
 \layout {
   #(layout-set-staff-size 16)
-  \context {
-    \Voice
-    \consists "Melody_engraver"
-  }
 }
 
 \include "Miserere mei, Deus_music.ily"

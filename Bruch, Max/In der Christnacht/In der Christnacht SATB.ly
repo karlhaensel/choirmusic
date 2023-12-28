@@ -16,10 +16,6 @@
 \layout {
   #(layout-set-staff-size 18) 
   \override Score.BarNumber.font-size = #1
-  \context {
-    \Voice
-    \consists "Melody_engraver"
-  }
 }
 
 \include "In der Christnacht_music.ily"
