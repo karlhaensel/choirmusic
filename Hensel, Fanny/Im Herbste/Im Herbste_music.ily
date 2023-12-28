@@ -11,7 +11,7 @@ global = {
 common = {
   \global
   \partial 4. s4.\mf | s1*9/8 | s1*9/8\< | s16 s\! s4 s4. s4.\< |
-  s4.\! \tag #'s { s4 s8\> s4. | s2.\!  s4.} \tag #'a \tag #'t \tag #'b { s4. s | s1*9/8 } | s1*9/8\f | s1*9/8 |
+  s4.\! \tag #'s { s4 s8\> s4. | s2.\!  s4.} \tag #'a \tag #'t \tag #'b { s4. s | s1*9/8 } | s2. s4.\f | s1*9/8 |
   
   \repeat unfold 6 { s1*9/8 | }
   s2. \key a \minor s4.\p | 
