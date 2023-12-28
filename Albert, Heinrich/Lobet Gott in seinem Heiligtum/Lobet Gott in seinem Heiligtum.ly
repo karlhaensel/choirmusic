@@ -14,11 +14,8 @@
   page-count = 2
 }
 
-\layout {#(layout-set-staff-size 14)
-  \context {
-    \Voice
-    \consists "Melody_engraver"
-  } 
+\layout {
+  #(layout-set-staff-size 14)
 }
 
 
@@ -87,7 +84,7 @@ sBass = \new Staff \with {
     >>
     \layout { }
     \midi {
-      \tempo 4=100
+      \tempo 4=112
     }
   }
 }
@@ -155,7 +152,7 @@ sTBass = \new Staff \with {
     >>
     \layout { }
     \midi {
-      \tempo 4=100
+      \tempo 4=112
     }
   }
 }

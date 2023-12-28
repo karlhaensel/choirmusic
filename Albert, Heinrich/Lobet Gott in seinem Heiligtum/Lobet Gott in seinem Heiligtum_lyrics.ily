@@ -53,7 +53,7 @@ tSopranIzwei = \lyricmode {
 
 tSopranIdreiA = \lyricmode {
   \set stanza = "3a." \dreiA al -- les, was auf Er -- den le -- bet, was \dreiC
-  lo -- bet die -- sen star -- ken Krei -- ges -- held.
+  lo -- bet die -- sen star -- ken Krie -- ges -- held.
   \set stanza = "3." Al -- les, was nur O -- dem hat,
   wer -- de nim -- mer, wer -- de nim -- mer Lo -- bens satt.
 }
