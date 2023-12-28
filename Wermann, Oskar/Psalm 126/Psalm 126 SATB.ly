@@ -16,10 +16,6 @@
 \layout {
   #(layout-set-staff-size 17)
   \override Score.BarNumber.font-size = #1
-  \context {
-    \Voice
-    \consists "Melody_engraver"
-  }
 }
 
 \include "Psalm 126_music.ily"

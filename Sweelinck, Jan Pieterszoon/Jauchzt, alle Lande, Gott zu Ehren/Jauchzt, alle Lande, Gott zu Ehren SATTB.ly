@@ -14,10 +14,6 @@
 \layout {
   #(layout-set-staff-size 15.5)
   \override Score.BarNumber.font-size = #1
-  \context {
-    \Voice
-    \consists "Melody_engraver"
-  }
 }
 
 \include "Jauchzt, alle Lande, Gott zu Ehren_music.ily"

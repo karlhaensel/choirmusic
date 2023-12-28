@@ -14,12 +14,8 @@
 }
 
 \layout {
-  #(layout-set-staff-size 18)
+  #(layout-set-staff-size 16)
   \override Score.BarNumber.font-size = #1
-  \context {
-    \Voice
-    \consists "Melody_engraver"
-  }
 }
 
 \include "Graduale - Domine miserere mei_music.ily"

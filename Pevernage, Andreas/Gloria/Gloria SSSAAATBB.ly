@@ -12,10 +12,6 @@
 
 \layout {
   #(layout-set-staff-size 14)
-  \context {
-    \Voice
-    \consists "Melody_engraver"
-  }
 }
 
 \include "Gloria_music.ily"
