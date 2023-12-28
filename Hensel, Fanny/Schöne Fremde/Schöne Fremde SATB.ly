@@ -13,8 +13,10 @@
 }
 
 \layout {
-  #(layout-set-staff-size 16) 
+  #(layout-set-staff-size 14.5) 
   \override Score.BarNumber.font-size = #1
+  \override Score.DynamicTextSpanner.style = #'none
+  \set Score.tempoHideNote = ##t
 }
 
 chormidi = \with {midiInstrument = "choir aahs"}
@@ -32,8 +34,7 @@ chormidi = \with {midiInstrument = "choir aahs"}
       \sBass
     >>
     \layout { }
-    \midi {
-      \tempo 4.=52  
+    \midi { 
     }
   }
 }

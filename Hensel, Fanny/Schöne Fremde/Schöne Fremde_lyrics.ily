@@ -15,6 +15,18 @@ tText = \lyricmode {
   \tag #'s { Pracht, was sprichst __ du wirr __ wie in Träu -- men, } \tag #'a \tag #'t \tag #'b { Pracht, __  was sprichst du wirr, o Nacht, }
   
   phan -- tas -- ti -- sche \tag #'s { Nacht, __ } \tag #'a \tag #'t \tag #'b { Nacht, } phan -- tas -- ti -- sche Nacht! __
+  Es fun -- keln mir zu al -- le Ster -- ne \tag #'s { mit __ } \tag #'a \tag #'t \tag #'b { mit } \tag #'s \tag #'b { glü -- hen -- dem } \tag #'a \tag #'t { glü -- hen -- dem __ } \tag #'s \tag #'t { Lie -- bes -- blick, } \tag #'a \tag #'b { Blick, }
+  es \tag #'s \tag #'t { re -- det __ } \tag #'a \tag #'b { re -- det } trun -- ken die Fer -- ne, es re -- det die
+  
+  \tag #'s { Fer -- ne von künf -- ti -- gem } \tag #'a \tag #'t \tag #'b { Fer -- ne, die Fer -- ne re -- det von } gro -- ßen \tag #'s \tag #'a \tag #'t { Glück, __ } \tag #'b { Glück, } es
+  fun -- keln mir zu al -- le Ster -- ne, \tag #'s { mit __ } \tag #'a \tag #'t \tag #'b { mit } \tag #'s \tag #'b { glü -- hen -- dem } \tag #'a \tag #'t { glü -- hen -- dem __ } \tag #'s \tag #'t { Lie -- bes -- blick, } \tag #'a \tag #'b { Blick, }
+  es \tag #'s \tag #'t { re -- det __ } \tag #'a \tag #'b { re -- det } trun -- ken die Fer -- ne, \tag #'s \tag #'a { es __ re -- det die __ Fer -- ne, } \tag #'t \tag #'b { es re -- det die Fer -- ne } \tag #'a \tag #'t \tag #'b { es re -- det, es re -- det trun -- ken }
+  
+  \tag #'s { es re -- det } die Fer -- ne von
+  \tag #'s { künf -- ti -- gem gro -- ßen } \tag #'a \tag #'t \tag #'b { gro -- ßem } \tag #'s \tag #'a \tag #'t { Glück, __ } \tag #'b { Glück, } es re -- det \tag #'s { trun -- ken } die Fer -- ne von
+  \tag #'s \tag #'t { gro -- ßem __ } \tag #'a \tag #'b { gro -- ßem } Glück, es re -- det trun -- ken die Fer -- ne von
+  
+  künft -- ti -- gem \tag #'s \tag #'t { gro -- ßen __ } \tag #'a \tag #'b { gro -- ßen } \tag #'s \tag #'t { Glück, __ } \tag #'a \tag #'b { Glück, } \tag #'s { vom } \tag #'a \tag #'t \tag #'b { vom } künf -- ti -- gen \tag #'s { gro -- ßen } Glück. __
 }
 
 tTextOriginal = {
@@ -28,6 +40,13 @@ tTextOriginal = {
     \repeat unfold 16 {\skip 1} mach -- ten
     \repeat unfold 14 {\skip 1} hin -- ter
     \tag #'s {\repeat unfold 10 {\skip 1}} \tag #'a \tag #'t { \repeat unfold 4 {\skip 1}} \repeat unfold 33 {\skip 1} hin -- ter
-    \tag #'s {\repeat unfold 2 {\skip 1}} \repeat unfold 23 {\skip 1} Nacht? __
+    \tag #'s {\repeat unfold 2 {\skip 1}} \repeat unfold 23 {\skip 1} Nacht?
+    \repeat unfold 3 {\skip 1} auf mich
+    \repeat unfold 25 {\skip 1} \tag #'a \tag #'b {\repeat unfold 3 {\skip 1}} \tag #'t {\repeat unfold 5 {\skip 1}} "wie von"
+    \tag #'s {\repeat unfold 3 {\skip 1}} \repeat unfold 6 {\skip 1} auf mich
+    \tag #'s {\repeat unfold 31 {\skip 1}} \tag #'a \tag #'b {\repeat unfold 34 {\skip 1}} \tag #'t {\repeat unfold 36 {\skip 1}} "wie von"
+    \tag #'s {\repeat unfold 14 {\skip 1}} \tag #'a \tag #'t \tag #'b {\repeat unfold 9 {\skip 1}} "wie von"
+    \repeat unfold 11 {\skip 1} "wie von"
+    \repeat unfold 6 {\skip 1} "wie von" künf -- ti -- gem \tag #'s { gro -- ßen } Glück! __
   }
 }
