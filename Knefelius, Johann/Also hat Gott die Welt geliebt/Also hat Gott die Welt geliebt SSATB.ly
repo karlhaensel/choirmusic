@@ -13,10 +13,6 @@
 \layout {
   #(layout-set-staff-size 18) 
   \override Score.BarNumber.font-size = #1
-  \context {
-    \Voice
-    \consists "Melody_engraver"
-  }
 }
 
 \include "Also hat Gott die Welt geliebt_music.ily"
@@ -107,6 +103,6 @@ sBass =
   >>
   \layout { }
   \midi {
-    \tempo 4=100
+    \tempo 2=64
   }
 }

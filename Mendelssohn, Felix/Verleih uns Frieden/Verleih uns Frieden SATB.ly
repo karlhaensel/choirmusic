@@ -11,11 +11,7 @@
   #(set-paper-size "a4")
 }
 
-\layout { 
-  \context {
-    \Voice
-    \consists "Melody_engraver"
-  }
+\layout {
 }
 
 chormidi = \with {midiInstrument = "choir aahs"}

@@ -15,10 +15,6 @@
 \layout {
   #(layout-set-staff-size 18)
   \override Score.BarNumber.font-size = #1
-  \context {
-    \Voice
-    \consists "Melody_engraver"
-  }
 }
 
 \include "Der Herr ist mein Hirt_music.ily"

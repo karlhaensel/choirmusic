@@ -10,16 +10,11 @@
 
 \paper {
   #(set-paper-size "a4")
-  page-count = 7
 }
 
 \layout {
-  #(layout-set-staff-size 18)
+  #(layout-set-staff-size 16)
   \override Score.BarNumber.font-size = #1
-  \context {
-    \Voice
-    \consists "Melody_engraver"
-  }
 }
 
 \include "Jauchzet dem Herrn A-Dur_music.ily"

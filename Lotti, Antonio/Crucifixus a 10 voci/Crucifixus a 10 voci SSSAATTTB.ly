@@ -13,10 +13,6 @@
 
 \layout {
   \override Score.BarNumber.font-size = #1
-  \context {
-    \Voice
-    \consists "Melody_engraver"
-  }
 }
 
 chormidi = \with {midiInstrument = "choir aahs"}
