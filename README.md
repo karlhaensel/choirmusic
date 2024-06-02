@@ -1,15 +1,15 @@
-# choirmusic
+# Choir music
 ## Good to know
-I am a professional choir director and singer from Northern Germany. Therefore, the present editions are practical editions that make no musicological claim. I would be grateful for any information about errors or suggestions for improvement. Questions or requests for transposed versions are also welcome via [e-mail](mailto:Karl-Haensel@gmx.de). However, this is only a leisure project, so I cannot promise a quick response. Feel free to use the Lilypond code for your own editions.
+I am a professional choral conductor and singer from Northern Germany. Therefore, the present editions are practical editions with no musicological claim. I would be grateful for any information about errors or suggestions for improvement. Questions or requests for transposed versions are also welcome via [e-mail](mailto:Karl-Haensel@gmx.de). However, I cannot promise a quick reply, as this is only a hobby project. Feel free to use the Lilypond code for your own editions.
 
 ## Content
-A loose collection of practical sheet music editions for choirs and singers containing:
-- editions, I already used in performances with my choirs
-- editions of pieces, I used to perform with other editions that had some minor or major flaws
-- editions of pieces, I want to study with my choirs in the future
-- editions, I just made for fun and/or to improve my Lilypond skills
+A loose collection of practical editions for choirs and singers, including
+- editions that I have used in performances with my choirs
+- editions of pieces that I have performed with other editions that had some minor or major flaws
+- editions of pieces that I would like to study with my choirs in the future
+- editions I have made just for fun and/or to improve my Lilypond skills
 
-## How to get PDF or MIDI Files
-For security reasons, PDF and MIDI files are not uploaded into the online repository. However, [Lilypond](http://lilypond.org/) (the markup language this sheet music is written in) and [Frescobaldi](https://www.frescobaldi.org/) (a very handy editor for Lilypond files) are available online for free. Even if you do not know Lilypond you can build your own PDF files with Frescobalid after you installed Lilypond. If you have a very urgent need for a PDF file and/or are really not able to compile them on your own, you can also contact me via [e-mail](mailto:Karl-Haensel@gmx.de). I will try to answer as soon as possible. But pleas keep in mind this is only a leisure project.
+## How to get PDF or MIDI files
+For security reasons, PDF and MIDI files are not uploaded to the online repository. However, [Lilypond](http://lilypond.org/) (the markup language these scores are written in) and [Frescobaldi](https://www.frescobaldi.org/) (a very handy Lilypond editor) are available online for free. Even if you do not know Lilypond, you can compile your own PDF files with Frescobaldi once you have installed Lilypond. If you have a very urgent need for a PDF file and/or are really unable to compile it yourself, you can also contact me via [e-mail](mailto:Karl-Haensel@gmx.de). I will try to reply as soon as possible. But please keep in mind that this is just a hobby project.
 
-__Have fun with this (and other) choral music!__
+## Have fun with this (and other) choral music!
