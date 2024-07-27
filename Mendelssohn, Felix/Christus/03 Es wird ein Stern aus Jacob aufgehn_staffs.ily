@@ -1,5 +1,6 @@
 \version "2.22.00"
 
+\include "03 Es wird ein Stern aus Jacob aufgehn_woodwinds.ily"
 \include "03 Es wird ein Stern aus Jacob aufgehn_brass.ily"
 \include "03 Es wird ein Stern aus Jacob aufgehn_timpani.ily"
 \include "03 Es wird ein Stern aus Jacob aufgehn_choir.ily"
@@ -8,31 +9,69 @@
 \include "03 Es wird ein Stern aus Jacob aufgehn_pianoReduction.ily"
 
 
+%%% WOODWINDS %%%
+
+sFl =
+  \new Staff = "zFlauti"
+    \with {
+      instrumentName = "Flauti"
+      midiInstrument = "flute"
+      \consists "Merge_rests_engraver"
+    }
+    <<{\partCombine \nFlI \nFlII}>>
+        
+sOb =
+  \new Staff = "zOboi"
+    \with {
+      instrumentName = "Oboi"
+      midiInstrument = "oboe"
+      \consists "Merge_rests_engraver"
+    }
+    <<{\partCombine \nObI \nObII}>>
+
+sKlar =
+  \new Staff = "zClarinetti"
+    \with {
+      instrumentName = "Clarinetti in B"
+      midiInstrument = "clarinet"
+      \consists "Merge_rests_engraver"
+    }
+    <<{\transposition bes \transpose bes c {\partCombine \nKlarI \nKlarII}}>>
+
+sFag =
+  \new Staff = "zFagotti"
+    \with {
+      instrumentName = "Fagotti"
+      midiInstrument = "bassoon"
+      \consists "Merge_rests_engraver"
+    }
+    <<{\clef bass \partCombine \nFagI \nFagII}>>
+
 
 %%% BRASS %%%
 
 sHrn =
-  \new Staff = "zHorn"
+  \new Staff = "zCorni"
     \with {
-      instrumentName = "Horn in Es"
+      instrumentName = "Corni in Es"
       midiInstrument = "french horn"
       \consists "Merge_rests_engraver"
     }
     <<{\transposition es \transpose es c' {\partCombine \nHrnI \nHrnII}}>>
 
 sPosAT =
-  \new Staff = "zPosAT"
+  \new Staff = "zTromboniAT"
     \with {
-      instrumentName = "Alt- und Tenorposaune"
+      instrumentName = \markup {\center-column{"Tromboni" "Alto e Tenore"}}
       midiInstrument = "trombone"
       \consists "Merge_rests_engraver"
     }
     <<{\clef "alto" \partCombine \nPosA \nPosT}>>
     
 sPosB =
-  \new Staff = "zPosB"
+  \new Staff = "zTromboneB"
     \with {
-      instrumentName = "Bassposaune"
+      instrumentName = "Trombone Basso"
       midiInstrument = "trombone"
       \consists "Merge_rests_engraver"
     }
@@ -43,9 +82,9 @@ sPosB =
 %%% TIMPANI %%%
 
 sPk =
-  \new Staff = "zPauken"
+  \new Staff = "zTimpani"
     \with {
-      instrumentName = "Pauken in Es.B."
+      instrumentName = "Timpani in Es.B."
       midiInstrument = "timpani"
       \consists "Merge_rests_engraver"
     }
@@ -56,7 +95,7 @@ sPk =
 %%% CHOIR %%%
 
 sSopran = 
-  \new Staff  = "zSopran"
+  \new Staff  = "zSoprano"
     \with {
       instrumentName = "Soprano"
       \chormidi
@@ -64,12 +103,12 @@ sSopran =
     } 
     <<
       \keepWithTag #'s \dChoir
-      {\new Voice = "vSopran" {\nSopran}}
-      \new Lyrics \lyricsto "vSopran" {\tSopran}
+      {\new Voice = "vSoprano" {\nSopran}}
+      \new Lyrics \lyricsto "vSoprano" {\tSopran}
     >>
 
 sAlt = 
-  \new Staff  = "zAlt"
+  \new Staff  = "zAlto"
     \with {
       instrumentName = "Alto"
       \chormidi
@@ -77,12 +116,12 @@ sAlt =
     } 
     <<
       \keepWithTag #'a \dChoir
-      {\new Voice = "vAlt" {\nAlt}}
-      \new Lyrics \lyricsto "vAlt" {\tAlt}
+      {\new Voice = "vAlto" {\nAlt}}
+      \new Lyrics \lyricsto "vAlto" {\tAlt}
     >>
 
 sTenor = 
-  \new Staff  = "zTenor"
+  \new Staff  = "zTenore"
     \with {
       instrumentName = "Tenore"
       \chormidi
@@ -90,12 +129,12 @@ sTenor =
     } 
     <<
       \keepWithTag #'t \dChoir
-      {\new Voice = "vTenor" {\clef "violin_8" \nTenor}}
-      \new Lyrics \lyricsto "vTenor" {\tTenor}
+      {\new Voice = "vTenore" {\clef "violin_8" \nTenor}}
+      \new Lyrics \lyricsto "vTenore" {\tTenor}
     >>
 
 sBass = 
-  \new Staff  = "zBass"
+  \new Staff  = "zBasso"
     \with {
       instrumentName = "Basso"
       \chormidi
@@ -103,8 +142,8 @@ sBass =
     } 
     <<
       \keepWithTag #'b \dChoir
-      {\new Voice = "vBass" {\clef bass \nBass}}
-      \new Lyrics \lyricsto "vBass" {\tBass}
+      {\new Voice = "vBasso" {\clef bass \nBass}}
+      \new Lyrics \lyricsto "vBasso" {\tBass}
     >>
 
 
@@ -152,6 +191,7 @@ sVc =
     \with {
       instrumentName = "Violoncello"
       midiInstrument = "cello"
+
       \consists "Merge_rests_engraver"
     }
     <<

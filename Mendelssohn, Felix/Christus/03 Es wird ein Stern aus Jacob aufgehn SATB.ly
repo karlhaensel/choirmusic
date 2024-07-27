@@ -16,11 +16,14 @@
   \override Score.BarNumber.font-size = #2
 }
 
-chormidi = \with {midiInstrument = "choir aahs"}
+chormidi = \with {
+  midiInstrument = "choir aahs"
+}
 
 global_transpose = {
   \time 4/4
   \tempo "Allegro moderato"
+  \dynamicDown
   \override DynamicTextSpanner.style = #'none % keine Striche/Punkt o.ä. nach cresc./dim. als Text
 }
 
@@ -72,6 +75,12 @@ global_voice = {
   \bookOutputSuffix "Score"
   \score {
     <<
+    \new StaffGroup <<
+      \sFl
+      \sOb
+      \sKlar
+      \sFag
+    >>
     \new StaffGroup <<
       \sHrn
       \new GrandStaff <<
