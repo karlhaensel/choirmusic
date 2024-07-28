@@ -24,7 +24,6 @@ global_transpose = {
   \time 4/4
   \tempo "Allegro moderato"
   \dynamicDown
-  \override DynamicTextSpanner.style = #'none % keine Striche/Punkt o.ä. nach cresc./dim. als Text
 }
 
 global = {
@@ -35,7 +34,6 @@ global = {
 global_voice = {
   \dynamicUp
   \autoBeamOff
-  \override DynamicTextSpanner.style = #'none  
 }
 
 \include "03 Es wird ein Stern aus Jacob aufgehn_staffs.ily"
@@ -45,8 +43,9 @@ global_voice = {
   \bookOutputSuffix "vocalScore"
   \score {
     <<
+    \accidentalStyle Score.modern % damit Erinnerungsvorzeichen nächster Takt
+    \override Score.DynamicTextSpanner.style = #'none % keine Striche/Punkt o.ä. nach cresc./dim. als Text
     \new ChoirStaff <<
-      \accidentalStyle Score.modern % damit Erinnerungsvorzeichen nächster Takt
       \sSopran
       \sAlt
       \sTenor
@@ -54,7 +53,6 @@ global_voice = {
     >>
     \new PianoStaff
     <<
-      \accidentalStyle Score.modern % damit Erinnerungsvorzeichen nächster Takt
       \sRechts
       \dKlavierauszug
       \sLinks
@@ -75,6 +73,8 @@ global_voice = {
   \bookOutputSuffix "Score"
   \score {
     <<
+    \accidentalStyle Score.modern % damit Erinnerungsvorzeichen nächster Takt
+    \override Score.DynamicTextSpanner.style = #'none % keine Striche/Punkt o.ä. nach cresc./dim. als Text
     \new StaffGroup <<
       \sFl
       \sOb
@@ -90,7 +90,6 @@ global_voice = {
     >>
     \sPk
     \new ChoirStaff <<
-      \accidentalStyle Score.modern % damit Erinnerungsvorzeichen nächster Takt
       \sSopran
       \sAlt
       \sTenor
