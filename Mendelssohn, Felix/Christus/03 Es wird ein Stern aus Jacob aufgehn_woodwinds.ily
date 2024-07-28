@@ -83,7 +83,7 @@ nFlII = \relative c' {
 nObI = \relative c' {
   \global
   % S. 4
-  R1*9 |
+  R1*7 | \cueDuringWithClef "fagotto1" #UP "bass" {\tag #'part {\set instrumentCueName = "Fagotti"} R1*2} |
   % S. 5
   r4 es\p g bes | c4. c8( bes4 as) |
   % S. 6
@@ -278,7 +278,7 @@ nFagI = \relative c' {
   % S. 19
   f1\f | g2 es'~ | es d | es1 | as,2\p bes | d es | as,\cresc bes |
   % S. 20
-  as2 g | as bes | c b | << c1\f~ {s2\<s4.\>s8\!} >> | c4 r4 r2 | R1*3 | bes1\p |
+  as2 g | as bes | c b | \tag #'part {\override Hairpin.minimum-length = #5 } << c1\f~ {s2\<s4.\>s8\!} >> \tag #'part {\revert Hairpin.minimum-length} | c4 r4 r2 | R1*3 | bes1\p |
   % S. 21
   c2( bes4 c) | bes es,( g bes) | c4. \partCombineApart c8( bes4 c) \partCombineAutomatic | bes2. es,4 | g bes es2~ | es1~ | es2 g | g1\fermata \bar "|."
 }
@@ -318,7 +318,7 @@ nFagII = \relative c' {
   % S. 19
   d1\f | es | f | es | c2\p bes | f' es | c\cresc bes |
   % S. 20
-  d2 es | f g | as g | <<c,1\f~ {s2\<s4.\>s8\!} >> | c4 r4 r2 | R1*3 | g'1\p |
+  d2 es | f g | as g | \tag #'part {\override Hairpin.minimum-length = #5 } <<c,1\f~ {s2\<s4.\>s8\!} >> \tag #'part {\revert Hairpin.minimum-length} | c4 r4 r2 | R1*3 | g'1\p |
   % S. 21
   as2( g4 as) | g es( g bes) | as4. as8( g4 as) | g2. es4 | g bes es2~ | es1~ | es2 es | es1\fermata \bar "|." 
 }

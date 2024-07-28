@@ -9,6 +9,10 @@
 \include "03 Es wird ein Stern aus Jacob aufgehn_pianoReduction.ily"
 
 
+%%% CUE VOICES %%%
+\addQuote "fagotto1" { \nFagI }
+
+
 %%% WOODWINDS %%%
 
 sFl =
@@ -19,7 +23,25 @@ sFl =
       \consists "Merge_rests_engraver"
     }
     <<{\partCombine \nFlI \nFlII}>>
-        
+
+sFlI =
+  \new Staff = "zFlautoI"
+    \with {
+      instrumentName = "Flauto I"
+      midiInstrument = "flute"
+      \consists "Merge_rests_engraver"
+    }
+    {\nFlI}
+
+sFlII =
+  \new Staff = "zFlautoII"
+    \with {
+      instrumentName = "Flauto II"
+      midiInstrument = "flute"
+      \consists "Merge_rests_engraver"
+    }
+    {\nFlII}
+
 sOb =
   \new Staff = "zOboi"
     \with {
@@ -28,6 +50,24 @@ sOb =
       \consists "Merge_rests_engraver"
     }
     <<{\partCombine \nObI \nObII}>>
+
+sObI =
+  \new Staff = "zOboeI"
+    \with {
+      instrumentName = "Oboe I"
+      midiInstrument = "oboe"
+      \consists "Merge_rests_engraver"
+    }
+    {\nObI}
+    
+sObII =
+  \new Staff = "zOboeII"
+    \with {
+      instrumentName = "Oboe II"
+      midiInstrument = "oboe"
+      \consists "Merge_rests_engraver"
+    }
+    {\nObII}
 
 sKlar =
   \new Staff = "zClarinetti"
@@ -38,6 +78,24 @@ sKlar =
     }
     <<{\transposition bes \transpose bes c {\partCombine \nKlarI \nKlarII}}>>
 
+sKlarI =
+  \new Staff = "zClarinettoI"
+    \with {
+      instrumentName = "Clarinetto I in B"
+      midiInstrument = "clarinet"
+      \consists "Merge_rests_engraver"
+    }
+    {\transposition bes \transpose bes c {\nKlarI}}
+    
+sKlarII =
+  \new Staff = "zClarinettoII"
+    \with {
+      instrumentName = "Clarinetto II in B"
+      midiInstrument = "clarinet"
+      \consists "Merge_rests_engraver"
+    }
+    {\transposition bes \transpose bes c {\nKlarII}}
+
 sFag =
   \new Staff = "zFagotti"
     \with {
@@ -47,6 +105,23 @@ sFag =
     }
     <<{\clef bass \partCombine \nFagI \nFagII}>>
 
+sFagI =
+  \new Staff = "zFagottoI"
+    \with {
+      instrumentName = "Fagotto I"
+      midiInstrument = "bassoon"
+      \consists "Merge_rests_engraver"
+    }
+    {\clef bass \nFagI}
+    
+sFagII =
+  \new Staff = "zFagottoII"
+    \with {
+      instrumentName = "Fagotto II"
+      midiInstrument = "bassoon"
+      \consists "Merge_rests_engraver"
+    }
+    {\clef bass \nFagII}
 
 %%% BRASS %%%
 
@@ -59,6 +134,24 @@ sHrn =
     }
     <<{\transposition es \transpose es c' {\partCombine \nHrnI \nHrnII}}>>
 
+sHrnI =
+  \new Staff = "zCornoI"
+    \with {
+      instrumentName = "Corno I in Es"
+      midiInstrument = "french horn"
+      \consists "Merge_rests_engraver"
+    }
+    {\transposition es \transpose es c' \nHrnI }
+    
+sHrnII =
+  \new Staff = "zCornoII"
+    \with {
+      instrumentName = "Corno II in Es"
+      midiInstrument = "french horn"
+      \consists "Merge_rests_engraver"
+    }
+    {\transposition es \transpose es c' \nHrnII}
+
 sPosAT =
   \new Staff = "zTromboniAT"
     \with {
@@ -68,6 +161,24 @@ sPosAT =
     }
     <<{\clef "alto" \partCombine \nPosA \nPosT}>>
     
+sPosA =
+  \new Staff = "zTromboneA"
+    \with {
+      instrumentName = "Trombone Alto"
+      midiInstrument = "trombone"
+      \consists "Merge_rests_engraver"
+    }
+    {\clef "alto" \nPosA}
+    
+sPosT =
+  \new Staff = "zTromboneT"
+    \with {
+      instrumentName = "Trombone Tenore"
+      midiInstrument = "trombone"
+      \consists "Merge_rests_engraver"
+    }
+   {\clef "alto" \nPosT}
+
 sPosB =
   \new Staff = "zTromboneB"
     \with {
@@ -75,7 +186,7 @@ sPosB =
       midiInstrument = "trombone"
       \consists "Merge_rests_engraver"
     }
-    <<{\clef bass \nPosB}>>
+    {\clef bass \nPosB}
 
 
 
@@ -88,7 +199,7 @@ sPk =
       midiInstrument = "timpani"
       \consists "Merge_rests_engraver"
     }
-    <<{\clef bass \nPk}>>
+    {\clef bass \nPk}
 
 
 
