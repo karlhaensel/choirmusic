@@ -16,13 +16,20 @@
 
 \include "03 Es wird ein Stern aus Jacob aufgehn_staffs.ily"
 
+scoreCommon = { 
+  \override Score.DynamicTextSpanner.style = #'none
+  \accidentalStyle Score.modern
+}
+
+scoreBarNumberSize = {
+  \override Score.BarNumber.font-size = #2
+}
 
 \book {
   \bookOutputSuffix "score"
   \score {
     <<
-    \accidentalStyle Score.modern % damit Erinnerungsvorzeichen nächster Takt
-    \override Score.DynamicTextSpanner.style = #'none 
+    \scoreCommon
     \new StaffGroup <<
       \removeWithTag #'part \killCues \sFl
       \removeWithTag #'part \killCues \sOb
@@ -36,7 +43,7 @@
         \removeWithTag #'part \killCues \sPosB
       >>
     >>
-    \sPk
+    \removeWithTag #'part \killCues \sPk
     \new ChoirStaff <<
       \removeWithTag #'part \killCues \sSopran
       \removeWithTag #'part \killCues \sAlt
@@ -53,8 +60,8 @@
     >>
     \layout {
       #(layout-set-staff-size 13) 
-      \override Score.BarNumber.font-size = #2
       indent = 2.5\cm
+      \scoreBarNumberSize
     }
     \midi {
       \tempo 4=124
@@ -66,8 +73,7 @@
   \bookOutputSuffix "vocalScore"
   \score {
     <<
-    \accidentalStyle Score.modern % damit Erinnerungsvorzeichen nächster Takt
-    \override Score.DynamicTextSpanner.style = #'none % keine Striche/Punkt o.ä. nach cresc./dim. als Text
+    \scoreCommon
     \new ChoirStaff <<
       \sSopran
       \sAlt
@@ -86,11 +92,13 @@
       \override Score.BarNumber.font-size = #2
     }
     \midi {
-      \tempo 4=124
     }
   }
 }
 
+partBarNumberSize = {
+  \override Score.BarNumber.font-size = #1
+}
 
 \book {
   \bookOutputSuffix "parts-flauto1"
@@ -99,11 +107,11 @@
     }
   \score {
     <<
-      
+      \scoreCommon
       \removeWithTag #'score {\compressMMRests {\sFlI}}
     >>
     \layout {
-      \override Score.BarNumber.font-size = #1
+      \partBarNumberSize
     }
   }
 }
@@ -115,11 +123,11 @@
     }
   \score {
     <<
-      \override Score.DynamicTextSpanner.style = #'none
+      \scoreCommon
       \removeWithTag #'score {\compressMMRests {\sFlII}}
     >>
     \layout {
-      \override Score.BarNumber.font-size = #1
+      \partBarNumberSize
     }
   }
 }
@@ -131,11 +139,11 @@
     }
   \score {
     <<
-      \override Score.DynamicTextSpanner.style = #'none
+      \scoreCommon
       \removeWithTag #'score {\compressMMRests {\sObI}}
     >>
     \layout {
-      \override Score.BarNumber.font-size = #1
+      \partBarNumberSize
     }
   }
 }
@@ -147,11 +155,11 @@
     }
   \score {
     <<
-      \override Score.DynamicTextSpanner.style = #'none
+      \scoreCommon
       \removeWithTag #'score {\compressMMRests {\sObII}}
     >>
     \layout {
-      \override Score.BarNumber.font-size = #1
+      \partBarNumberSize
     }
   }
 }
@@ -163,12 +171,12 @@
     }
   \score {
     <<
-      \override Score.DynamicTextSpanner.style = #'none
+      \scoreCommon
       \removeWithTag #'score {\compressMMRests {\sKlarI}}
     >>
     \layout {
-      \override Score.BarNumber.font-size = #1
-      indent = 2.5\cm
+      \partBarNumberSize
+      indent = 2.8\cm
     }
   }
 }
@@ -180,12 +188,12 @@
     }
   \score {
     <<
-      \override Score.DynamicTextSpanner.style = #'none
+      \scoreCommon
       \removeWithTag #'score {\compressMMRests {\sKlarII}}
     >>
     \layout {
-      \override Score.BarNumber.font-size = #1
-      indent = 2.5\cm
+      \partBarNumberSize
+      indent = 2.8\cm
     }
   }
 }
@@ -197,11 +205,11 @@
     }
   \score {
     <<
-      \override Score.DynamicTextSpanner.style = #'none
+      \scoreCommon
       \removeWithTag #'score {\compressMMRests {\sFagI}}
     >>
     \layout {
-      \override Score.BarNumber.font-size = #1
+      \partBarNumberSize
     }
   }
 }
@@ -213,11 +221,11 @@
     }
   \score {
     <<
-      \override Score.DynamicTextSpanner.style = #'none
+      \scoreCommon
       \removeWithTag #'score {\compressMMRests {\sFagII}}
     >>
     \layout {
-      \override Score.BarNumber.font-size = #1
+      \partBarNumberSize
     }
   }
 }
@@ -229,11 +237,11 @@
     }
   \score {
     <<
-      \override Score.DynamicTextSpanner.style = #'none
+      \scoreCommon
       \removeWithTag #'score {\compressMMRests {\sHrnI}}
     >>
     \layout {
-      \override Score.BarNumber.font-size = #1
+      \partBarNumberSize
       indent = 2.5\cm
     }
   }
@@ -246,11 +254,11 @@
     }
   \score {
     <<
-      \override Score.DynamicTextSpanner.style = #'none
+      \scoreCommon
       \removeWithTag #'score {\compressMMRests {\sHrnII}}
     >>
     \layout {
-      \override Score.BarNumber.font-size = #1
+      \partBarNumberSize
       indent = 2.5\cm
     }
   }
@@ -263,11 +271,11 @@
     }
   \score {
     <<
-      \override Score.DynamicTextSpanner.style = #'none
+      \scoreCommon
       \removeWithTag #'score {\compressMMRests {\sPosA}}
     >>
     \layout {
-      \override Score.BarNumber.font-size = #1
+      \partBarNumberSize
       indent = 2.8\cm
     }
   }
@@ -280,11 +288,11 @@
     }
   \score {
     <<
-      \override Score.DynamicTextSpanner.style = #'none
+      \scoreCommon
       \removeWithTag #'score {\compressMMRests {\sPosT}}
     >>
     \layout {
-      \override Score.BarNumber.font-size = #1
+      \partBarNumberSize
       indent = 2.8\cm
     }
   }
@@ -297,11 +305,11 @@
     }
   \score {
     <<
-      \override Score.DynamicTextSpanner.style = #'none
+      \scoreCommon
       \removeWithTag #'score {\compressMMRests {\sPosB}}
     >>
     \layout {
-      \override Score.BarNumber.font-size = #1
+      \partBarNumberSize
       indent = 2.8\cm
     }
   }
@@ -314,11 +322,11 @@
     }
   \score {
     <<
-      \override Score.DynamicTextSpanner.style = #'none
+      \scoreCommon
       \removeWithTag #'score {\compressMMRests {\sPk}}
     >>
     \layout {
-      \override Score.BarNumber.font-size = #1
+      \partBarNumberSize
       indent = 2.8\cm
     }
   }
