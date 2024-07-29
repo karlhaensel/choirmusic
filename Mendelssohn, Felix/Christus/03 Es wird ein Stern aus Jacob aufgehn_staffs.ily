@@ -1,5 +1,6 @@
 \version "2.22.00"
 
+\include "03 Es wird ein Stern aus Jacob aufgehn_global.ily"
 \include "03 Es wird ein Stern aus Jacob aufgehn_woodwinds.ily"
 \include "03 Es wird ein Stern aus Jacob aufgehn_brass.ily"
 \include "03 Es wird ein Stern aus Jacob aufgehn_timpani.ily"
@@ -22,7 +23,10 @@ sFl =
       midiInstrument = "flute"
       \consists "Merge_rests_engraver"
     }
-    <<{\partCombine \nFlI \nFlII}>>
+    <<
+      \global_marks
+      {\partCombine \nFlI \nFlII}
+    >>
 
 sFlI =
   \new Staff = "zFlautoI"
@@ -31,7 +35,10 @@ sFlI =
       midiInstrument = "flute"
       \consists "Merge_rests_engraver"
     }
-    {\nFlI}
+    <<
+      \global_marks
+      {\nFlI}
+    >>
 
 sFlII =
   \new Staff = "zFlautoII"
@@ -40,7 +47,10 @@ sFlII =
       midiInstrument = "flute"
       \consists "Merge_rests_engraver"
     }
-    {\nFlII}
+    <<
+      \global_marks
+      {\nFlII}
+    >>
 
 sOb =
   \new Staff = "zOboi"
@@ -49,7 +59,10 @@ sOb =
       midiInstrument = "oboe"
       \consists "Merge_rests_engraver"
     }
-    <<{\partCombine \nObI \nObII}>>
+    <<
+      \global_marks
+      {\partCombine \nObI \nObII}
+    >>
 
 sObI =
   \new Staff = "zOboeI"
@@ -58,7 +71,10 @@ sObI =
       midiInstrument = "oboe"
       \consists "Merge_rests_engraver"
     }
-    {\nObI}
+    <<
+      \global_marks
+      {\nObI}
+    >>
     
 sObII =
   \new Staff = "zOboeII"
@@ -67,7 +83,10 @@ sObII =
       midiInstrument = "oboe"
       \consists "Merge_rests_engraver"
     }
-    {\nObII}
+    <<
+      \global_marks
+      {\nObII}
+    >>
 
 sKlar =
   \new Staff = "zClarinetti"
@@ -76,7 +95,10 @@ sKlar =
       midiInstrument = "clarinet"
       \consists "Merge_rests_engraver"
     }
-    <<{\transposition bes \transpose bes c {\partCombine \nKlarI \nKlarII}}>>
+    <<
+      \global_marks
+      {\transposition bes \transpose bes c {\partCombine \nKlarI \nKlarII}}
+    >>
 
 sKlarI =
   \new Staff = "zClarinettoI"
@@ -85,7 +107,10 @@ sKlarI =
       midiInstrument = "clarinet"
       \consists "Merge_rests_engraver"
     }
-    {\transposition bes \transpose bes c {\nKlarI}}
+    <<
+      \global_marks
+      {\transposition bes \transpose bes c {\nKlarI}}
+    >>
     
 sKlarII =
   \new Staff = "zClarinettoII"
@@ -94,7 +119,10 @@ sKlarII =
       midiInstrument = "clarinet"
       \consists "Merge_rests_engraver"
     }
-    {\transposition bes \transpose bes c {\nKlarII}}
+    <<
+      \global_marks
+      {\transposition bes \transpose bes c {\nKlarII}}
+    >>
 
 sFag =
   \new Staff = "zFagotti"
@@ -103,7 +131,10 @@ sFag =
       midiInstrument = "bassoon"
       \consists "Merge_rests_engraver"
     }
-    <<{\clef bass \partCombine \nFagI \nFagII}>>
+    <<
+      \global_marks
+      {\clef bass \partCombine \nFagI \nFagII}
+    >>
 
 sFagI =
   \new Staff = "zFagottoI"
@@ -112,7 +143,10 @@ sFagI =
       midiInstrument = "bassoon"
       \consists "Merge_rests_engraver"
     }
-    {\clef bass \nFagI}
+    <<
+      \global_marks
+      {\clef bass \nFagI}
+    >>
     
 sFagII =
   \new Staff = "zFagottoII"
@@ -121,7 +155,10 @@ sFagII =
       midiInstrument = "bassoon"
       \consists "Merge_rests_engraver"
     }
-    {\clef bass \nFagII}
+    <<
+      \global_marks
+      {\clef bass \nFagII}
+    >>
 
 %%% BRASS %%%
 
@@ -132,7 +169,10 @@ sHrn =
       midiInstrument = "french horn"
       \consists "Merge_rests_engraver"
     }
-    <<{\transposition es \transpose es c' {\partCombine \nHrnI \nHrnII}}>>
+    <<
+      \global_marks
+      {\transposition es \transpose es c' {\partCombine \nHrnI \nHrnII}}
+    >>
 
 sHrnI =
   \new Staff = "zCornoI"
@@ -141,7 +181,10 @@ sHrnI =
       midiInstrument = "french horn"
       \consists "Merge_rests_engraver"
     }
-    {\transposition es \transpose es c' \nHrnI }
+    <<
+      \global_marks
+      {\transposition es \transpose es c' \nHrnI }
+    >>
     
 sHrnII =
   \new Staff = "zCornoII"
@@ -150,7 +193,10 @@ sHrnII =
       midiInstrument = "french horn"
       \consists "Merge_rests_engraver"
     }
-    {\transposition es \transpose es c' \nHrnII}
+    <<
+      \global_marks
+      {\transposition es \transpose es c' \nHrnII}
+    >>
 
 sPosAT =
   \new Staff = "zTromboniAT"
@@ -159,7 +205,10 @@ sPosAT =
       midiInstrument = "trombone"
       \consists "Merge_rests_engraver"
     }
-    <<{\clef "alto" \partCombine \nPosA \nPosT}>>
+    <<
+      \global_marks
+      {\clef "alto" \partCombine \nPosA \nPosT}
+    >>
     
 sPosA =
   \new Staff = "zTromboneA"
@@ -168,7 +217,10 @@ sPosA =
       midiInstrument = "trombone"
       \consists "Merge_rests_engraver"
     }
-    {\clef "alto" \nPosA}
+    <<
+      \global_marks
+      {\clef "alto" \nPosA}
+    >>
     
 sPosT =
   \new Staff = "zTromboneT"
@@ -177,7 +229,10 @@ sPosT =
       midiInstrument = "trombone"
       \consists "Merge_rests_engraver"
     }
-   {\clef "alto" \nPosT}
+    <<
+      \global_marks
+      {\clef bass \nPosT}
+    >>
 
 sPosB =
   \new Staff = "zTromboneB"
@@ -186,7 +241,10 @@ sPosB =
       midiInstrument = "trombone"
       \consists "Merge_rests_engraver"
     }
-    {\clef bass \nPosB}
+    <<
+      \global_marks
+      {\clef bass \nPosB}
+    >>
 
 
 
@@ -199,7 +257,10 @@ sPk =
       midiInstrument = "timpani"
       \consists "Merge_rests_engraver"
     }
-    {\clef bass \nPk}
+    <<
+      \global_marks
+      {\clef bass \nPk}
+    >>
 
 
 
@@ -213,6 +274,7 @@ sSopran =
       \consists "Merge_rests_engraver"
     } 
     <<
+      \global_marks
       \keepWithTag #'s \dChoir
       {\new Voice = "vSoprano" {\nSopran}}
       \new Lyrics \lyricsto "vSoprano" {\tSopran}
@@ -226,6 +288,7 @@ sAlt =
       \consists "Merge_rests_engraver"
     } 
     <<
+      \global_marks
       \keepWithTag #'a \dChoir
       {\new Voice = "vAlto" {\nAlt}}
       \new Lyrics \lyricsto "vAlto" {\tAlt}
@@ -239,6 +302,7 @@ sTenor =
       \consists "Merge_rests_engraver"
     } 
     <<
+      \global_marks
       \keepWithTag #'t \dChoir
       {\new Voice = "vTenore" {\clef "violin_8" \nTenor}}
       \new Lyrics \lyricsto "vTenore" {\tTenor}
@@ -252,6 +316,7 @@ sBass =
       \consists "Merge_rests_engraver"
     } 
     <<
+      \global_marks
       \keepWithTag #'b \dChoir
       {\new Voice = "vBasso" {\clef bass \nBass}}
       \new Lyrics \lyricsto "vBasso" {\tBass}
@@ -269,6 +334,7 @@ sVioI =
       \consists "Merge_rests_engraver"
     }
     <<
+      \global_marks
       \keepWithTag #'vioI \dStrings
       {\new Voice = "vVioI" {\nVioI}}
     >>
@@ -281,6 +347,7 @@ sVioII =
       \consists "Merge_rests_engraver"
     }
     <<
+      \global_marks
       \keepWithTag #'vioII \dStrings
       {\new Voice = "vVioII" {\nVioII}}
     >>
@@ -293,6 +360,7 @@ sVla =
       \consists "Merge_rests_engraver"
     }
     <<
+      \global_marks
       \keepWithTag #'vla \dStrings
       {\new Voice = "vVla" {\clef alto \nVla}}
     >>
@@ -306,6 +374,7 @@ sVc =
       \consists "Merge_rests_engraver"
     }
     <<
+      \global_marks
       \keepWithTag #'vc \dStrings
       {\new Voice = "vVc" {\clef bass \nVc}}
     >>
@@ -318,6 +387,7 @@ sCb =
       \consists "Merge_rests_engraver"
     }
     <<
+      \global_marks
       \keepWithTag #'cb \dStrings
       {\new Voice = "vCb" {\clef bass \nCb}}
     >>
@@ -331,11 +401,17 @@ sRechts =
     \with {
       midiInstrument = "acoustic grand"
     }
-    {\nRechts}
+    <<
+      \global_marks
+      {\nRechts}
+    >>
 
 sLinks =
   \new Staff = "zLinks"
     \with {
       midiInstrument = "acoustic grand"
     }
-    {\clef bass \nLinks}
+    <<
+      \global_marks
+      {\clef bass \nLinks}
+    >>

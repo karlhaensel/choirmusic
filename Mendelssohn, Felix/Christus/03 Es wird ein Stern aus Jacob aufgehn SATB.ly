@@ -14,26 +14,6 @@
 \layout {
 }
 
-chormidi = \with {
-  midiInstrument = "choir aahs"
-}
-
-global_transpose = {
-  \time 4/4
-  \tempo "Allegro moderato"
-  \dynamicDown
-}
-
-global = {
-  \key es \major
-  \global_transpose
-}
-
-global_voice = {
-  \dynamicUp
-  \autoBeamOff
-}
-
 \include "03 Es wird ein Stern aus Jacob aufgehn_staffs.ily"
 
 
@@ -42,7 +22,7 @@ global_voice = {
   \score {
     <<
     \accidentalStyle Score.modern % damit Erinnerungsvorzeichen nächster Takt
-    \override Score.DynamicTextSpanner.style = #'none % keine Striche/Punkt o.ä. nach cresc./dim. als Text
+    \override Score.DynamicTextSpanner.style = #'none 
     \new StaffGroup <<
       \removeWithTag #'part \killCues \sFl
       \removeWithTag #'part \killCues \sOb
@@ -74,6 +54,7 @@ global_voice = {
     \layout {
       #(layout-set-staff-size 13) 
       \override Score.BarNumber.font-size = #2
+      indent = 2.5\cm
     }
     \midi {
       \tempo 4=124
@@ -110,6 +91,7 @@ global_voice = {
   }
 }
 
+
 \book {
   \bookOutputSuffix "parts-flauto1"
   \header {
@@ -117,7 +99,7 @@ global_voice = {
     }
   \score {
     <<
-      \override Score.DynamicTextSpanner.style = #'none
+      
       \removeWithTag #'score {\compressMMRests {\sFlI}}
     >>
     \layout {
@@ -236,6 +218,108 @@ global_voice = {
     >>
     \layout {
       \override Score.BarNumber.font-size = #1
+    }
+  }
+}
+
+\book {
+  \bookOutputSuffix "parts-cornoEs1"
+  \header {
+      instrument = "Corno in Es I"
+    }
+  \score {
+    <<
+      \override Score.DynamicTextSpanner.style = #'none
+      \removeWithTag #'score {\compressMMRests {\sHrnI}}
+    >>
+    \layout {
+      \override Score.BarNumber.font-size = #1
+      indent = 2.5\cm
+    }
+  }
+}
+
+\book {
+  \bookOutputSuffix "parts-cornoEs2"
+  \header {
+      instrument = "Corno in Es II"
+    }
+  \score {
+    <<
+      \override Score.DynamicTextSpanner.style = #'none
+      \removeWithTag #'score {\compressMMRests {\sHrnII}}
+    >>
+    \layout {
+      \override Score.BarNumber.font-size = #1
+      indent = 2.5\cm
+    }
+  }
+}
+
+\book {
+  \bookOutputSuffix "parts-tromboneA"
+  \header {
+      instrument = "Trombone Alto"
+    }
+  \score {
+    <<
+      \override Score.DynamicTextSpanner.style = #'none
+      \removeWithTag #'score {\compressMMRests {\sPosA}}
+    >>
+    \layout {
+      \override Score.BarNumber.font-size = #1
+      indent = 2.8\cm
+    }
+  }
+}
+
+\book {
+  \bookOutputSuffix "parts-tromboneT"
+  \header {
+      instrument = "Trombone Tenore"
+    }
+  \score {
+    <<
+      \override Score.DynamicTextSpanner.style = #'none
+      \removeWithTag #'score {\compressMMRests {\sPosT}}
+    >>
+    \layout {
+      \override Score.BarNumber.font-size = #1
+      indent = 2.8\cm
+    }
+  }
+}
+
+\book {
+  \bookOutputSuffix "parts-tromboneB"
+  \header {
+      instrument = "Trombone Basso"
+    }
+  \score {
+    <<
+      \override Score.DynamicTextSpanner.style = #'none
+      \removeWithTag #'score {\compressMMRests {\sPosB}}
+    >>
+    \layout {
+      \override Score.BarNumber.font-size = #1
+      indent = 2.8\cm
+    }
+  }
+}
+
+\book {
+  \bookOutputSuffix "parts-timpaniEsB"
+  \header {
+      instrument = "Timpani in Es.B."
+    }
+  \score {
+    <<
+      \override Score.DynamicTextSpanner.style = #'none
+      \removeWithTag #'score {\compressMMRests {\sPk}}
+    >>
+    \layout {
+      \override Score.BarNumber.font-size = #1
+      indent = 2.8\cm
     }
   }
 }

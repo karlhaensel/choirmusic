@@ -161,8 +161,8 @@ nObII = \relative c' {
 }
 
 nKlarI = \transpose c bes \relative c' {
-  \global_transpose
   \key f \major
+  \global_transpose
   % S.4
   R1 | r4 f4\p( a c) | d4. d8( c4 bes) | \partCombineApart c4( f,) \partCombineAutomatic f'( e) | d( a8) a d4( c) |
   % S. 5
@@ -202,8 +202,8 @@ nKlarI = \transpose c bes \relative c' {
 }
 
 nKlarII = \transpose c bes \relative c' {
-  \global_transpose
   \key f \major
+  \global_transpose
   % S.4
   R1 | r4 f4\p( a c) | bes4. bes8( a4 g) | \partCombineApart a4( f) \partCombineAutomatic f'( e) | d( a8) a d4( c) |
   % S. 5
