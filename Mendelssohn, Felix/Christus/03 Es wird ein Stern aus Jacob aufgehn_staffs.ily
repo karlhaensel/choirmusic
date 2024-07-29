@@ -12,6 +12,8 @@
 
 %%% CUE VOICES %%%
 \addQuote "fagotto1" { \nFagI }
+\addQuote "soprano" { \nSopran}
+\addQuote "violoncello" { \nVc }
 
 
 %%% WOODWINDS %%%

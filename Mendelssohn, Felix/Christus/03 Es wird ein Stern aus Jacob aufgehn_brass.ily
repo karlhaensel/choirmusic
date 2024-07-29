@@ -35,7 +35,7 @@ nHrnI = \transpose c' es \relative c' {
   % S.19
   g,1\f~ | g | g\sf~ | g | c2\p c | \once \partCombineApart g c | c\cresc c |
   % S.20
-  g g | R1*2 | <<e1\f~ {s2\<s4.\>s8\!}>> | e4 r4 r2 | R1*3 | \partCombineChords c'1\p~ |
+  g g | R1*2 | \tag #'part {\override Hairpin.minimum-length = #5 } <<e1\f~ {s2\<s4.\>s8\!}>> \tag #'part {\revert Hairpin.minimum-length} | e4 r4 r2 | R1*3 | \partCombineChords c'1\p~ |
   % S.21
   c1 | c,4 \partCombineAutomatic c( e g) | c1~ | c4 c, e g | c1 | e~ | e2 e | e1\fermata \bar "|."
 }
@@ -75,7 +75,7 @@ nHrnII = \transpose c' es \relative c' {
   % S.19
   g,1\f~ | g | g\sf~ | g | c2\p c | \once \partCombineApart g' c, | c\cresc c |
   % S.20
-  g' g | R1*2 | <<c,1\f~ {s2\<s4.\>s8\!}>> | c4 r4 r2 | R1*3 | \partCombineChords c1\p~ |
+  g' g | R1*2 | \tag #'part {\override Hairpin.minimum-length = #5 } <<c,1\f~ {s2\<s4.\>s8\!}>> \tag #'part {\revert Hairpin.minimum-length} | c4 r4 r2 | R1*3 | \partCombineChords c1\p~ |
   % S.21
   c1~ | c4 \partCombineAutomatic c( e g) | c1~ | c4 c, e g | c1~ | c~ | c2 c | c1\fermata \bar "|."
 }
@@ -83,41 +83,41 @@ nHrnII = \transpose c' es \relative c' {
 nPosA = \relative c' {
   \global
   % S.4-16
-  R1*78 |
+  R1*79 |
   % S.17
-  R1*6 | r2 f2\p | as\cresc f |
+  \cueDuringWithClef "soprano" #UP "violin" {\tag #'part {\set instrumentCueName = "Soprano (\"Wie schön leuchtet der Morgenstern\")" } R1*5} | r2 f2\p | as\cresc f |
   % S.18
   es f | g f | f1~\> | f4\! r4 r2 | R1*4 |
   % S.19
   bes1\f | g | bes | g | as2\p g | f g | \partCombineChords as\cresc g |
   % S.20
-  f2 g | as g | \partCombineAutomatic f1 | es1\f | es4 r4 r2 | R1*3 | bes1\p |
+  f2 g | as g | \partCombineAutomatic f1 | \partCombineChords es1\f~ | es4 r4 r2 | R1*3 | bes1\p |
   % S.21
-  R1*3 | bes1\p\<~ | bes\>~ | bes4\! r4 r2 | R1 | R1\fermata \bar "|."
+  R1*3 | \tag #'part { \once \override Hairpin.minimum-length = #5 } bes1\p\<~ | bes\>~ | bes4\! r4 r2 | R1 | R1\fermata \bar "|."
 }
 
 nPosT = \relative c' {
   \global
   % S.4-16
-  R1*78 |
+  R1*79 |
   % S.17
-  R1*6 | r2 d2\p | c\cresc bes |
+  \cueDuringWithClef "soprano" #UP "violin" {\tag #'part {\set instrumentCueName = "Soprano (\"Wie schön leuchtet der Morgenstern\")" } R1*5} | r2 d2\p | c\cresc bes |
   % S.18
   bes bes | bes as | as1~\> | as4\! r4 r2 | R1*4 |
   % S.19
   f'1\f | es | es2 d | es1 | as,2\p bes | d es | \partCombineChords as,\cresc bes |
   % S.20
-  bes2 es | d es | \partCombineAutomatic c\( b\) | c1\f~ | c4 r4 r2 | R1*3 | g1\p |
+  bes2 es | d es | \partCombineAutomatic c\( b\) | \partCombineChords c1\f~ | c4 r4 r2 | R1*3 | g1\p |
   % S.21
-  R1*3 | g1\p\<~ | g\>~ | g4\! r4 r2 | R1 | R1\fermata \bar "|."
+  R1*3 | \tag #'part { \once \override Hairpin.minimum-length = #5 } g1\p\<~ | g\>~ | g4\! r4 r2 | R1 | R1\fermata \bar "|."
 }
 
 nPosB = \relative c' {
   \global
   % S.4-16
-  R1*78 |
+  R1*79 |
   % S.17
-  R1*6 | r2 bes2\p | as\cresc as |
+  \cueDuringWithClef "soprano" #UP "violin" {\tag #'part {\set instrumentCueName = "Soprano (\"Wie schön leuchtet der Morgenstern\")" } R1*5} | r2 bes2\p | as\cresc as |
   % S.18
   g f | es f | d1~\> | d4\! r4 r2 | R1*4 |
   % S.19
@@ -125,5 +125,5 @@ nPosB = \relative c' {
   % S.20
   d2 es | f g | as g | c,1\f~ | c4 r4 r2 | R1*3 | es1\p |
   % S.21
-  R1*3 | es,1\p\<~ | es\>~ | es4\! r4 r2 | R1 | R1\fermata \bar "|."
+  R1*3 | \tag #'part { \once \override Hairpin.minimum-length = #5 } es,1\p\<~ | es\>~ | es4\! r4 r2 | R1 | R1\fermata \bar "|."
 }
