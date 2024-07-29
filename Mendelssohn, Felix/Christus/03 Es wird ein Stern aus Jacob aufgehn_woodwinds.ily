@@ -123,7 +123,7 @@ nObI = \relative c' {
 nObII = \relative c' {
   \global
   % S. 4
-  R1*9 |
+  R1*7 | \cueDuringWithClef "fagotto1" #UP "bass" {\tag #'part {\set instrumentCueName = "Fagotti"} R1*2} |
   % S. 5
   r4 es\p g bes | c4. c8( bes4 as) |
   % S. 6
