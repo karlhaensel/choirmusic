@@ -10,6 +10,6 @@ A loose collection of practical editions for choirs and singers, including
 - editions I have made just for fun and/or to improve my Lilypond skills
 
 ## How to get PDF or MIDI files
-For security reasons, PDF and MIDI files are not uploaded to the online repository. However, [Lilypond](http://lilypond.org/) (the markup language these scores are written in) and [Frescobaldi](https://www.frescobaldi.org/) (a very handy Lilypond editor) are available online for free. Even if you do not know Lilypond, you can compile your own PDF files with Frescobaldi once you have installed Lilypond. If you have a very urgent need for a PDF file and/or are really unable to compile it yourself, you can also contact me via [e-mail](mailto:Karl-Haensel@gmx.de). I will try to reply as soon as possible. But please keep in mind that this is just a hobby project.
+For security reasons, PDF and MIDI files are not uploaded directly to the repository. However, you may find a current version of the PDF and MIDI files within a zip file in the latest release (see right column of repository homepage). Furthermore, [Lilypond](http://lilypond.org/) (the markup language these scores are written in) and [Frescobaldi](https://www.frescobaldi.org/) (a very handy Lilypond editor) are available online for free. Even if you do not know Lilypond, you can compile your own PDF files with Frescobaldi once you have installed Lilypond.
 
 ## Have fun with this (and other) choral music!
