@@ -89,7 +89,34 @@ scoreBarNumberSize = {
     >>
     \layout {
       #(layout-set-staff-size 13) 
-      \override Score.BarNumber.font-size = #2
+      \scoreBarNumberSize
+    }
+    \midi {
+    }
+  }
+}
+
+\book {
+  \bookOutputSuffix "parts-coro"
+  \header {
+    instrument = "Coro"
+  }
+  \paper  {
+    page-count = #4
+  }
+  \score {
+    <<
+    \scoreCommon
+    \new ChoirStaff <<
+      \removeWithTag #'score {\compressMMRests \sSopran}
+      \removeWithTag #'score {\compressMMRests \sAlt}
+      \removeWithTag #'score {\compressMMRests \sTenor}
+      \removeWithTag #'score {\compressMMRests \sBass}
+    >>
+    >>
+    \layout {
+      #(layout-set-staff-size 16) 
+      \scoreBarNumberSize
     }
     \midi {
     }

@@ -53,9 +53,9 @@ nSopran = \relative c' {
   % S.7
   d2 d2(~d4 e f g | c,) f,4 a c | d4. d8 c4 bes4 | es2 es~| es4 d c bes |
   % S.8
-  a4 bes c d | es4(g) f2~ | f4 f, f'2~ | f4 es8([ d8]) c2 | bes2 r2 | R1 |
+  a4 bes c d | es4(g) f2~ | f4 f, f'2~ | f4 es8([ d8]) c2 | bes2 r2 |
   % S.9
-  R1 | R1 | r4 bes4 bes bes | e2 e | r2 bes4 bes8 bes | f'2 f |
+  R1*3 | r4 bes4 bes bes | e2 e | r2 bes4 bes8 bes | f'2 f |
   % S.10
   r4 bes,4 bes bes | ges'1~ | ges4 bes,4 bes bes8 bes | bes2 as2 | R1 | R1 |
   % S.11
@@ -94,9 +94,9 @@ nAlt = \relative c' {
   % S.7
   c2 bes~ | bes4) bes bes bes | bes2 a | as2. as4 | g4(bes) a g | a2(g4) f |
   % S.8
-  es4 d f bes | a4(g4) c2 | bes4(a) bes f | g4(bes2 a4) | bes2 r2 | R1
+  es4 d f bes | a4(g4) c2 | bes4(a) bes f | g4(bes2 a4) | bes2 r2 |
   % S.9
-  R1*2 | r4 bes bes bes | bes2 bes | r bes4 bes8 bes | bes2 bes |
+  R1*3 | r4 bes bes bes | bes2 bes | r bes4 bes8 bes | bes2 bes |
   % S.10
   r4 bes bes bes | bes1~ | bes4 ges ges ges8 ges | ges2 es | R1 | r4 des des des |
   % S.11
@@ -135,9 +135,9 @@ nTenor = \relative c' {
   % S.7
   r4 bes d f | g4. g8 f4 e | f2 f~ | f4 f f d | bes2 r4 c | c( d es d |
   % S.8
-  c) bes a bes | c( d es2) | d4 es f d | bes( c8[ d] es2) | d2 r2 | R1 |
+  c) bes a bes | c( d es2) | d4 es f d | bes( c8[ d] es2) | d2 r2 |
   % S.9
-  R1*2 | r4 bes bes bes | des2 des | r bes4 bes8 bes | des2 des |
+  R1*3 | r4 bes bes bes | des2 des | r bes4 bes8 bes | des2 des |
   % S.10
   r4 bes bes bes | des1~ | des4 des des des8 des | des4. des8 c4 as | des2 des | r4 des des des |
   % S.11
@@ -175,9 +175,9 @@ nBass = \relative c {
   % S.7
   bes r | R1*2 | r4 bes d f | g4. g8 f4 es | f2 f~ |
   % S.8
-  f4 f es d | c( bes) a2 | bes4 c d4. d8 | es2( f) | bes,2 r | R1 |
+  f4 f es d | c( bes) a2 | bes4 c d4. d8 | es2( f) | bes,2 r |
   % S.9
-  R1*2 | r4 bes' bes bes | g2 g | r bes4 bes8 bes | f2 f |
+  R1*3 | r4 bes' bes bes | g2 g | r bes4 bes8 bes | f2 f |
   % S.10
   r4 bes bes bes | es,1~ | es4 es es es8 es | as2 as | r4 des, f as | bes4. bes8 as4 ges |
   % S.11
