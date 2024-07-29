@@ -53,7 +53,7 @@ nVioI = \relative c' {
   % S.16
   g2\( f\) | \scaleDurations 2/3 {\repeat unfold 3 {es8\(c es c es c\)} es\( bes es a, es' a,\) | es'\( bes es g bes, g'\) f\( bes, f' es bes es\) | d\( as d c d c\) d\( bes d as d as\)} | es'4 bes2 as4 | g2 f |
   % S.17
-  \scaleDurations 2/3 { es8\( \repeat unfold 8 { bes es} bes\)} es4 r | R1*3 | \scaleDurations 2/3 {bes'8\( \repeat unfold 8 {f bes} f\) bes\( f bes f bes f\) | c'\( as c as c as\) d\( bes d bes d bes\) | 
+  \scaleDurations 2/3 { es8\( \repeat unfold 8 { bes es} bes\)} es4 r | R1*3 | \tag #'part {\pageTurn} \scaleDurations 2/3 {bes'8\( \repeat unfold 8 {f bes} f\) bes\( f bes f bes f\) | c'\( as c as c as\) d\( bes d bes d bes\) | 
   % S.18
   es\( bes es bes es bes\) d\( bes d bes d bes\) | c\( bes c bes c bes\) c\( as c as c as\) | bes\( \repeat unfold 8 {f bes} f\)} g4 r | R1*4 |
   % S.19
@@ -93,7 +93,7 @@ nVioII = \relative c' {
   % S.16
   g\( es g es g es\) f\( d f d f d\) | c'\( g c g c g\) c\( g c g c g\) | c\( f, c' f, c' f,\) c'\( f, c' f, c' f,\) | bes\( g bes g bes g\) as\( bes as g bes g\) | as\( f as\) as\( bes, as'\) g\( bes, g' f bes, f'\)} | es4 es2 es4 | es2 d |
   % S.17
-  \scaleDurations 2/3{bes8\( \repeat unfold 8 {g bes} g\)} bes4 r4 | R1*3 | \scaleDurations 2/3 {f'8\( \repeat unfold 8 {d f} d\) f\( d f d f d\) | as'\( es as es as es\) bes'\( f bes f bes f\) |
+  \scaleDurations 2/3{bes8\( \repeat unfold 8 {g bes} g\)} bes4 r4 | R1*3 | \tag #'part {\pageTurn} \scaleDurations 2/3 {f'8\( \repeat unfold 8 {d f} d\) f\( d f d f d\) | as'\( es as es as es\) bes'\( f bes f bes f\) |
   % S.18
   bes\( es, bes' es, bes' es,\) bes'\( f bes f bes f\) | bes\( g bes g bes g\) as\( f as f as f\) | as\( \repeat unfold 8 {f as} f\)} es4 r | R1*4 |
   % S.19
@@ -137,7 +137,7 @@ nVla = \relative c' {
   % S.18
   bes'\( es, bes' es, bes' es,\) f\( d f d f d\) | g\( c, g' c, g' c,\) f\( c f c f c\) | f\( \repeat unfold 8 {bes, f'} bes,\)} es4 r | R1*4 |
   % S.19
-  \scaleDurations 2/3 {f8\( \repeat unfold 5 {bes, f'} bes,\) | bes\( \repeat unfold 5 {g bes} g\) | f'\( \repeat unfold 5 {bes, f'} bes,\) | bes\( \repeat unfold 5 {g bes} g\)} | as2 bes | \scaleDurations 2/3 {bes8\( f bes f bes f\) bes\( g bes g bes g\)} | as2 bes |
+  \tag #'part {\pageTurn} \scaleDurations 2/3 {f8\( \repeat unfold 5 {bes, f'} bes,\) | bes\( \repeat unfold 5 {g bes} g\) | f'\( \repeat unfold 5 {bes, f'} bes,\) | bes\( \repeat unfold 5 {g bes} g\)} | as2 bes | \scaleDurations 2/3 {bes8\( f bes f bes f\) bes\( g bes g bes g\)} | as2 bes |
   % S.20
   \scaleDurations 2/3 {as8\( f as f as f\) es\( g es g es g\)} | as2 bes | c\( b\) | \scaleDurations 2/3 {g8\( \repeat unfold 5 {es g} es\)} | g4 r r2 | R1*3 | \scaleDurations 2/3 {\repeat unfold 2 {bes8\( g bes g bes g\)} |
   % S.21

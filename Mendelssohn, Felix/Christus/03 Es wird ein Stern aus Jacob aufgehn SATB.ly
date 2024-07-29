@@ -331,3 +331,83 @@ partBarNumberSize = {
     }
   }
 }
+
+\book {
+  \bookOutputSuffix "parts-violino1"
+  \header {
+      instrument = "Violino I"
+    }
+  \score {
+    <<
+      \scoreCommon
+      \removeWithTag #'score {\compressMMRests {\sVioI}}
+    >>
+    \layout {
+      \partBarNumberSize
+    }
+  }
+}
+
+\book {
+  \bookOutputSuffix "parts-violino2"
+  \header {
+      instrument = "Violino II"
+    }
+  \score {
+    <<
+      \scoreCommon
+      \removeWithTag #'score {\compressMMRests {\sVioII}}
+    >>
+    \layout {
+      \partBarNumberSize
+    }
+  }
+}
+
+\book {
+  \bookOutputSuffix "parts-viola"
+  \header {
+      instrument = "Viola"
+    }
+  \score {
+    <<
+      \scoreCommon
+      \removeWithTag #'score {\compressMMRests {\sVla}}
+    >>
+    \layout {
+      \partBarNumberSize
+    }
+  }
+}
+
+\book {
+  \bookOutputSuffix "parts-violoncello"
+  \header {
+      instrument = "Violoncello"
+    }
+  \score {
+    <<
+      \scoreCommon
+      \removeWithTag #'score {\compressMMRests {\sVc}}
+    >>
+    \layout {
+      \partBarNumberSize
+    }
+  }
+}
+
+\book {
+  \bookOutputSuffix "parts-basso"
+  \header {
+      instrument = "Basso"
+    }
+  \score {
+    <<
+      \scoreCommon
+      \removeWithTag #'score {\compressMMRests {\sCb}}
+    >>
+    \layout {
+      \partBarNumberSize
+    }
+  }
+}
