@@ -349,10 +349,8 @@ sVioII =
       instrumentName = "Violino II"
       midiInstrument = "violin"
       \consists "Merge_rests_engraver"
-      \consists Page_turn_engraver
     }
     <<
-      \set Staff.minimumPageTurnLength = #(ly:make-moment 2/1)
       \global_marks
       \keepWithTag #'vioII \dStrings
       {\new Voice = "vVioII" {\nVioII}}
@@ -364,10 +362,8 @@ sVla =
       instrumentName = "Viola"
       midiInstrument = "viola"
       \consists "Merge_rests_engraver"
-      \consists Page_turn_engraver
     }
     <<
-      \set Staff.minimumPageTurnLength = #(ly:make-moment 2/1)
       \global_marks
       \keepWithTag #'vla \dStrings
       {\new Voice = "vVla" {\clef alto \nVla}}
@@ -379,7 +375,6 @@ sVc =
       instrumentName = "Violoncello"
       midiInstrument = "cello"
       \consists "Merge_rests_engraver"
-      \consists Page_turn_engraver
     }
     <<
       \global_marks
@@ -393,7 +388,6 @@ sCb =
       instrumentName = "Basso"
       midiInstrument = "contrabass"
       \consists "Merge_rests_engraver"
-      \consists Page_turn_engraver
     }
     <<
       \global_marks
