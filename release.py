@@ -10,7 +10,7 @@ from zipfile import ZipFile
 
 CHOIRMUSIC_DIR = Path(__file__).resolve().parent
 LOG_DIR = CHOIRMUSIC_DIR / ".release_logs"
-
+LOG_LEVEL = logging.INFO
 
 def setup_logging() -> None:
     start_time = dt.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
@@ -19,7 +19,7 @@ def setup_logging() -> None:
     LOG_DIR.mkdir(parents=True, exist_ok=True)
 
     logging.basicConfig(
-        level=logging.INFO,
+        level=LOG_LEVEL,
         format="%(asctime)s %(levelname)s: %(message)s",
         handlers=[
             logging.FileHandler(log_file, encoding="utf-8"),
@@ -35,6 +35,24 @@ def check_lilypond() -> None:
         raise FileNotFoundError(
             "'lilypond' was not found in PATH. Please install and/or add to your PATH."
         )
+
+
+def clean_up() -> None:
+    removed = 0
+    errors = 0
+
+    for path in CHOIRMUSIC_DIR.rglob("*"):
+        if path.is_file() and path.suffix.lower() in {".pdf", ".mid"}:
+            try:
+                path.unlink()
+                removed += 1
+                logging.debug(f"Removed {path.relative_to(CHOIRMUSIC_DIR)}")
+            except Exception as e:
+                errors += 1
+                logging.error(f"Failed to remove {path.relative_to(CHOIRMUSIC_DIR)}: {e}")
+                raise
+
+    logging.info(f"Cleanup complete: removed {removed} PDF and MIDI files.")
 
 
 def compile_lilypond() -> None:
@@ -54,7 +72,7 @@ def compile_lilypond() -> None:
                 f"Lilypond error occurred while compiling {ly_file_relative}."
             )
         else:
-            logging.info(
+            logging.debug(
                 f"Successfully compiled {ly_file_relative}. CAUTION: There might still have been warnings during compilation"
             )
 
@@ -93,7 +111,7 @@ def zip_files() -> None:
                 relative_path = path.relative_to(CHOIRMUSIC_DIR)
                 release_zip.write(path, arcname=relative_path)
     logging.info(
-        f"Succesfully created zip file {zip_path.resolve()} with PDF and MIDI files for release."
+        f"Successfully created zip file {zip_path.resolve()} with PDF and MIDI files for release."
     )
 
 
@@ -103,9 +121,10 @@ def main() -> None:
     try:
         check_lilypond()
     except FileNotFoundError as e:
-        logging.error("%s", e)
+        logging.error(e)
         raise SystemExit(1) from e
 
+    clean_up()
     compile_lilypond()
     zip_files()
 
