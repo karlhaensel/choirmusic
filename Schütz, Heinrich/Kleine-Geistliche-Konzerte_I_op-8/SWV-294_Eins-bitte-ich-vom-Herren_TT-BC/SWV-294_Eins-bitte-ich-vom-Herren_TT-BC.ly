@@ -1,7 +1,7 @@
 \version "2.24.4"
 
 \header {
-  title = "Schaffe in mir, Gott, ein reines Herz (SWV 291)"
+  title = "Eins bitte ich vom Herren (SWV 294)"
   composer = "Heinrich Schütz (1585-1672)"
   tagline = ##f
 }
@@ -19,21 +19,21 @@
   short-indent = 0\mm
 }
 
-\include "SWV-291_staffs.ily"
+\include "SWV-294_staffs.ily"
 
 \book {
   \score {  
    <<
      \new StaffGroup 
      <<
-       \sSopran
-       \sTenor
+       \sTenorI
+       \sTenorII
      >>
      \sBC
    >>
     \layout { }
     \midi {
-      \tempo 2=72
+      \tempo 2=92
     }
   }
 }
