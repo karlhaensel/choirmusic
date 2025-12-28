@@ -11,7 +11,6 @@
 }
 
 \layout {
-  #(layout-set-staff-size 14.7) 
   \override Score.BarNumber.font-size = #1
   \override Score.DynamicTextSpanner.style = #'none
   \set Score.tempoHideNote = ##t
@@ -20,6 +19,10 @@
 }
 
 \include "SWV-291_staffs.ily"
+
+%#(set-global-staff-size 14.14)
+#(set-global-staff-size 15.87)
+%#(set-global-staff-size 17.82)
 
 \book {
   \score {  
