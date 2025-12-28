@@ -6,7 +6,7 @@
 sTenor =
   \new Staff = "zTenor"
     \with {
-      vocalName =  "Tenor vel Cantus"
+      vocalName =  \markup  {\center-column {"Tenor" "oder Sopran"}}
       shortVocalName = ""
       midiInstrument = "voice oohs"
       \consists "Merge_rests_engraver"

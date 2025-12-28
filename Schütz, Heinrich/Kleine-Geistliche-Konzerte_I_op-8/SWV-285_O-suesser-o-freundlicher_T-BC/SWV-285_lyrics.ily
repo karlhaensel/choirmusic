@@ -3,7 +3,7 @@
 tText = \lyricmode {
   O sü -- sser, o freund -- li -- cher, o gü -- ti -- ger Herr Je -- su Chri -- ste, wie hoch
   hast du uns e -- len -- de Men -- schen ge -- lie -- bet, wie theur hast du uns er -- lö -- set, wie lieb -- lich hast du uns ge --
-  trö -- stet, wie herr -- lich hast du uns ge -- macht, wie ge -- wal -- tig hast du uns er -- \footnote #'(0.5 . 0.5) \markup{ Spitta: \italic erhaben} Lyrics.LyricText ho --
+  trö -- stet, wie herr -- lich hast du uns ge -- macht, wie ge -- wal -- tig hast du uns er -- ha --
   ben, mein Hei -- land, wie er -- freu -- et sich mein Herz, mein Hei -- land, wie er -- freu -- et sich mein
   
   Herz, wenn ich da -- ran ge -- den -- ke, denn je mehr, je mehr ich da -- ran ge -- den -- ke, je
