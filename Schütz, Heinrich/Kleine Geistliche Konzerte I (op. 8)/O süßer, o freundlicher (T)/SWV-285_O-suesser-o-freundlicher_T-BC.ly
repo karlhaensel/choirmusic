@@ -19,7 +19,7 @@
   short-indent = 0\mm
 }
 
-\include "O-suesser-o-freundlicher_staffs.ily"
+\include "SWV-285_staffs.ily"
 
 \book {
   \score {  

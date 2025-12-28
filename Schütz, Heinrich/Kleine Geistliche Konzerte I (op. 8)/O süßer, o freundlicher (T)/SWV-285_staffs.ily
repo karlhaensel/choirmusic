@@ -1,7 +1,7 @@
 \version "2.24.4"
 
-\include "O-suesser-o-freundlicher_music.ily"
-\include "O-suesser-o-freundlicher_lyrics.ily"
+\include "SWV-285_music.ily"
+\include "SWV-285_lyrics.ily"
 
 sTenor =
   \new Staff = "zTenor"
