@@ -24,7 +24,7 @@
 \book {
   \score {  
    <<
-     \new StaffGroup 
+     \new ChoirStaff 
      <<
        \sTenorI
        \sTenorII
