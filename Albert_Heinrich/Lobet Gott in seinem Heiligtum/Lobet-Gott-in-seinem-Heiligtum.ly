@@ -19,8 +19,8 @@
 }
 
 
-\include "Lobet Gott in seinem Heiligtum_music.ily"
-\include "Lobet Gott in seinem Heiligtum_lyrics.ily"
+\include "Lobet-Gott-in-seinem-Heiligtum_music.ily"
+\include "Lobet-Gott-in-seinem-Heiligtum_lyrics.ily"
 
 
 choirmidi = \with { midiInstrument = "choir aahs" }
