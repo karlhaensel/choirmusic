@@ -15,8 +15,8 @@
   \override Score.BarNumber.font-size = #1
 }
 
-\include "Zu-dieser-österlichen-Zeit_SATB_music.ily"
-\include "Zu-dieser-österlichen-Zeit_SATB_lyrics.ily"
+\include "Zu-dieser-oesterlichen-Zeit_music.ily"
+\include "Zu-dieser-oesterlichen-Zeit_lyrics.ily"
 
 chormidi = \with {midiInstrument = "choir aahs"}
 
