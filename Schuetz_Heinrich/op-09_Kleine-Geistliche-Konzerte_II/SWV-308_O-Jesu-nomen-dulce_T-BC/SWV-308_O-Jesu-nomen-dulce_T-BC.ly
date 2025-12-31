@@ -1,7 +1,7 @@
 \version "2.24.4"
 
 \header {
-  title = "O Jesu, nomen dulce (SWV 285)"
+  title = "O Jesu, nomen dulce (SWV 308)"
   composer = "Heinrich Schütz (1585-1672)"
   tagline = ##f
 }
