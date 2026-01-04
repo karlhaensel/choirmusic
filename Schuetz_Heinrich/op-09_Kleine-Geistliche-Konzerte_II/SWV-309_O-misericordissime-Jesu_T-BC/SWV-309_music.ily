@@ -20,7 +20,7 @@ nTenor = \relative c' {
   g2 f | a8 bes c a d4 c8 c bes4. a8 a2 | g4 d'8 d g4 f8 f es4 d c2 | bes1 r2 r8 c f, f |
   f4. e8 g2 g r8 d' g, g | g4. fis8 a2 a r8 e' a, a | a4. g8 b!2 b4 r8 c c4 c8 d | d4 d8 e e2. e16([ f g f]) e2 |
   d1 r4 f4. f,8 g g | a4. a8 a4 b!8 b c4 c8 c c4 c8 b | c4 c8 c c4 c c2.( b!4) | c1 r4 es4. g,8 g a |
-  a4. a8 a2 r4 d4. c8 bes4 | r d4. d,8 e e fis4. fis8 fis4 fis8 fis | g4 g8 g g4 g8 fis g4 g8 g g4 g | g2.( fis4) g1\fermata \bar "|."
+  a4. a8 a2 r4 d4. c8 bes4 | r d4. d,8 e e fis4. fis8 fis4 fis8 fis | g4 g8 g g4 g8 fis g4 g8 g g4 g | \time 6/2 g2.( fis4) g\breve\fermata \bar "|."
 }
 
 nBC = \relative c {
@@ -37,7 +37,7 @@ nBC = \relative c {
   c'8[ d e c] f4 e | d c bes a g bes d8[ e fis d] | g4 f!8 f es4 d c bes f'2 | bes,1 f |
   f2 c' c g~ | g d' d a~ | a e' e f | fis g4 gis a gis a2 |
   d,1 bes1 | f'2. d4 c a f g | c e f a f2 g | c,1 c2. c4 |
-  cis2 d4. c!8 bes4. a8 g2 | g1 d'2. d4 | g f es d c d es c | d1 g,\fermata \bar "|."
+  cis2 d4. c!8 bes4. a8 g2 | g1 d'2. d4 | g f es d c d es c | \time 6/2 d1 g,\breve\fermata \bar "|."
 }
 
 nBCfigured = \figuremode {
@@ -54,5 +54,5 @@ nBCfigured = \figuremode {
   <_>1. <_+>2 | <_>1 <_->2 <4>4 <3> | <_>\breve*2 |
   <_>2 <_+>1. | <_>2 <_+> <5[!]>4 <6> <5> <6> | <6>2 <6> <_+> <_+> |
   <_>1. <_>4 <6> | <_>2. <6[+]>1 <_!>4 | <_> <6> <_>1 <_!>2 | <_>1 <_->2. <6>4 |
-  <_>\breve | <_>2 <5>4 <6> <_+>1 | <_>2. <_+>4 <_->1 | <4>2 <_+> <_>1 \bar "|."
+  <_>\breve | <_>2 <5>4 <6> <_+>1 | <_>2. <_+>4 <_->1 | <4>2 <_+> <_>\breve \bar "|."
 }

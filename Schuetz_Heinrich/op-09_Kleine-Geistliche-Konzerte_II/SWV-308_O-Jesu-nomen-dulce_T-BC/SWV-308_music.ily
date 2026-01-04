@@ -16,7 +16,7 @@ nTenor = \relative c' {
   g1) bes4 bes bes bes8 bes | bes4 bes8 bes b!4 b8 b c1( | cis) d2 r4 d8 a | bes4 bes r8 g bes c d4 c8 bes a([ bes16 c f,8 g16 a] |
   bes8[ c16 d g,8 a16 bes] f8[ g16 a] d,[ e f e] e2) d4 r8 f' | es([ d d c] d[ c c bes] c\([ d]\) es[\( d] \) c2) | bes2 r g4 g g g8 g | g4 g8 g g4 g8 g a1~ |
   a a4 d8 a bes4 bes | r8 es, g a bes4 a8 g f8([ g16 a d,8 es16 f] g[ a g a] bes[ c bes c] | d8[ e16 f bes,8 c16 d] f,16[ g f g] a[ bes a bes]
-  c8[ d16 es a,8 bes16 c] e,!16[ f e f] g[ a g a] | bes8[ c16 d g,8 a16 bes] d,[ e d e] f[ g f g] a8[ bes16 c] f,[ g a g] g2) | f r4 d' c8([ bes bes a] bes[ a a g] | a[ bes c bes] a2)  g1\fermata \bar "|."
+  c8[ d16 es a,8 bes16 c] e,!16[ f e f] g[ a g a] | bes8[ c16 d g,8 a16 bes] d,[ e d e] f[ g f g] a8[ bes16 c] f,[ g a g] g2) | \time 10/2 f r4 d' c8([ bes bes a] bes[ a a g] a[ bes c bes] a2)  g\breve\fermata \bar "|."
 }
 
 nBC = \relative c' {
@@ -29,7 +29,7 @@ nBC = \relative c' {
   g,1 g'2 f | es d c bes | a g fis fis' | g4 g8[ d] es2 bes4 d8[ es] f4 f, |
   g2 d' a d | c bes f'4 es f2 | bes,1 es2 d | c bes a g |
   f4 e8[ d] a'2 d, g4 g'8[ d] | es2~ es8[ g, bes c] d2 g, | bes f'
-  f, c' | g bes f c' | f, bes a g | d'4 c d2 g,1\fermata \bar "|."
+  f, c' | g bes f c' | \time 10/2 f, bes a g d'4 c d2 g,\breve\fermata \bar "|."
 }
 
 nBCfigured = \figuremode {
@@ -41,6 +41,6 @@ nBCfigured = \figuremode {
   <6>4 <5> <4> <_+> <_>2 <_!> | <_> <_-> <_>1 | <_> <_+>2 <4>4 <_+> |
   <_>\breve | <_>2 <6+> <_>1 | <_+>\breve | <_> |
   <_>1 <_+> | <_-> <_>2 <4>4 <3> | <_>\breve | <_>1 <_+> |
-  <_>2 <_+> <_+> <_>4. <6>8 | <_>\breve*4 |
-  <_+>2 <4>4 <_+> <_>1 \bar "|."
+  <_>2 <_+> <_+> <_>4. <6>8 | <_>\breve*3 |
+  <_>\breve <_+>2 <4>4 <_+> <_>\breve \bar "|."
 }
