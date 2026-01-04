@@ -9,5 +9,5 @@ tText = \lyricmode {
   
   \tag #'I { Tem -- pel, sei -- nen } Tem -- pel \tag #'II { zu __  be -- su -- chen, und sei -- nen Tem -- pel } zu be -- su -- chen, zu schau -- en die schö -- nen Got -- tes -- dienst des
   Her -- ren, die schö -- nen Got -- tes -- dienst des Her -- ren, und sei -- nen Tem -- pel \tag #'I { zu __ } \tag #'II { zu } be -- su -- chen,
-  und sei -- nen \tag #'I { Tem -- pel, sei -- nen } Tem -- pel zu be -- su -- chen.
+  und sei -- nen \tag #'I { Tem -- pel, und sei -- nen } Tem -- pel zu be -- su -- chen.
 }

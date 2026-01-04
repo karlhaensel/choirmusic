@@ -20,9 +20,9 @@
 
 \include "SWV-285_staffs.ily"
 
-%#(set-global-staff-size 14.14)
-#(set-global-staff-size 15.87)
-%#(set-global-staff-size 17.82)
+%#(set-global-staff-size 14.14)  % very small
+#(set-global-staff-size 15.87)  % small
+%#(set-global-staff-size 17.82)  % "normal"
 
 \book {
   \score {  
@@ -30,7 +30,7 @@
      \sTenor
      \sBC
    >>
-    \layout { }
+    \layout {}
     \midi {
       \tempo 2=100
     }

@@ -20,9 +20,9 @@
 
 \include "SWV-294_staffs.ily"
 
-%#(set-global-staff-size 14.14)
-#(set-global-staff-size 15.87)
-%#(set-global-staff-size 17.82)
+%#(set-global-staff-size 14.14)  % very small
+%#(set-global-staff-size 15.87)  % small
+#(set-global-staff-size 17.82)  % "normal"
 
 \book {
   \score {  

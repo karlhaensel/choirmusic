@@ -1,8 +1,15 @@
 \version "2.24.4"
 
+tempusImperfectum = {
+  \time 4/2
+  \set Timing.timeSignatureFraction = #'(4 . 4)
+}
+
+noTimeSignature = { \once \omit Staff.TimeSignature }
+
 global = {
   \key f \ionian
-  \time 4/2
+  \tempusImperfectum
   \autoBeamOff
 }
 
@@ -16,7 +23,7 @@ nTenorI = \relative c' {
   
   bes4 bes bes c d2 f4 es~ | es d c2 bes d | es1 d | r4 c d a f'4. es8 d4 c |
   b!4( c2 b4) c2 r4 g | a e c'4. bes8 a4 g f8([ g f e] | d1) e | r4 f f g a2 c4 bes~ | bes a g2 f1 |
-  R\breve | r4 f f g a2 c | r2 r4 g g a bes2 | c bes1 a2 | g1 f \bar "|."
+  R\breve | r4 f f g a2 c | r2 r4 g g a bes2 | c bes1 a2 | \noTimeSignature \time 6/2 g1 f\breve \bar "|."
 }
 
 nTenorII = \relative c' {
@@ -29,7 +36,7 @@ nTenorII = \relative c' {
   
   r4 g' g a bes2 d4 g, | a bes2( a4) bes1 | r2 g bes1 | a2 r4 c d a f'4. es8 |
   d4 es d2 c4 g a e | c'4. bes8 a4 g f8([ e f g] a2~ | a4 g8[ f] g2) a1 | R\breve | r1 r4 d, d e |
-  f2 a4 g2 f4 e2 | d1 r2 r4 g | g a bes2 d r | g,1 e2 f~( | f4 e8[ d] e2) f1 \bar "|."
+  f2 a4 g2 f4 e2 | d1 r2 r4 g | g a bes2 d r | g,1 e2 f~( | \noTimeSignature \time 6/2 f4 e8[ d] e2) f\breve \bar "|."
 }
 
 nBC = \relative c {
@@ -42,7 +49,7 @@ nBC = \relative c {
   
   g4 g'2 f4 bes g d es | f1 bes,2 bes | es1 bes | f'2 f1 f2 |
   g1 c,2 c~ | c c d2. c4 | bes1 a | d2 d4 c f2 a,4 bes | c1 f,4 bes2 a4 |
-  d2 f,4 g a1 | d1 f2 c~ | c g1 g2~ | g g c1~ | c f,1 \bar "|."
+  d2 f,4 g a1 | d1 f2 c~ | c g1 g2~ | g g c1~ | \noTimeSignature \time 6/2 c f,\breve \bar "|."
 }
 
 nBCfigured = \figuremode {
@@ -55,5 +62,5 @@ nBCfigured = \figuremode {
   
   <_>\breve | <7[-] 3>4 <6 4>2 <3>4 <_>1 | <_>\breve | <_>2 <6>4 <5> <6> <5> <6> <5> |
   <_!> <4> <4> <_!> <_>2 <6>4 <5> | <6> <5> <6> <5> <_>2. <6>4 | <7>2 <6> <_+>1 | <_>\breve | <7 3>4 <6 4>2 <3>4 <_>1 |
-  <_> <7 _+>4 <6 4>2 <3[+]>4 | <_>\breve*2 | <_>1 <7 3>2 <6 4> | <4> <3> <_>1 \bar "|."
+  <_> <7 _+>4 <6 4>2 <3[+]>4 | <_>\breve*2 | <_>1 <7 3>2 <6 4> | \noTimeSignature \time 6/2 <4> <3> <_>\breve \bar "|."
 }

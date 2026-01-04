@@ -1,8 +1,15 @@
 \version "2.24.4"
 
+tempusImperfectum = {
+  \time 4/2
+  \set Timing.timeSignatureFraction = #'(4 . 4)
+}
+
+noTimeSignature = { \once \omit Staff.TimeSignature }
+
 global = {
   \key a \aeolian
-  \time 4/2
+  \tempusImperfectum
   \autoBeamOff
 }
 
@@ -15,7 +22,7 @@ nTenorI = \relative c' {
   a g2 d'~ | d b! e c | gis( a1 gis2) | a1 r | R\breve | r1 r2 d~ | d a b g |
   fis gis a c~ | c c c a | d\breve | c1 r | R\breve | r1 cis4 d e f |
   e2 d r a | d fis,4 fis fis2 g | a b4 c d e b( c~ | c b) c2 r4 b e2~ |
-  e gis,4 gis gis2 a | b e,4 fis gis a b8([ d c d] | b1) a2 r | a4 b c d e8([ f d e] c2) | b\breve \bar "|." 
+  e gis,4 gis gis2 a | b e,4 fis gis a b8([ d c d] | b1) a2 r | \noTimeSignature \time 8/2 a4 b c d e8([ f d e] c2) b\breve \bar "|." 
 }
 
 nTenorII = \relative c' {
@@ -27,7 +34,7 @@ nTenorII = \relative c' {
   g fis) g b~ | b g c e | b\breve | a1 r2 c~ | c g a f | e fis g1 | R\breve |
   r1 r2 e'~ | e e e c | b( c1 b2) | c1 r2 b | e gis,4 gis gis2 a | b cis4 d e f cis( d~ |
   d cis) d2 r1 | R\breve | r1 b4 c d e | d2 c r4 gis c2~ |
-  c b4 b b2 a | gis r e4 fis gis a | gis( a2 gis4) a2 a4 b | c d e8([ f d e] c[ d b c] a2) | gis\breve \bar "|."
+  c b4 b b2 a | gis r e4 fis gis a | gis( a2 gis4) a2 a4 b | \noTimeSignature \time 8/2 c d e8([ f d e] c[ d b c] a2) gis\breve \bar "|."
 }
 
 nBC = \relative c {
@@ -39,7 +46,7 @@ nBC = \relative c {
   d1 g,2 g~ | g g a1 | e' e | a, f' | e f2 d | c d g,1 | fis' g2 e |
   d e a, a'~ | a a a1 | g2 f g1 | c, e2 e~ | e e4 e e2 f | e a4 bes a d, a d |
   a'2 d, d d~ | d d4 d d2 e | d g4 a g c, g c | g'2 c, e a,~ |
-  a e'4 e e2 f | e2 c4 d e d b a | e' d e2 a, a~ | a a a1 | e'\breve \bar "|."
+  a e'4 e e2 f | e2 c4 d e d b a | e' d e2 a, a~ | \noTimeSignature \time 8/2  a a a1 e'\breve \bar "|."
 }
 
 nBCfigured = \figuremode {
@@ -51,5 +58,5 @@ nBCfigured = \figuremode {
   <4> <_+> <_>1 | <_>\breve | <_+>2 <4> <4> <_+> | <_>\breve | <6> | <_>2 <_+> <_>1 | <_>\breve |
   <_+>2 <_+> <_>1 | <_>\breve | <_>1 <4>2 <3> | <_>1 <_+> | <_>\breve | <_+>2 <_+> <_+> <_+> |
   <4>4 <_+> <_+>2 <_>1 | <_>\breve | <_+> | <4>4 <3> <_>2 <_+> <_> |
-  <_> <_+> <_>1 | <_+>2. <_+>4 <_+> <_+> <6[+]>2 | <_+> <4>4 <_+> <_>1 | <_>\breve*2 \bar "|."
+  <_> <_+> <_>1 | <_+>2. <_+>4 <_+> <_+> <6[+]>2 | <_+> <4>4 <_+> <_>1 | \noTimeSignature \time 8/2 <_>\breve*2 \bar "|."
 }
