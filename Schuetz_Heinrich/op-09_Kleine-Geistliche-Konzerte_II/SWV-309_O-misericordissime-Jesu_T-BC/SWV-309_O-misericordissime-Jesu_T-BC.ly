@@ -30,12 +30,7 @@
      \sTenor
      \sBC
    >>
-    \layout {
-      \context {
-        \Staff
-        \omit TimeSignature
-      }
-    }
+    \layout {}
     \midi {
       \tempo 2=52
     }
