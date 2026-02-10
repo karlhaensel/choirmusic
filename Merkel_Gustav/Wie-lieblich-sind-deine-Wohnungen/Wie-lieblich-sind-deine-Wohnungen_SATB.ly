@@ -13,10 +13,8 @@
     
 
 \book {
-  \bookOutputSuffix "4pages"
   \paper {
     #(set-paper-size "a4")
-    % page-count = 4
   }
   \score {
     \new ChoirStaff <<
