@@ -13,8 +13,8 @@
 \include "Orpheus-with-his-lute_voices.ily"
     
 
-#(set-global-staff-size 14.14)  % very small
-%#(set-global-staff-size 15.87)  % small
+%#(set-global-staff-size 14.14)  % very small
+#(set-global-staff-size 15.87)  % small
 %#(set-global-staff-size 17.82)  % "normal"
 
 
@@ -22,7 +22,7 @@
   \bookOutputSuffix "4pages"
   \paper {
     #(set-paper-size "a4")
-    % page-count = 4
+    page-count = 3
   }
   \score {
     \new ChoirStaff <<
