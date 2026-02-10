@@ -35,10 +35,11 @@
       \sIBass
     >>
     \layout {
-      \override Score.BarNumber.font-size = #1
+      \override Score.BarNumber.font-size = #1      
     }
     \midi { }
   }
+
   \score {
     \header {
     piece = "II"
